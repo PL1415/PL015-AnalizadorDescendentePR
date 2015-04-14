@@ -1,21 +1,21 @@
-PL015-AnalizadorLexicoJS [![Build Status](https://travis-ci.org/PL2015/PL015-AnalizadorLexicoJS.svg?branch=master)](https://travis-ci.org/PL2015/PL015-AnalizadorLexicoJS)
-========================
+PL015-AnalizadorDescendentePR
+=============================
 
-Analizador Léxico para Un Subconjunto de JavaScript
+
 
 ## Enlaces:
 
-Página del proyecto (GH-Pages) [aquí](http://pl2015.github.io/PL015-AnalizadorLexicoJS/)
+Página del proyecto (GH-Pages) 
 
-Página de los test del proyecto (GH-Pages) [aqui](http://pl2015.github.io/PL015-AnalizadorLexicoJS/test.html)
+Página de los test del proyecto (GH-Pages) 
 
-Página del proyecto (Heroku) [aqu’](https://quiet-refuge-1585.herokuapp.com/)
+Página del proyecto (Heroku) 
 
-Página de los test del proyecto (Heroku) [aqu’](https://quiet-refuge-1585.herokuapp.com/test)
+Página de los test del proyecto (Heroku) 
 
 
 ## Autores:
 
-* [Guillermo Rodríguez Pardo](https://wyllman.github.io)
+
 
 
