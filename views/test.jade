@@ -1,37 +1,40 @@
-link (rel="stylesheet", href="tests/mocha.css")
+extends layout
 
-h1 Top Down Operator Precedence. Lexical Analysis
-  p
-    nav
-      a (href="http://javascript.crockford.com/tdop/tdop.html" class="mylink") Top Down Operator Precedence tutorial
-      a (href="https://github.com/PL2015/PL015-AnalizadorLexicoJS" class="mylink") Repo at GitHub
+block content
+
+  link(rel="stylesheet", href="tests/mocha.css")
+
+  h1 Top Down Operator Precedence. Lexical Analysis
+    p
+      nav
+        a(href="http://javascript.crockford.com/tdop/tdop.html", class="mylink") Top Down Operator Precedence tutorial
+        a(href="https://github.com/PL2015/PL015-AnalizadorLexicoJS", class="mylink") Repo at GitHub
          
-      h2 Input
-      p Fill the input box with javascript code:
-      textarea (id="INPUT")
+        h2 Input
+        p Fill the input box with javascript code:
+        textarea#INPUT
 
-      br
-      input (id="PARSE", value=parse, type=button, class="mylink")
-
-      button (id ="input2", type="button", onclick="dump('input2.txt');") input2
+        br
+        input#PARSE(value=parse, type=button, class="mylink")
+        
+        button#input2(type="button", onclick="dump('input2.txt');") input2
       
-      div (id="drop_zone") Drop files here
-      output (id="list")
+        div#drop_zone Drop files here
+        output#list
       
-      script
-        setupFileList ();
+        script(type="text/javascript")
+          setupFileList ()
 
-
-      pre (id=OUTPUT)
+        pre#OUTPUT
 
     
-    div (id="mocha")
+     div#mocha
     
-    script (src="../tests/chai.js")
-    script (src="../tests/mocha.js")
-    script (mocha.setup('tdd'))
-    script (src="../tests/blanket.min.js", data-cover-adapter="../tests/mocha-blanket.js")
-    script (src="../tests/tests.js")
-    script (type='text/javascript')
-      mocha.run();
+    script(src="../tests/chai.js")
+    script(src="../tests/mocha.js")
+    script(mocha.setup('tdd'))
+    script(src="../tests/blanket.min.js", data-cover-adapter="../tests/mocha-blanket.js")
+    script(src="../tests/tests.js")
+    script(type="text/javascript")
+      mocha.run()
     

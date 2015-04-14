@@ -7,13 +7,11 @@ var app = express();
 module.exports = app;
 
 var path = require('path');
-var expressLayouts = require('express-ejs-layouts');
 
 app.set('port', (process.env.PORT || 5000));
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.set('view engine', 'jade');
 
-app.use(expressLayouts);
 app.use(express.static(__dirname + '/'));
 
 app.get('/', function (request, response) {

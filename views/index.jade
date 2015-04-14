@@ -1,0 +1,24 @@
+extends layout
+
+block content
+
+  h1 Top Down Operator Precedence. Lexical Analysis  
+  p
+   nav
+    a(href="http://javascript.crockford.com/tdop/tdop.html", class="mylink") Top Down Operator Precedence tutorial
+    a(href="https://github.com/PL2015/PL015-AnalizadorLexicoJS", class="mylink") Repo at GitHub
+  h2 Input
+    p Fill the input box with javascript code:
+    textarea#INPUT
+      'var a = "hello"; // initialize a'    
+    br
+    input#PARSE(value='parse', type=button, class="mylink") 
+    button#input2(type="button", onclick="dump('input2.txt')") input2
+      
+    div#drop_zone
+      Drop files here
+    output id="list"
+      
+    script(type='text/javascript')
+      setupFileList ();
+  pre#OUTPUT
