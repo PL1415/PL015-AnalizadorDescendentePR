@@ -1,220 +1,3072 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
 2 info using npm@1.4.28
-3 info using node@v0.10.36
-4 verbose readDependencies using package.json deps
-5 verbose install where, deps [ '/Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS',
-5 verbose install   [ 'jquery',
-5 verbose install     'underscore',
-5 verbose install     'express',
-5 verbose install     'ejs',
-5 verbose install     'body-parser',
-5 verbose install     'express-ejs-layouts',
-5 verbose install     'blanket',
-5 verbose install     'chai',
-5 verbose install     'del',
-5 verbose install     'gulp',
-5 verbose install     'gulp-concat',
-5 verbose install     'gulp-karma',
-5 verbose install     'gulp-minify-css',
-5 verbose install     'gulp-minify-html',
-5 verbose install     'gulp-shell',
-5 verbose install     'gulp-uglify',
-5 verbose install     'gulp-util',
-5 verbose install     'jasmine-core',
-5 verbose install     'karma',
-5 verbose install     'karma-chrome-launcher',
-5 verbose install     'karma-firefox-launcher',
-5 verbose install     'karma-html2js-preprocessor',
-5 verbose install     'karma-jasmine',
-5 verbose install     'karma-mocha',
-5 verbose install     'karma-phantomjs-launcher',
-5 verbose install     'mocha',
-5 verbose install     'node-static',
-5 verbose install     'node-supervisor' ] ]
-6 info preinstall PL015-AnalizadorLexicoJS@0.0.1
-7 verbose readDependencies using package.json deps
-8 verbose already installed skipping gulp-shell@* /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-9 verbose already installed skipping gulp-uglify@^1.1.0 /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-10 verbose already installed skipping gulp-util@^3.0.4 /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-11 verbose already installed skipping jasmine-core@^2.2.0 /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-12 verbose already installed skipping karma@* /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-13 verbose already installed skipping karma-chrome-launcher@* /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-14 verbose already installed skipping karma-firefox-launcher@* /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-15 verbose already installed skipping karma-html2js-preprocessor@* /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-16 verbose already installed skipping karma-jasmine@^0.3.5 /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-17 verbose already installed skipping karma-mocha@* /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-18 verbose already installed skipping karma-phantomjs-launcher@* /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-19 verbose cache add [ 'mocha@latest', null ]
-20 verbose cache add name=undefined spec="mocha@latest" args=["mocha@latest",null]
-21 verbose parsed url { protocol: null,
-21 verbose parsed url   slashes: null,
-21 verbose parsed url   auth: null,
-21 verbose parsed url   host: null,
-21 verbose parsed url   port: null,
-21 verbose parsed url   hostname: null,
-21 verbose parsed url   hash: null,
-21 verbose parsed url   search: null,
-21 verbose parsed url   query: null,
-21 verbose parsed url   pathname: 'mocha@latest',
-21 verbose parsed url   path: 'mocha@latest',
-21 verbose parsed url   href: 'mocha@latest' }
-22 verbose already installed skipping node-static@^0.7.6 /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-23 verbose cache add [ 'node-supervisor@*', null ]
-24 verbose cache add name=undefined spec="node-supervisor@*" args=["node-supervisor@*",null]
-25 verbose parsed url { protocol: null,
-25 verbose parsed url   slashes: null,
-25 verbose parsed url   auth: null,
-25 verbose parsed url   host: null,
-25 verbose parsed url   port: null,
-25 verbose parsed url   hostname: null,
-25 verbose parsed url   hash: null,
-25 verbose parsed url   search: null,
-25 verbose parsed url   query: null,
-25 verbose parsed url   pathname: 'node-supervisor@*',
-25 verbose parsed url   path: 'node-supervisor@*',
-25 verbose parsed url   href: 'node-supervisor@*' }
-26 verbose cache add name="mocha" spec="latest" args=["mocha","latest"]
-27 verbose parsed url { protocol: null,
-27 verbose parsed url   slashes: null,
-27 verbose parsed url   auth: null,
-27 verbose parsed url   host: null,
-27 verbose parsed url   port: null,
-27 verbose parsed url   hostname: null,
-27 verbose parsed url   hash: null,
-27 verbose parsed url   search: null,
-27 verbose parsed url   query: null,
-27 verbose parsed url   pathname: 'latest',
-27 verbose parsed url   path: 'latest',
-27 verbose parsed url   href: 'latest' }
-28 verbose addNamed [ 'mocha', 'latest' ]
-29 verbose addNamed [ null, null ]
-30 verbose cache add name="node-supervisor" spec="*" args=["node-supervisor","*"]
-31 verbose parsed url { protocol: null,
-31 verbose parsed url   slashes: null,
-31 verbose parsed url   auth: null,
-31 verbose parsed url   host: null,
-31 verbose parsed url   port: null,
-31 verbose parsed url   hostname: null,
-31 verbose parsed url   hash: null,
-31 verbose parsed url   search: null,
-31 verbose parsed url   query: null,
-31 verbose parsed url   pathname: '*',
-31 verbose parsed url   path: '*',
-31 verbose parsed url   href: '*' }
-32 verbose addNamed [ 'node-supervisor', '*' ]
-33 verbose addNamed [ null, '*' ]
-34 silly lockFile 12215997-mocha-latest mocha@latest
-35 verbose lock mocha@latest /Users/tenerent/.npm/12215997-mocha-latest.lock
-36 silly lockFile d8cd1c82-node-supervisor node-supervisor@*
-37 verbose lock node-supervisor@* /Users/tenerent/.npm/d8cd1c82-node-supervisor.lock
-38 info addNameTag [ 'mocha', 'latest' ]
-39 silly addNameRange { name: 'node-supervisor', range: '*', hasData: false }
-40 verbose request where is /node-supervisor
-41 verbose request registry https://registry.npmjs.org/
-42 verbose request id 786b31726f611173
-43 verbose url raw /node-supervisor
-44 verbose url resolving [ 'https://registry.npmjs.org/', './node-supervisor' ]
-45 verbose url resolved https://registry.npmjs.org/node-supervisor
-46 verbose request where is https://registry.npmjs.org/node-supervisor
-47 info trying registry request attempt 1 at 00:51:57
-48 http GET https://registry.npmjs.org/node-supervisor
-49 verbose already installed skipping jquery@* /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-50 verbose already installed skipping underscore@* /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-51 verbose already installed skipping express@* /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-52 verbose already installed skipping ejs@* /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-53 verbose already installed skipping body-parser@~1.12.0 /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-54 verbose already installed skipping express-ejs-layouts@~1.1.0 /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-55 verbose already installed skipping blanket@^1.1.6 /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-56 verbose already installed skipping chai@^2.1.0 /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-57 verbose already installed skipping del@^1.1.1 /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-58 verbose already installed skipping gulp@^3.8.11 /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-59 verbose already installed skipping gulp-concat@^2.5.2 /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-60 verbose already installed skipping gulp-karma@* /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-61 verbose already installed skipping gulp-minify-css@^0.4.6 /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-62 verbose already installed skipping gulp-minify-html@^1.0.0 /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-63 verbose request where is /mocha
-64 verbose request registry https://registry.npmjs.org/
-65 verbose url raw /mocha
-66 verbose url resolving [ 'https://registry.npmjs.org/', './mocha' ]
-67 verbose url resolved https://registry.npmjs.org/mocha
-68 verbose request where is https://registry.npmjs.org/mocha
-69 info trying registry request attempt 1 at 00:51:57
-70 verbose etag "9LYR452BMBWW56PQGHT1CL6LL"
-71 http GET https://registry.npmjs.org/mocha
-72 http 304 https://registry.npmjs.org/mocha
-73 silly registry.get cb [ 304,
-73 silly registry.get   { date: 'Thu, 26 Mar 2015 00:51:57 GMT',
-73 silly registry.get     server: 'Apache',
-73 silly registry.get     via: '1.1 varnish',
-73 silly registry.get     'last-modified': 'Thu, 26 Mar 2015 00:51:57 GMT',
-73 silly registry.get     'cache-control': 'max-age=60',
-73 silly registry.get     etag: '"9LYR452BMBWW56PQGHT1CL6LL"',
-73 silly registry.get     age: '12',
-73 silly registry.get     'x-served-by': 'cache-fra1232-FRA',
-73 silly registry.get     'x-cache': 'HIT',
-73 silly registry.get     'x-cache-hits': '1',
-73 silly registry.get     'x-timer': 'S1427331117.701340,VS0,VE1',
-73 silly registry.get     vary: 'Accept',
-73 silly registry.get     'content-length': '0',
-73 silly registry.get     'keep-alive': 'timeout=10, max=50',
-73 silly registry.get     connection: 'Keep-Alive' } ]
-74 verbose etag https://registry.npmjs.org/mocha from cache
-75 verbose addNamed [ 'mocha', '2.2.1' ]
-76 verbose addNamed [ '2.2.1', '2.2.1' ]
-77 silly lockFile cd740b7b-mocha-2-2-1 mocha@2.2.1
-78 verbose lock mocha@2.2.1 /Users/tenerent/.npm/cd740b7b-mocha-2-2-1.lock
-79 silly lockFile cd740b7b-mocha-2-2-1 mocha@2.2.1
-80 silly lockFile cd740b7b-mocha-2-2-1 mocha@2.2.1
-81 silly lockFile 12215997-mocha-latest mocha@latest
-82 silly lockFile 12215997-mocha-latest mocha@latest
-83 info already installed mocha@2.2.1
-84 http 404 https://registry.npmjs.org/node-supervisor
-85 verbose headers { date: 'Thu, 26 Mar 2015 00:51:57 GMT',
-85 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-85 verbose headers   'content-type': 'application/json',
-85 verbose headers   'cache-control': 'max-age=0',
-85 verbose headers   'content-length': '51',
-85 verbose headers   'accept-ranges': 'bytes',
-85 verbose headers   via: '1.1 varnish',
-85 verbose headers   age: '0',
-85 verbose headers   'x-served-by': 'cache-fra1240-FRA',
-85 verbose headers   'x-cache': 'MISS',
-85 verbose headers   'x-cache-hits': '0',
-85 verbose headers   'x-timer': 'S1427331117.694082,VS0,VE106',
-85 verbose headers   'keep-alive': 'timeout=10, max=50',
-85 verbose headers   connection: 'Keep-Alive' }
-86 silly registry.get cb [ 404,
-86 silly registry.get   { date: 'Thu, 26 Mar 2015 00:51:57 GMT',
-86 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-86 silly registry.get     'content-type': 'application/json',
-86 silly registry.get     'cache-control': 'max-age=0',
-86 silly registry.get     'content-length': '51',
-86 silly registry.get     'accept-ranges': 'bytes',
-86 silly registry.get     via: '1.1 varnish',
-86 silly registry.get     age: '0',
-86 silly registry.get     'x-served-by': 'cache-fra1240-FRA',
-86 silly registry.get     'x-cache': 'MISS',
-86 silly registry.get     'x-cache-hits': '0',
-86 silly registry.get     'x-timer': 'S1427331117.694082,VS0,VE106',
-86 silly registry.get     'keep-alive': 'timeout=10, max=50',
-86 silly registry.get     connection: 'Keep-Alive' } ]
-87 silly lockFile d8cd1c82-node-supervisor node-supervisor@*
-88 silly lockFile d8cd1c82-node-supervisor node-supervisor@*
-89 error 404 404 Not Found: node-supervisor
-89 error 404
-89 error 404 'node-supervisor' is not in the npm registry.
-89 error 404 You should bug the author to publish it
-89 error 404 It was specified as a dependency of 'PL015-AnalizadorLexicoJS'
-89 error 404
-89 error 404 Maybe try 'npm search supervisor'
-89 error 404
-89 error 404 Note that you can also install from a
-89 error 404 tarball, folder, or http url, or git url.
-90 error System Darwin 10.8.0
-91 error command "node" "/usr/local/bin/npm" "install"
-92 error cwd /Users/tenerent/Downloads/workspace-2015-2c/PL/PL015-AnalizadorLexicoJS
-93 error node -v v0.10.36
-94 error npm -v 1.4.28
-95 error code E404
-96 verbose exit [ 1, true ]
+3 info using node@v0.10.38
+4 verbose node symlink /usr/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/home/juanfgr/Escritorio/PL015-AnalizadorDescendentePR',
+6 verbose install   [ 'jquery',
+6 verbose install     'underscore',
+6 verbose install     'express',
+6 verbose install     'ejs',
+6 verbose install     'body-parser',
+6 verbose install     'express-ejs-layouts',
+6 verbose install     'blanket',
+6 verbose install     'chai',
+6 verbose install     'del',
+6 verbose install     'gulp',
+6 verbose install     'gulp-concat',
+6 verbose install     'gulp-karma',
+6 verbose install     'gulp-minify-css',
+6 verbose install     'gulp-minify-html',
+6 verbose install     'gulp-shell',
+6 verbose install     'gulp-uglify',
+6 verbose install     'gulp-util',
+6 verbose install     'jasmine-core',
+6 verbose install     'karma',
+6 verbose install     'karma-chrome-launcher',
+6 verbose install     'karma-firefox-launcher',
+6 verbose install     'karma-html2js-preprocessor',
+6 verbose install     'karma-jasmine',
+6 verbose install     'karma-mocha',
+6 verbose install     'karma-phantomjs-launcher',
+6 verbose install     'mocha',
+6 verbose install     'node-static',
+6 verbose install     'supervisor',
+6 verbose install     'supertest' ] ]
+7 info preinstall PL015-AnalizadorLexicoJS@0.0.1
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'jquery@*', null ]
+10 verbose cache add name=undefined spec="jquery@*" args=["jquery@*",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'jquery@*',
+11 verbose parsed url   path: 'jquery@*',
+11 verbose parsed url   href: 'jquery@*' }
+12 verbose cache add [ 'underscore@*', null ]
+13 verbose cache add name=undefined spec="underscore@*" args=["underscore@*",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'underscore@*',
+14 verbose parsed url   path: 'underscore@*',
+14 verbose parsed url   href: 'underscore@*' }
+15 verbose cache add [ 'express@*', null ]
+16 verbose cache add name=undefined spec="express@*" args=["express@*",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'express@*',
+17 verbose parsed url   path: 'express@*',
+17 verbose parsed url   href: 'express@*' }
+18 verbose cache add [ 'ejs@*', null ]
+19 verbose cache add name=undefined spec="ejs@*" args=["ejs@*",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'ejs@*',
+20 verbose parsed url   path: 'ejs@*',
+20 verbose parsed url   href: 'ejs@*' }
+21 verbose cache add name="jquery" spec="*" args=["jquery","*"]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: '*',
+22 verbose parsed url   path: '*',
+22 verbose parsed url   href: '*' }
+23 verbose addNamed [ 'jquery', '*' ]
+24 verbose addNamed [ null, '*' ]
+25 verbose cache add name="underscore" spec="*" args=["underscore","*"]
+26 verbose parsed url { protocol: null,
+26 verbose parsed url   slashes: null,
+26 verbose parsed url   auth: null,
+26 verbose parsed url   host: null,
+26 verbose parsed url   port: null,
+26 verbose parsed url   hostname: null,
+26 verbose parsed url   hash: null,
+26 verbose parsed url   search: null,
+26 verbose parsed url   query: null,
+26 verbose parsed url   pathname: '*',
+26 verbose parsed url   path: '*',
+26 verbose parsed url   href: '*' }
+27 verbose addNamed [ 'underscore', '*' ]
+28 verbose addNamed [ null, '*' ]
+29 verbose cache add name="express" spec="*" args=["express","*"]
+30 verbose parsed url { protocol: null,
+30 verbose parsed url   slashes: null,
+30 verbose parsed url   auth: null,
+30 verbose parsed url   host: null,
+30 verbose parsed url   port: null,
+30 verbose parsed url   hostname: null,
+30 verbose parsed url   hash: null,
+30 verbose parsed url   search: null,
+30 verbose parsed url   query: null,
+30 verbose parsed url   pathname: '*',
+30 verbose parsed url   path: '*',
+30 verbose parsed url   href: '*' }
+31 verbose addNamed [ 'express', '*' ]
+32 verbose addNamed [ null, '*' ]
+33 verbose cache add [ 'body-parser@~1.12.0', null ]
+34 verbose cache add name=undefined spec="body-parser@~1.12.0" args=["body-parser@~1.12.0",null]
+35 verbose parsed url { protocol: null,
+35 verbose parsed url   slashes: null,
+35 verbose parsed url   auth: null,
+35 verbose parsed url   host: null,
+35 verbose parsed url   port: null,
+35 verbose parsed url   hostname: null,
+35 verbose parsed url   hash: null,
+35 verbose parsed url   search: null,
+35 verbose parsed url   query: null,
+35 verbose parsed url   pathname: 'body-parser@~1.12.0',
+35 verbose parsed url   path: 'body-parser@~1.12.0',
+35 verbose parsed url   href: 'body-parser@~1.12.0' }
+36 verbose cache add [ 'express-ejs-layouts@~1.1.0', null ]
+37 verbose cache add name=undefined spec="express-ejs-layouts@~1.1.0" args=["express-ejs-layouts@~1.1.0",null]
+38 verbose parsed url { protocol: null,
+38 verbose parsed url   slashes: null,
+38 verbose parsed url   auth: null,
+38 verbose parsed url   host: null,
+38 verbose parsed url   port: null,
+38 verbose parsed url   hostname: null,
+38 verbose parsed url   hash: null,
+38 verbose parsed url   search: null,
+38 verbose parsed url   query: null,
+38 verbose parsed url   pathname: 'express-ejs-layouts@~1.1.0',
+38 verbose parsed url   path: 'express-ejs-layouts@~1.1.0',
+38 verbose parsed url   href: 'express-ejs-layouts@~1.1.0' }
+39 verbose cache add [ 'blanket@^1.1.6', null ]
+40 verbose cache add name=undefined spec="blanket@^1.1.6" args=["blanket@^1.1.6",null]
+41 verbose parsed url { protocol: null,
+41 verbose parsed url   slashes: null,
+41 verbose parsed url   auth: null,
+41 verbose parsed url   host: null,
+41 verbose parsed url   port: null,
+41 verbose parsed url   hostname: null,
+41 verbose parsed url   hash: null,
+41 verbose parsed url   search: null,
+41 verbose parsed url   query: null,
+41 verbose parsed url   pathname: 'blanket@^1.1.6',
+41 verbose parsed url   path: 'blanket@^1.1.6',
+41 verbose parsed url   href: 'blanket@^1.1.6' }
+42 verbose cache add name="ejs" spec="*" args=["ejs","*"]
+43 verbose parsed url { protocol: null,
+43 verbose parsed url   slashes: null,
+43 verbose parsed url   auth: null,
+43 verbose parsed url   host: null,
+43 verbose parsed url   port: null,
+43 verbose parsed url   hostname: null,
+43 verbose parsed url   hash: null,
+43 verbose parsed url   search: null,
+43 verbose parsed url   query: null,
+43 verbose parsed url   pathname: '*',
+43 verbose parsed url   path: '*',
+43 verbose parsed url   href: '*' }
+44 verbose addNamed [ 'ejs', '*' ]
+45 verbose addNamed [ null, '*' ]
+46 silly lockFile 940b64bc-jquery jquery@*
+47 verbose lock jquery@* /home/juanfgr/.npm/940b64bc-jquery.lock
+48 silly lockFile 67e8a6a2-underscore underscore@*
+49 verbose lock underscore@* /home/juanfgr/.npm/67e8a6a2-underscore.lock
+50 silly lockFile 8ad1ad64-express express@*
+51 verbose lock express@* /home/juanfgr/.npm/8ad1ad64-express.lock
+52 silly lockFile 9d73ed50-ejs ejs@*
+53 verbose lock ejs@* /home/juanfgr/.npm/9d73ed50-ejs.lock
+54 verbose cache add name="body-parser" spec="~1.12.0" args=["body-parser","~1.12.0"]
+55 verbose parsed url { protocol: null,
+55 verbose parsed url   slashes: null,
+55 verbose parsed url   auth: null,
+55 verbose parsed url   host: null,
+55 verbose parsed url   port: null,
+55 verbose parsed url   hostname: null,
+55 verbose parsed url   hash: null,
+55 verbose parsed url   search: null,
+55 verbose parsed url   query: null,
+55 verbose parsed url   pathname: '~1.12.0',
+55 verbose parsed url   path: '~1.12.0',
+55 verbose parsed url   href: '~1.12.0' }
+56 verbose addNamed [ 'body-parser', '~1.12.0' ]
+57 verbose addNamed [ null, '>=1.12.0-0 <1.13.0-0' ]
+58 silly lockFile 6121e062-body-parser-1-12-0 body-parser@~1.12.0
+59 verbose lock body-parser@~1.12.0 /home/juanfgr/.npm/6121e062-body-parser-1-12-0.lock
+60 verbose cache add name="express-ejs-layouts" spec="~1.1.0" args=["express-ejs-layouts","~1.1.0"]
+61 verbose parsed url { protocol: null,
+61 verbose parsed url   slashes: null,
+61 verbose parsed url   auth: null,
+61 verbose parsed url   host: null,
+61 verbose parsed url   port: null,
+61 verbose parsed url   hostname: null,
+61 verbose parsed url   hash: null,
+61 verbose parsed url   search: null,
+61 verbose parsed url   query: null,
+61 verbose parsed url   pathname: '~1.1.0',
+61 verbose parsed url   path: '~1.1.0',
+61 verbose parsed url   href: '~1.1.0' }
+62 verbose addNamed [ 'express-ejs-layouts', '~1.1.0' ]
+63 verbose addNamed [ null, '>=1.1.0-0 <1.2.0-0' ]
+64 silly lockFile 2b43e645-express-ejs-layouts-1-1-0 express-ejs-layouts@~1.1.0
+65 verbose lock express-ejs-layouts@~1.1.0 /home/juanfgr/.npm/2b43e645-express-ejs-layouts-1-1-0.lock
+66 verbose cache add [ 'chai@^2.1.0', null ]
+67 verbose cache add name=undefined spec="chai@^2.1.0" args=["chai@^2.1.0",null]
+68 verbose parsed url { protocol: null,
+68 verbose parsed url   slashes: null,
+68 verbose parsed url   auth: null,
+68 verbose parsed url   host: null,
+68 verbose parsed url   port: null,
+68 verbose parsed url   hostname: null,
+68 verbose parsed url   hash: null,
+68 verbose parsed url   search: null,
+68 verbose parsed url   query: null,
+68 verbose parsed url   pathname: 'chai@^2.1.0',
+68 verbose parsed url   path: 'chai@^2.1.0',
+68 verbose parsed url   href: 'chai@^2.1.0' }
+69 verbose cache add [ 'del@^1.1.1', null ]
+70 verbose cache add name=undefined spec="del@^1.1.1" args=["del@^1.1.1",null]
+71 verbose parsed url { protocol: null,
+71 verbose parsed url   slashes: null,
+71 verbose parsed url   auth: null,
+71 verbose parsed url   host: null,
+71 verbose parsed url   port: null,
+71 verbose parsed url   hostname: null,
+71 verbose parsed url   hash: null,
+71 verbose parsed url   search: null,
+71 verbose parsed url   query: null,
+71 verbose parsed url   pathname: 'del@^1.1.1',
+71 verbose parsed url   path: 'del@^1.1.1',
+71 verbose parsed url   href: 'del@^1.1.1' }
+72 verbose cache add [ 'gulp@^3.8.11', null ]
+73 verbose cache add name=undefined spec="gulp@^3.8.11" args=["gulp@^3.8.11",null]
+74 verbose parsed url { protocol: null,
+74 verbose parsed url   slashes: null,
+74 verbose parsed url   auth: null,
+74 verbose parsed url   host: null,
+74 verbose parsed url   port: null,
+74 verbose parsed url   hostname: null,
+74 verbose parsed url   hash: null,
+74 verbose parsed url   search: null,
+74 verbose parsed url   query: null,
+74 verbose parsed url   pathname: 'gulp@^3.8.11',
+74 verbose parsed url   path: 'gulp@^3.8.11',
+74 verbose parsed url   href: 'gulp@^3.8.11' }
+75 verbose cache add [ 'gulp-concat@^2.5.2', null ]
+76 verbose cache add name=undefined spec="gulp-concat@^2.5.2" args=["gulp-concat@^2.5.2",null]
+77 verbose parsed url { protocol: null,
+77 verbose parsed url   slashes: null,
+77 verbose parsed url   auth: null,
+77 verbose parsed url   host: null,
+77 verbose parsed url   port: null,
+77 verbose parsed url   hostname: null,
+77 verbose parsed url   hash: null,
+77 verbose parsed url   search: null,
+77 verbose parsed url   query: null,
+77 verbose parsed url   pathname: 'gulp-concat@^2.5.2',
+77 verbose parsed url   path: 'gulp-concat@^2.5.2',
+77 verbose parsed url   href: 'gulp-concat@^2.5.2' }
+78 verbose cache add [ 'gulp-karma@*', null ]
+79 verbose cache add name=undefined spec="gulp-karma@*" args=["gulp-karma@*",null]
+80 verbose parsed url { protocol: null,
+80 verbose parsed url   slashes: null,
+80 verbose parsed url   auth: null,
+80 verbose parsed url   host: null,
+80 verbose parsed url   port: null,
+80 verbose parsed url   hostname: null,
+80 verbose parsed url   hash: null,
+80 verbose parsed url   search: null,
+80 verbose parsed url   query: null,
+80 verbose parsed url   pathname: 'gulp-karma@*',
+80 verbose parsed url   path: 'gulp-karma@*',
+80 verbose parsed url   href: 'gulp-karma@*' }
+81 verbose cache add name="blanket" spec="^1.1.6" args=["blanket","^1.1.6"]
+82 verbose parsed url { protocol: null,
+82 verbose parsed url   slashes: null,
+82 verbose parsed url   auth: null,
+82 verbose parsed url   host: null,
+82 verbose parsed url   port: null,
+82 verbose parsed url   hostname: null,
+82 verbose parsed url   hash: null,
+82 verbose parsed url   search: null,
+82 verbose parsed url   query: null,
+82 verbose parsed url   pathname: '^1.1.6',
+82 verbose parsed url   path: '^1.1.6',
+82 verbose parsed url   href: '^1.1.6' }
+83 verbose addNamed [ 'blanket', '^1.1.6' ]
+84 verbose addNamed [ null, '>=1.1.6-0 <2.0.0-0' ]
+85 silly lockFile 48589c58-blanket-1-1-6 blanket@^1.1.6
+86 verbose lock blanket@^1.1.6 /home/juanfgr/.npm/48589c58-blanket-1-1-6.lock
+87 verbose cache add [ 'gulp-minify-css@^0.4.6', null ]
+88 verbose cache add name=undefined spec="gulp-minify-css@^0.4.6" args=["gulp-minify-css@^0.4.6",null]
+89 verbose parsed url { protocol: null,
+89 verbose parsed url   slashes: null,
+89 verbose parsed url   auth: null,
+89 verbose parsed url   host: null,
+89 verbose parsed url   port: null,
+89 verbose parsed url   hostname: null,
+89 verbose parsed url   hash: null,
+89 verbose parsed url   search: null,
+89 verbose parsed url   query: null,
+89 verbose parsed url   pathname: 'gulp-minify-css@^0.4.6',
+89 verbose parsed url   path: 'gulp-minify-css@^0.4.6',
+89 verbose parsed url   href: 'gulp-minify-css@^0.4.6' }
+90 verbose cache add [ 'gulp-minify-html@^1.0.0', null ]
+91 verbose cache add name=undefined spec="gulp-minify-html@^1.0.0" args=["gulp-minify-html@^1.0.0",null]
+92 verbose parsed url { protocol: null,
+92 verbose parsed url   slashes: null,
+92 verbose parsed url   auth: null,
+92 verbose parsed url   host: null,
+92 verbose parsed url   port: null,
+92 verbose parsed url   hostname: null,
+92 verbose parsed url   hash: null,
+92 verbose parsed url   search: null,
+92 verbose parsed url   query: null,
+92 verbose parsed url   pathname: 'gulp-minify-html@^1.0.0',
+92 verbose parsed url   path: 'gulp-minify-html@^1.0.0',
+92 verbose parsed url   href: 'gulp-minify-html@^1.0.0' }
+93 verbose cache add [ 'gulp-shell@*', null ]
+94 verbose cache add name=undefined spec="gulp-shell@*" args=["gulp-shell@*",null]
+95 verbose parsed url { protocol: null,
+95 verbose parsed url   slashes: null,
+95 verbose parsed url   auth: null,
+95 verbose parsed url   host: null,
+95 verbose parsed url   port: null,
+95 verbose parsed url   hostname: null,
+95 verbose parsed url   hash: null,
+95 verbose parsed url   search: null,
+95 verbose parsed url   query: null,
+95 verbose parsed url   pathname: 'gulp-shell@*',
+95 verbose parsed url   path: 'gulp-shell@*',
+95 verbose parsed url   href: 'gulp-shell@*' }
+96 verbose cache add [ 'gulp-uglify@^1.1.0', null ]
+97 verbose cache add name=undefined spec="gulp-uglify@^1.1.0" args=["gulp-uglify@^1.1.0",null]
+98 verbose parsed url { protocol: null,
+98 verbose parsed url   slashes: null,
+98 verbose parsed url   auth: null,
+98 verbose parsed url   host: null,
+98 verbose parsed url   port: null,
+98 verbose parsed url   hostname: null,
+98 verbose parsed url   hash: null,
+98 verbose parsed url   search: null,
+98 verbose parsed url   query: null,
+98 verbose parsed url   pathname: 'gulp-uglify@^1.1.0',
+98 verbose parsed url   path: 'gulp-uglify@^1.1.0',
+98 verbose parsed url   href: 'gulp-uglify@^1.1.0' }
+99 verbose cache add [ 'gulp-util@^3.0.4', null ]
+100 verbose cache add name=undefined spec="gulp-util@^3.0.4" args=["gulp-util@^3.0.4",null]
+101 verbose parsed url { protocol: null,
+101 verbose parsed url   slashes: null,
+101 verbose parsed url   auth: null,
+101 verbose parsed url   host: null,
+101 verbose parsed url   port: null,
+101 verbose parsed url   hostname: null,
+101 verbose parsed url   hash: null,
+101 verbose parsed url   search: null,
+101 verbose parsed url   query: null,
+101 verbose parsed url   pathname: 'gulp-util@^3.0.4',
+101 verbose parsed url   path: 'gulp-util@^3.0.4',
+101 verbose parsed url   href: 'gulp-util@^3.0.4' }
+102 verbose cache add [ 'jasmine-core@^2.2.0', null ]
+103 verbose cache add name=undefined spec="jasmine-core@^2.2.0" args=["jasmine-core@^2.2.0",null]
+104 verbose parsed url { protocol: null,
+104 verbose parsed url   slashes: null,
+104 verbose parsed url   auth: null,
+104 verbose parsed url   host: null,
+104 verbose parsed url   port: null,
+104 verbose parsed url   hostname: null,
+104 verbose parsed url   hash: null,
+104 verbose parsed url   search: null,
+104 verbose parsed url   query: null,
+104 verbose parsed url   pathname: 'jasmine-core@^2.2.0',
+104 verbose parsed url   path: 'jasmine-core@^2.2.0',
+104 verbose parsed url   href: 'jasmine-core@^2.2.0' }
+105 verbose cache add [ 'karma@*', null ]
+106 verbose cache add name=undefined spec="karma@*" args=["karma@*",null]
+107 verbose parsed url { protocol: null,
+107 verbose parsed url   slashes: null,
+107 verbose parsed url   auth: null,
+107 verbose parsed url   host: null,
+107 verbose parsed url   port: null,
+107 verbose parsed url   hostname: null,
+107 verbose parsed url   hash: null,
+107 verbose parsed url   search: null,
+107 verbose parsed url   query: null,
+107 verbose parsed url   pathname: 'karma@*',
+107 verbose parsed url   path: 'karma@*',
+107 verbose parsed url   href: 'karma@*' }
+108 verbose cache add [ 'karma-chrome-launcher@*', null ]
+109 verbose cache add name=undefined spec="karma-chrome-launcher@*" args=["karma-chrome-launcher@*",null]
+110 verbose parsed url { protocol: null,
+110 verbose parsed url   slashes: null,
+110 verbose parsed url   auth: null,
+110 verbose parsed url   host: null,
+110 verbose parsed url   port: null,
+110 verbose parsed url   hostname: null,
+110 verbose parsed url   hash: null,
+110 verbose parsed url   search: null,
+110 verbose parsed url   query: null,
+110 verbose parsed url   pathname: 'karma-chrome-launcher@*',
+110 verbose parsed url   path: 'karma-chrome-launcher@*',
+110 verbose parsed url   href: 'karma-chrome-launcher@*' }
+111 verbose cache add [ 'karma-firefox-launcher@*', null ]
+112 verbose cache add name=undefined spec="karma-firefox-launcher@*" args=["karma-firefox-launcher@*",null]
+113 verbose parsed url { protocol: null,
+113 verbose parsed url   slashes: null,
+113 verbose parsed url   auth: null,
+113 verbose parsed url   host: null,
+113 verbose parsed url   port: null,
+113 verbose parsed url   hostname: null,
+113 verbose parsed url   hash: null,
+113 verbose parsed url   search: null,
+113 verbose parsed url   query: null,
+113 verbose parsed url   pathname: 'karma-firefox-launcher@*',
+113 verbose parsed url   path: 'karma-firefox-launcher@*',
+113 verbose parsed url   href: 'karma-firefox-launcher@*' }
+114 verbose cache add [ 'karma-html2js-preprocessor@*', null ]
+115 verbose cache add name=undefined spec="karma-html2js-preprocessor@*" args=["karma-html2js-preprocessor@*",null]
+116 verbose parsed url { protocol: null,
+116 verbose parsed url   slashes: null,
+116 verbose parsed url   auth: null,
+116 verbose parsed url   host: null,
+116 verbose parsed url   port: null,
+116 verbose parsed url   hostname: null,
+116 verbose parsed url   hash: null,
+116 verbose parsed url   search: null,
+116 verbose parsed url   query: null,
+116 verbose parsed url   pathname: 'karma-html2js-preprocessor@*',
+116 verbose parsed url   path: 'karma-html2js-preprocessor@*',
+116 verbose parsed url   href: 'karma-html2js-preprocessor@*' }
+117 verbose cache add [ 'karma-jasmine@^0.3.5', null ]
+118 verbose cache add name=undefined spec="karma-jasmine@^0.3.5" args=["karma-jasmine@^0.3.5",null]
+119 verbose parsed url { protocol: null,
+119 verbose parsed url   slashes: null,
+119 verbose parsed url   auth: null,
+119 verbose parsed url   host: null,
+119 verbose parsed url   port: null,
+119 verbose parsed url   hostname: null,
+119 verbose parsed url   hash: null,
+119 verbose parsed url   search: null,
+119 verbose parsed url   query: null,
+119 verbose parsed url   pathname: 'karma-jasmine@^0.3.5',
+119 verbose parsed url   path: 'karma-jasmine@^0.3.5',
+119 verbose parsed url   href: 'karma-jasmine@^0.3.5' }
+120 verbose cache add [ 'karma-mocha@*', null ]
+121 verbose cache add name=undefined spec="karma-mocha@*" args=["karma-mocha@*",null]
+122 verbose parsed url { protocol: null,
+122 verbose parsed url   slashes: null,
+122 verbose parsed url   auth: null,
+122 verbose parsed url   host: null,
+122 verbose parsed url   port: null,
+122 verbose parsed url   hostname: null,
+122 verbose parsed url   hash: null,
+122 verbose parsed url   search: null,
+122 verbose parsed url   query: null,
+122 verbose parsed url   pathname: 'karma-mocha@*',
+122 verbose parsed url   path: 'karma-mocha@*',
+122 verbose parsed url   href: 'karma-mocha@*' }
+123 verbose cache add [ 'karma-phantomjs-launcher@*', null ]
+124 verbose cache add name=undefined spec="karma-phantomjs-launcher@*" args=["karma-phantomjs-launcher@*",null]
+125 verbose parsed url { protocol: null,
+125 verbose parsed url   slashes: null,
+125 verbose parsed url   auth: null,
+125 verbose parsed url   host: null,
+125 verbose parsed url   port: null,
+125 verbose parsed url   hostname: null,
+125 verbose parsed url   hash: null,
+125 verbose parsed url   search: null,
+125 verbose parsed url   query: null,
+125 verbose parsed url   pathname: 'karma-phantomjs-launcher@*',
+125 verbose parsed url   path: 'karma-phantomjs-launcher@*',
+125 verbose parsed url   href: 'karma-phantomjs-launcher@*' }
+126 verbose cache add [ 'mocha@latest', null ]
+127 verbose cache add name=undefined spec="mocha@latest" args=["mocha@latest",null]
+128 verbose parsed url { protocol: null,
+128 verbose parsed url   slashes: null,
+128 verbose parsed url   auth: null,
+128 verbose parsed url   host: null,
+128 verbose parsed url   port: null,
+128 verbose parsed url   hostname: null,
+128 verbose parsed url   hash: null,
+128 verbose parsed url   search: null,
+128 verbose parsed url   query: null,
+128 verbose parsed url   pathname: 'mocha@latest',
+128 verbose parsed url   path: 'mocha@latest',
+128 verbose parsed url   href: 'mocha@latest' }
+129 verbose cache add [ 'node-static@^0.7.6', null ]
+130 verbose cache add name=undefined spec="node-static@^0.7.6" args=["node-static@^0.7.6",null]
+131 verbose parsed url { protocol: null,
+131 verbose parsed url   slashes: null,
+131 verbose parsed url   auth: null,
+131 verbose parsed url   host: null,
+131 verbose parsed url   port: null,
+131 verbose parsed url   hostname: null,
+131 verbose parsed url   hash: null,
+131 verbose parsed url   search: null,
+131 verbose parsed url   query: null,
+131 verbose parsed url   pathname: 'node-static@^0.7.6',
+131 verbose parsed url   path: 'node-static@^0.7.6',
+131 verbose parsed url   href: 'node-static@^0.7.6' }
+132 verbose cache add [ 'supervisor@*', null ]
+133 verbose cache add name=undefined spec="supervisor@*" args=["supervisor@*",null]
+134 verbose parsed url { protocol: null,
+134 verbose parsed url   slashes: null,
+134 verbose parsed url   auth: null,
+134 verbose parsed url   host: null,
+134 verbose parsed url   port: null,
+134 verbose parsed url   hostname: null,
+134 verbose parsed url   hash: null,
+134 verbose parsed url   search: null,
+134 verbose parsed url   query: null,
+134 verbose parsed url   pathname: 'supervisor@*',
+134 verbose parsed url   path: 'supervisor@*',
+134 verbose parsed url   href: 'supervisor@*' }
+135 verbose cache add [ 'supertest@*', null ]
+136 verbose cache add name=undefined spec="supertest@*" args=["supertest@*",null]
+137 verbose parsed url { protocol: null,
+137 verbose parsed url   slashes: null,
+137 verbose parsed url   auth: null,
+137 verbose parsed url   host: null,
+137 verbose parsed url   port: null,
+137 verbose parsed url   hostname: null,
+137 verbose parsed url   hash: null,
+137 verbose parsed url   search: null,
+137 verbose parsed url   query: null,
+137 verbose parsed url   pathname: 'supertest@*',
+137 verbose parsed url   path: 'supertest@*',
+137 verbose parsed url   href: 'supertest@*' }
+138 verbose cache add name="chai" spec="^2.1.0" args=["chai","^2.1.0"]
+139 verbose parsed url { protocol: null,
+139 verbose parsed url   slashes: null,
+139 verbose parsed url   auth: null,
+139 verbose parsed url   host: null,
+139 verbose parsed url   port: null,
+139 verbose parsed url   hostname: null,
+139 verbose parsed url   hash: null,
+139 verbose parsed url   search: null,
+139 verbose parsed url   query: null,
+139 verbose parsed url   pathname: '^2.1.0',
+139 verbose parsed url   path: '^2.1.0',
+139 verbose parsed url   href: '^2.1.0' }
+140 verbose addNamed [ 'chai', '^2.1.0' ]
+141 verbose addNamed [ null, '>=2.1.0-0 <3.0.0-0' ]
+142 silly lockFile fbacd2aa-chai-2-1-0 chai@^2.1.0
+143 verbose lock chai@^2.1.0 /home/juanfgr/.npm/fbacd2aa-chai-2-1-0.lock
+144 verbose cache add name="del" spec="^1.1.1" args=["del","^1.1.1"]
+145 verbose parsed url { protocol: null,
+145 verbose parsed url   slashes: null,
+145 verbose parsed url   auth: null,
+145 verbose parsed url   host: null,
+145 verbose parsed url   port: null,
+145 verbose parsed url   hostname: null,
+145 verbose parsed url   hash: null,
+145 verbose parsed url   search: null,
+145 verbose parsed url   query: null,
+145 verbose parsed url   pathname: '^1.1.1',
+145 verbose parsed url   path: '^1.1.1',
+145 verbose parsed url   href: '^1.1.1' }
+146 verbose addNamed [ 'del', '^1.1.1' ]
+147 verbose addNamed [ null, '>=1.1.1-0 <2.0.0-0' ]
+148 silly lockFile 7493aa52-del-1-1-1 del@^1.1.1
+149 verbose lock del@^1.1.1 /home/juanfgr/.npm/7493aa52-del-1-1-1.lock
+150 verbose cache add name="gulp" spec="^3.8.11" args=["gulp","^3.8.11"]
+151 verbose parsed url { protocol: null,
+151 verbose parsed url   slashes: null,
+151 verbose parsed url   auth: null,
+151 verbose parsed url   host: null,
+151 verbose parsed url   port: null,
+151 verbose parsed url   hostname: null,
+151 verbose parsed url   hash: null,
+151 verbose parsed url   search: null,
+151 verbose parsed url   query: null,
+151 verbose parsed url   pathname: '^3.8.11',
+151 verbose parsed url   path: '^3.8.11',
+151 verbose parsed url   href: '^3.8.11' }
+152 verbose addNamed [ 'gulp', '^3.8.11' ]
+153 verbose addNamed [ null, '>=3.8.11-0 <4.0.0-0' ]
+154 silly lockFile 3156ea88-gulp-3-8-11 gulp@^3.8.11
+155 verbose lock gulp@^3.8.11 /home/juanfgr/.npm/3156ea88-gulp-3-8-11.lock
+156 verbose cache add name="gulp-concat" spec="^2.5.2" args=["gulp-concat","^2.5.2"]
+157 verbose parsed url { protocol: null,
+157 verbose parsed url   slashes: null,
+157 verbose parsed url   auth: null,
+157 verbose parsed url   host: null,
+157 verbose parsed url   port: null,
+157 verbose parsed url   hostname: null,
+157 verbose parsed url   hash: null,
+157 verbose parsed url   search: null,
+157 verbose parsed url   query: null,
+157 verbose parsed url   pathname: '^2.5.2',
+157 verbose parsed url   path: '^2.5.2',
+157 verbose parsed url   href: '^2.5.2' }
+158 verbose addNamed [ 'gulp-concat', '^2.5.2' ]
+159 verbose addNamed [ null, '>=2.5.2-0 <3.0.0-0' ]
+160 silly lockFile 60a235d6-gulp-concat-2-5-2 gulp-concat@^2.5.2
+161 verbose lock gulp-concat@^2.5.2 /home/juanfgr/.npm/60a235d6-gulp-concat-2-5-2.lock
+162 verbose cache add name="gulp-karma" spec="*" args=["gulp-karma","*"]
+163 verbose parsed url { protocol: null,
+163 verbose parsed url   slashes: null,
+163 verbose parsed url   auth: null,
+163 verbose parsed url   host: null,
+163 verbose parsed url   port: null,
+163 verbose parsed url   hostname: null,
+163 verbose parsed url   hash: null,
+163 verbose parsed url   search: null,
+163 verbose parsed url   query: null,
+163 verbose parsed url   pathname: '*',
+163 verbose parsed url   path: '*',
+163 verbose parsed url   href: '*' }
+164 verbose addNamed [ 'gulp-karma', '*' ]
+165 verbose addNamed [ null, '*' ]
+166 silly lockFile fa7e6443-gulp-karma gulp-karma@*
+167 verbose lock gulp-karma@* /home/juanfgr/.npm/fa7e6443-gulp-karma.lock
+168 verbose cache add name="gulp-minify-css" spec="^0.4.6" args=["gulp-minify-css","^0.4.6"]
+169 verbose parsed url { protocol: null,
+169 verbose parsed url   slashes: null,
+169 verbose parsed url   auth: null,
+169 verbose parsed url   host: null,
+169 verbose parsed url   port: null,
+169 verbose parsed url   hostname: null,
+169 verbose parsed url   hash: null,
+169 verbose parsed url   search: null,
+169 verbose parsed url   query: null,
+169 verbose parsed url   pathname: '^0.4.6',
+169 verbose parsed url   path: '^0.4.6',
+169 verbose parsed url   href: '^0.4.6' }
+170 verbose addNamed [ 'gulp-minify-css', '^0.4.6' ]
+171 verbose addNamed [ null, '>=0.4.6-0 <0.5.0-0' ]
+172 silly lockFile 71b63d7b-gulp-minify-css-0-4-6 gulp-minify-css@^0.4.6
+173 verbose lock gulp-minify-css@^0.4.6 /home/juanfgr/.npm/71b63d7b-gulp-minify-css-0-4-6.lock
+174 verbose cache add name="gulp-minify-html" spec="^1.0.0" args=["gulp-minify-html","^1.0.0"]
+175 verbose parsed url { protocol: null,
+175 verbose parsed url   slashes: null,
+175 verbose parsed url   auth: null,
+175 verbose parsed url   host: null,
+175 verbose parsed url   port: null,
+175 verbose parsed url   hostname: null,
+175 verbose parsed url   hash: null,
+175 verbose parsed url   search: null,
+175 verbose parsed url   query: null,
+175 verbose parsed url   pathname: '^1.0.0',
+175 verbose parsed url   path: '^1.0.0',
+175 verbose parsed url   href: '^1.0.0' }
+176 verbose addNamed [ 'gulp-minify-html', '^1.0.0' ]
+177 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+178 silly lockFile 44f1f91f-gulp-minify-html-1-0-0 gulp-minify-html@^1.0.0
+179 verbose lock gulp-minify-html@^1.0.0 /home/juanfgr/.npm/44f1f91f-gulp-minify-html-1-0-0.lock
+180 verbose cache add name="gulp-shell" spec="*" args=["gulp-shell","*"]
+181 verbose parsed url { protocol: null,
+181 verbose parsed url   slashes: null,
+181 verbose parsed url   auth: null,
+181 verbose parsed url   host: null,
+181 verbose parsed url   port: null,
+181 verbose parsed url   hostname: null,
+181 verbose parsed url   hash: null,
+181 verbose parsed url   search: null,
+181 verbose parsed url   query: null,
+181 verbose parsed url   pathname: '*',
+181 verbose parsed url   path: '*',
+181 verbose parsed url   href: '*' }
+182 verbose addNamed [ 'gulp-shell', '*' ]
+183 verbose addNamed [ null, '*' ]
+184 silly lockFile 5093d701-gulp-shell gulp-shell@*
+185 verbose lock gulp-shell@* /home/juanfgr/.npm/5093d701-gulp-shell.lock
+186 verbose cache add name="gulp-uglify" spec="^1.1.0" args=["gulp-uglify","^1.1.0"]
+187 verbose parsed url { protocol: null,
+187 verbose parsed url   slashes: null,
+187 verbose parsed url   auth: null,
+187 verbose parsed url   host: null,
+187 verbose parsed url   port: null,
+187 verbose parsed url   hostname: null,
+187 verbose parsed url   hash: null,
+187 verbose parsed url   search: null,
+187 verbose parsed url   query: null,
+187 verbose parsed url   pathname: '^1.1.0',
+187 verbose parsed url   path: '^1.1.0',
+187 verbose parsed url   href: '^1.1.0' }
+188 verbose addNamed [ 'gulp-uglify', '^1.1.0' ]
+189 verbose addNamed [ null, '>=1.1.0-0 <2.0.0-0' ]
+190 silly lockFile f336d083-gulp-uglify-1-1-0 gulp-uglify@^1.1.0
+191 verbose lock gulp-uglify@^1.1.0 /home/juanfgr/.npm/f336d083-gulp-uglify-1-1-0.lock
+192 verbose cache add name="gulp-util" spec="^3.0.4" args=["gulp-util","^3.0.4"]
+193 verbose parsed url { protocol: null,
+193 verbose parsed url   slashes: null,
+193 verbose parsed url   auth: null,
+193 verbose parsed url   host: null,
+193 verbose parsed url   port: null,
+193 verbose parsed url   hostname: null,
+193 verbose parsed url   hash: null,
+193 verbose parsed url   search: null,
+193 verbose parsed url   query: null,
+193 verbose parsed url   pathname: '^3.0.4',
+193 verbose parsed url   path: '^3.0.4',
+193 verbose parsed url   href: '^3.0.4' }
+194 verbose addNamed [ 'gulp-util', '^3.0.4' ]
+195 verbose addNamed [ null, '>=3.0.4-0 <4.0.0-0' ]
+196 silly lockFile f8ceac1d-gulp-util-3-0-4 gulp-util@^3.0.4
+197 verbose lock gulp-util@^3.0.4 /home/juanfgr/.npm/f8ceac1d-gulp-util-3-0-4.lock
+198 verbose cache add name="jasmine-core" spec="^2.2.0" args=["jasmine-core","^2.2.0"]
+199 verbose parsed url { protocol: null,
+199 verbose parsed url   slashes: null,
+199 verbose parsed url   auth: null,
+199 verbose parsed url   host: null,
+199 verbose parsed url   port: null,
+199 verbose parsed url   hostname: null,
+199 verbose parsed url   hash: null,
+199 verbose parsed url   search: null,
+199 verbose parsed url   query: null,
+199 verbose parsed url   pathname: '^2.2.0',
+199 verbose parsed url   path: '^2.2.0',
+199 verbose parsed url   href: '^2.2.0' }
+200 verbose addNamed [ 'jasmine-core', '^2.2.0' ]
+201 verbose addNamed [ null, '>=2.2.0-0 <3.0.0-0' ]
+202 silly lockFile 02d021a2-jasmine-core-2-2-0 jasmine-core@^2.2.0
+203 verbose lock jasmine-core@^2.2.0 /home/juanfgr/.npm/02d021a2-jasmine-core-2-2-0.lock
+204 verbose cache add name="karma" spec="*" args=["karma","*"]
+205 verbose parsed url { protocol: null,
+205 verbose parsed url   slashes: null,
+205 verbose parsed url   auth: null,
+205 verbose parsed url   host: null,
+205 verbose parsed url   port: null,
+205 verbose parsed url   hostname: null,
+205 verbose parsed url   hash: null,
+205 verbose parsed url   search: null,
+205 verbose parsed url   query: null,
+205 verbose parsed url   pathname: '*',
+205 verbose parsed url   path: '*',
+205 verbose parsed url   href: '*' }
+206 verbose addNamed [ 'karma', '*' ]
+207 verbose addNamed [ null, '*' ]
+208 silly lockFile 85881dbb-karma karma@*
+209 verbose lock karma@* /home/juanfgr/.npm/85881dbb-karma.lock
+210 verbose cache add name="karma-chrome-launcher" spec="*" args=["karma-chrome-launcher","*"]
+211 verbose parsed url { protocol: null,
+211 verbose parsed url   slashes: null,
+211 verbose parsed url   auth: null,
+211 verbose parsed url   host: null,
+211 verbose parsed url   port: null,
+211 verbose parsed url   hostname: null,
+211 verbose parsed url   hash: null,
+211 verbose parsed url   search: null,
+211 verbose parsed url   query: null,
+211 verbose parsed url   pathname: '*',
+211 verbose parsed url   path: '*',
+211 verbose parsed url   href: '*' }
+212 verbose addNamed [ 'karma-chrome-launcher', '*' ]
+213 verbose addNamed [ null, '*' ]
+214 silly lockFile 436adad2-karma-chrome-launcher karma-chrome-launcher@*
+215 verbose lock karma-chrome-launcher@* /home/juanfgr/.npm/436adad2-karma-chrome-launcher.lock
+216 verbose cache add name="karma-firefox-launcher" spec="*" args=["karma-firefox-launcher","*"]
+217 verbose parsed url { protocol: null,
+217 verbose parsed url   slashes: null,
+217 verbose parsed url   auth: null,
+217 verbose parsed url   host: null,
+217 verbose parsed url   port: null,
+217 verbose parsed url   hostname: null,
+217 verbose parsed url   hash: null,
+217 verbose parsed url   search: null,
+217 verbose parsed url   query: null,
+217 verbose parsed url   pathname: '*',
+217 verbose parsed url   path: '*',
+217 verbose parsed url   href: '*' }
+218 verbose addNamed [ 'karma-firefox-launcher', '*' ]
+219 verbose addNamed [ null, '*' ]
+220 silly lockFile 981535e0-karma-firefox-launcher karma-firefox-launcher@*
+221 verbose lock karma-firefox-launcher@* /home/juanfgr/.npm/981535e0-karma-firefox-launcher.lock
+222 verbose cache add name="karma-html2js-preprocessor" spec="*" args=["karma-html2js-preprocessor","*"]
+223 verbose parsed url { protocol: null,
+223 verbose parsed url   slashes: null,
+223 verbose parsed url   auth: null,
+223 verbose parsed url   host: null,
+223 verbose parsed url   port: null,
+223 verbose parsed url   hostname: null,
+223 verbose parsed url   hash: null,
+223 verbose parsed url   search: null,
+223 verbose parsed url   query: null,
+223 verbose parsed url   pathname: '*',
+223 verbose parsed url   path: '*',
+223 verbose parsed url   href: '*' }
+224 verbose addNamed [ 'karma-html2js-preprocessor', '*' ]
+225 verbose addNamed [ null, '*' ]
+226 silly lockFile 30ba7a84-karma-html2js-preprocessor karma-html2js-preprocessor@*
+227 verbose lock karma-html2js-preprocessor@* /home/juanfgr/.npm/30ba7a84-karma-html2js-preprocessor.lock
+228 verbose cache add name="karma-jasmine" spec="^0.3.5" args=["karma-jasmine","^0.3.5"]
+229 verbose parsed url { protocol: null,
+229 verbose parsed url   slashes: null,
+229 verbose parsed url   auth: null,
+229 verbose parsed url   host: null,
+229 verbose parsed url   port: null,
+229 verbose parsed url   hostname: null,
+229 verbose parsed url   hash: null,
+229 verbose parsed url   search: null,
+229 verbose parsed url   query: null,
+229 verbose parsed url   pathname: '^0.3.5',
+229 verbose parsed url   path: '^0.3.5',
+229 verbose parsed url   href: '^0.3.5' }
+230 verbose addNamed [ 'karma-jasmine', '^0.3.5' ]
+231 verbose addNamed [ null, '>=0.3.5-0 <0.4.0-0' ]
+232 silly lockFile b0acc008-karma-jasmine-0-3-5 karma-jasmine@^0.3.5
+233 verbose lock karma-jasmine@^0.3.5 /home/juanfgr/.npm/b0acc008-karma-jasmine-0-3-5.lock
+234 verbose cache add name="karma-mocha" spec="*" args=["karma-mocha","*"]
+235 verbose parsed url { protocol: null,
+235 verbose parsed url   slashes: null,
+235 verbose parsed url   auth: null,
+235 verbose parsed url   host: null,
+235 verbose parsed url   port: null,
+235 verbose parsed url   hostname: null,
+235 verbose parsed url   hash: null,
+235 verbose parsed url   search: null,
+235 verbose parsed url   query: null,
+235 verbose parsed url   pathname: '*',
+235 verbose parsed url   path: '*',
+235 verbose parsed url   href: '*' }
+236 verbose addNamed [ 'karma-mocha', '*' ]
+237 verbose addNamed [ null, '*' ]
+238 silly lockFile f47f521a-karma-mocha karma-mocha@*
+239 verbose lock karma-mocha@* /home/juanfgr/.npm/f47f521a-karma-mocha.lock
+240 verbose cache add name="karma-phantomjs-launcher" spec="*" args=["karma-phantomjs-launcher","*"]
+241 verbose parsed url { protocol: null,
+241 verbose parsed url   slashes: null,
+241 verbose parsed url   auth: null,
+241 verbose parsed url   host: null,
+241 verbose parsed url   port: null,
+241 verbose parsed url   hostname: null,
+241 verbose parsed url   hash: null,
+241 verbose parsed url   search: null,
+241 verbose parsed url   query: null,
+241 verbose parsed url   pathname: '*',
+241 verbose parsed url   path: '*',
+241 verbose parsed url   href: '*' }
+242 verbose addNamed [ 'karma-phantomjs-launcher', '*' ]
+243 verbose addNamed [ null, '*' ]
+244 silly lockFile eb87fc55-karma-phantomjs-launcher karma-phantomjs-launcher@*
+245 verbose lock karma-phantomjs-launcher@* /home/juanfgr/.npm/eb87fc55-karma-phantomjs-launcher.lock
+246 verbose cache add name="mocha" spec="latest" args=["mocha","latest"]
+247 verbose parsed url { protocol: null,
+247 verbose parsed url   slashes: null,
+247 verbose parsed url   auth: null,
+247 verbose parsed url   host: null,
+247 verbose parsed url   port: null,
+247 verbose parsed url   hostname: null,
+247 verbose parsed url   hash: null,
+247 verbose parsed url   search: null,
+247 verbose parsed url   query: null,
+247 verbose parsed url   pathname: 'latest',
+247 verbose parsed url   path: 'latest',
+247 verbose parsed url   href: 'latest' }
+248 verbose addNamed [ 'mocha', 'latest' ]
+249 verbose addNamed [ null, null ]
+250 silly lockFile 12215997-mocha-latest mocha@latest
+251 verbose lock mocha@latest /home/juanfgr/.npm/12215997-mocha-latest.lock
+252 verbose cache add name="node-static" spec="^0.7.6" args=["node-static","^0.7.6"]
+253 verbose parsed url { protocol: null,
+253 verbose parsed url   slashes: null,
+253 verbose parsed url   auth: null,
+253 verbose parsed url   host: null,
+253 verbose parsed url   port: null,
+253 verbose parsed url   hostname: null,
+253 verbose parsed url   hash: null,
+253 verbose parsed url   search: null,
+253 verbose parsed url   query: null,
+253 verbose parsed url   pathname: '^0.7.6',
+253 verbose parsed url   path: '^0.7.6',
+253 verbose parsed url   href: '^0.7.6' }
+254 verbose addNamed [ 'node-static', '^0.7.6' ]
+255 verbose addNamed [ null, '>=0.7.6-0 <0.8.0-0' ]
+256 silly lockFile 7ffb1a23-node-static-0-7-6 node-static@^0.7.6
+257 verbose lock node-static@^0.7.6 /home/juanfgr/.npm/7ffb1a23-node-static-0-7-6.lock
+258 verbose cache add name="supervisor" spec="*" args=["supervisor","*"]
+259 verbose parsed url { protocol: null,
+259 verbose parsed url   slashes: null,
+259 verbose parsed url   auth: null,
+259 verbose parsed url   host: null,
+259 verbose parsed url   port: null,
+259 verbose parsed url   hostname: null,
+259 verbose parsed url   hash: null,
+259 verbose parsed url   search: null,
+259 verbose parsed url   query: null,
+259 verbose parsed url   pathname: '*',
+259 verbose parsed url   path: '*',
+259 verbose parsed url   href: '*' }
+260 verbose addNamed [ 'supervisor', '*' ]
+261 verbose addNamed [ null, '*' ]
+262 silly lockFile 568a622e-supervisor supervisor@*
+263 verbose lock supervisor@* /home/juanfgr/.npm/568a622e-supervisor.lock
+264 verbose cache add name="supertest" spec="*" args=["supertest","*"]
+265 verbose parsed url { protocol: null,
+265 verbose parsed url   slashes: null,
+265 verbose parsed url   auth: null,
+265 verbose parsed url   host: null,
+265 verbose parsed url   port: null,
+265 verbose parsed url   hostname: null,
+265 verbose parsed url   hash: null,
+265 verbose parsed url   search: null,
+265 verbose parsed url   query: null,
+265 verbose parsed url   pathname: '*',
+265 verbose parsed url   path: '*',
+265 verbose parsed url   href: '*' }
+266 verbose addNamed [ 'supertest', '*' ]
+267 verbose addNamed [ null, '*' ]
+268 silly lockFile 3f72b6b7-supertest supertest@*
+269 verbose lock supertest@* /home/juanfgr/.npm/3f72b6b7-supertest.lock
+270 silly addNameRange { name: 'jquery', range: '*', hasData: false }
+271 silly addNameRange { name: 'body-parser',
+271 silly addNameRange   range: '>=1.12.0-0 <1.13.0-0',
+271 silly addNameRange   hasData: false }
+272 silly addNameRange { name: 'express-ejs-layouts',
+272 silly addNameRange   range: '>=1.1.0-0 <1.2.0-0',
+272 silly addNameRange   hasData: false }
+273 silly addNameRange { name: 'underscore', range: '*', hasData: false }
+274 silly addNameRange { name: 'blanket', range: '>=1.1.6-0 <2.0.0-0', hasData: false }
+275 silly addNameRange { name: 'express', range: '*', hasData: false }
+276 silly addNameRange { name: 'ejs', range: '*', hasData: false }
+277 silly addNameRange { name: 'chai', range: '>=2.1.0-0 <3.0.0-0', hasData: false }
+278 silly addNameRange { name: 'del', range: '>=1.1.1-0 <2.0.0-0', hasData: false }
+279 silly addNameRange { name: 'gulp', range: '>=3.8.11-0 <4.0.0-0', hasData: false }
+280 silly addNameRange { name: 'gulp-concat',
+280 silly addNameRange   range: '>=2.5.2-0 <3.0.0-0',
+280 silly addNameRange   hasData: false }
+281 silly addNameRange { name: 'gulp-karma', range: '*', hasData: false }
+282 silly addNameRange { name: 'gulp-minify-css',
+282 silly addNameRange   range: '>=0.4.6-0 <0.5.0-0',
+282 silly addNameRange   hasData: false }
+283 silly addNameRange { name: 'gulp-uglify',
+283 silly addNameRange   range: '>=1.1.0-0 <2.0.0-0',
+283 silly addNameRange   hasData: false }
+284 silly addNameRange { name: 'jasmine-core',
+284 silly addNameRange   range: '>=2.2.0-0 <3.0.0-0',
+284 silly addNameRange   hasData: false }
+285 silly addNameRange { name: 'gulp-minify-html',
+285 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+285 silly addNameRange   hasData: false }
+286 silly addNameRange { name: 'karma', range: '*', hasData: false }
+287 silly addNameRange { name: 'gulp-shell', range: '*', hasData: false }
+288 silly addNameRange { name: 'karma-firefox-launcher', range: '*', hasData: false }
+289 silly addNameRange { name: 'karma-html2js-preprocessor',
+289 silly addNameRange   range: '*',
+289 silly addNameRange   hasData: false }
+290 silly addNameRange { name: 'karma-jasmine',
+290 silly addNameRange   range: '>=0.3.5-0 <0.4.0-0',
+290 silly addNameRange   hasData: false }
+291 silly addNameRange { name: 'karma-mocha', range: '*', hasData: false }
+292 silly addNameRange { name: 'karma-phantomjs-launcher', range: '*', hasData: false }
+293 info addNameTag [ 'mocha', 'latest' ]
+294 silly addNameRange { name: 'gulp-util',
+294 silly addNameRange   range: '>=3.0.4-0 <4.0.0-0',
+294 silly addNameRange   hasData: false }
+295 silly addNameRange { name: 'supervisor', range: '*', hasData: false }
+296 silly addNameRange { name: 'karma-chrome-launcher', range: '*', hasData: false }
+297 silly addNameRange { name: 'node-static',
+297 silly addNameRange   range: '>=0.7.6-0 <0.8.0-0',
+297 silly addNameRange   hasData: false }
+298 silly addNameRange { name: 'supertest', range: '*', hasData: false }
+299 verbose request where is /supervisor
+300 verbose request registry https://registry.npmjs.org/
+301 verbose request id 46dc5fe88c1a8f13
+302 verbose url raw /supervisor
+303 verbose url resolving [ 'https://registry.npmjs.org/', './supervisor' ]
+304 verbose url resolved https://registry.npmjs.org/supervisor
+305 verbose request where is https://registry.npmjs.org/supervisor
+306 info trying registry request attempt 1 at 16:44:58
+307 http GET https://registry.npmjs.org/supervisor
+308 verbose request where is /supertest
+309 verbose request registry https://registry.npmjs.org/
+310 verbose url raw /supertest
+311 verbose url resolving [ 'https://registry.npmjs.org/', './supertest' ]
+312 verbose url resolved https://registry.npmjs.org/supertest
+313 verbose request where is https://registry.npmjs.org/supertest
+314 info trying registry request attempt 1 at 16:44:58
+315 http GET https://registry.npmjs.org/supertest
+316 verbose request where is /jquery
+317 verbose request registry https://registry.npmjs.org/
+318 verbose url raw /jquery
+319 verbose url resolving [ 'https://registry.npmjs.org/', './jquery' ]
+320 verbose url resolved https://registry.npmjs.org/jquery
+321 verbose request where is https://registry.npmjs.org/jquery
+322 info trying registry request attempt 1 at 16:44:58
+323 verbose etag "59CL68V6D2RUJS43BAQPJXH4T"
+324 http GET https://registry.npmjs.org/jquery
+325 verbose request where is /express-ejs-layouts
+326 verbose request registry https://registry.npmjs.org/
+327 verbose url raw /express-ejs-layouts
+328 verbose url resolving [ 'https://registry.npmjs.org/', './express-ejs-layouts' ]
+329 verbose url resolved https://registry.npmjs.org/express-ejs-layouts
+330 verbose request where is https://registry.npmjs.org/express-ejs-layouts
+331 info trying registry request attempt 1 at 16:44:58
+332 verbose etag "9B7L1G33IDVKDVVK3VFL6AKDS"
+333 http GET https://registry.npmjs.org/express-ejs-layouts
+334 verbose request where is /underscore
+335 verbose request registry https://registry.npmjs.org/
+336 verbose url raw /underscore
+337 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+338 verbose url resolved https://registry.npmjs.org/underscore
+339 verbose request where is https://registry.npmjs.org/underscore
+340 info trying registry request attempt 1 at 16:44:58
+341 verbose etag "P0HIU13LBSNXYG7VC1QM4RZ3"
+342 http GET https://registry.npmjs.org/underscore
+343 verbose request where is /body-parser
+344 verbose request registry https://registry.npmjs.org/
+345 verbose url raw /body-parser
+346 verbose url resolving [ 'https://registry.npmjs.org/', './body-parser' ]
+347 verbose url resolved https://registry.npmjs.org/body-parser
+348 verbose request where is https://registry.npmjs.org/body-parser
+349 info trying registry request attempt 1 at 16:44:58
+350 verbose etag "9MMCZ37RC4T1CZDB2FT5P972N"
+351 http GET https://registry.npmjs.org/body-parser
+352 verbose request where is /express
+353 verbose request registry https://registry.npmjs.org/
+354 verbose url raw /express
+355 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+356 verbose url resolved https://registry.npmjs.org/express
+357 verbose request where is https://registry.npmjs.org/express
+358 info trying registry request attempt 1 at 16:44:58
+359 verbose etag "D3G9O23WEU7T1GM92EI6W1VW1"
+360 http GET https://registry.npmjs.org/express
+361 verbose request where is /blanket
+362 verbose request registry https://registry.npmjs.org/
+363 verbose url raw /blanket
+364 verbose url resolving [ 'https://registry.npmjs.org/', './blanket' ]
+365 verbose url resolved https://registry.npmjs.org/blanket
+366 verbose request where is https://registry.npmjs.org/blanket
+367 info trying registry request attempt 1 at 16:44:58
+368 verbose etag "7VI4CVHUB08ZD62Q030P8LASG"
+369 http GET https://registry.npmjs.org/blanket
+370 verbose request where is /del
+371 verbose request registry https://registry.npmjs.org/
+372 verbose url raw /del
+373 verbose url resolving [ 'https://registry.npmjs.org/', './del' ]
+374 verbose url resolved https://registry.npmjs.org/del
+375 verbose request where is https://registry.npmjs.org/del
+376 info trying registry request attempt 1 at 16:44:58
+377 verbose etag "2EHA91NOF885HOELPX2N3HTUD"
+378 http GET https://registry.npmjs.org/del
+379 verbose request where is /ejs
+380 verbose request registry https://registry.npmjs.org/
+381 verbose url raw /ejs
+382 verbose url resolving [ 'https://registry.npmjs.org/', './ejs' ]
+383 verbose url resolved https://registry.npmjs.org/ejs
+384 verbose request where is https://registry.npmjs.org/ejs
+385 info trying registry request attempt 1 at 16:44:58
+386 verbose etag "83KXQOL8TTA6MEGOZ3968736R"
+387 http GET https://registry.npmjs.org/ejs
+388 verbose request where is /gulp-concat
+389 verbose request registry https://registry.npmjs.org/
+390 verbose url raw /gulp-concat
+391 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-concat' ]
+392 verbose url resolved https://registry.npmjs.org/gulp-concat
+393 verbose request where is https://registry.npmjs.org/gulp-concat
+394 info trying registry request attempt 1 at 16:44:58
+395 verbose etag "6HU0KL05Z9JNLJ3BGKPRDJGM2"
+396 http GET https://registry.npmjs.org/gulp-concat
+397 verbose request where is /gulp
+398 verbose request registry https://registry.npmjs.org/
+399 verbose url raw /gulp
+400 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+401 verbose url resolved https://registry.npmjs.org/gulp
+402 verbose request where is https://registry.npmjs.org/gulp
+403 info trying registry request attempt 1 at 16:44:58
+404 verbose etag "BXMQNZ89WRMIOXRKDU2OQ7W3Z"
+405 http GET https://registry.npmjs.org/gulp
+406 verbose request where is /gulp-minify-css
+407 verbose request registry https://registry.npmjs.org/
+408 verbose url raw /gulp-minify-css
+409 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-minify-css' ]
+410 verbose url resolved https://registry.npmjs.org/gulp-minify-css
+411 verbose request where is https://registry.npmjs.org/gulp-minify-css
+412 info trying registry request attempt 1 at 16:44:58
+413 verbose etag "CN4904OLWCHH0T2HJ6E845O3G"
+414 http GET https://registry.npmjs.org/gulp-minify-css
+415 verbose request where is /gulp-uglify
+416 verbose request registry https://registry.npmjs.org/
+417 verbose url raw /gulp-uglify
+418 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-uglify' ]
+419 verbose url resolved https://registry.npmjs.org/gulp-uglify
+420 verbose request where is https://registry.npmjs.org/gulp-uglify
+421 info trying registry request attempt 1 at 16:44:58
+422 verbose etag "5PYFMOJL3J8ODS71P6GOEMNZ1"
+423 http GET https://registry.npmjs.org/gulp-uglify
+424 verbose request where is /gulp-minify-html
+425 verbose request registry https://registry.npmjs.org/
+426 verbose url raw /gulp-minify-html
+427 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-minify-html' ]
+428 verbose url resolved https://registry.npmjs.org/gulp-minify-html
+429 verbose request where is https://registry.npmjs.org/gulp-minify-html
+430 info trying registry request attempt 1 at 16:44:58
+431 verbose etag "NNBZFDVYHL7U71XINXUGEBS0"
+432 http GET https://registry.npmjs.org/gulp-minify-html
+433 verbose request where is /gulp-shell
+434 verbose request registry https://registry.npmjs.org/
+435 verbose url raw /gulp-shell
+436 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-shell' ]
+437 verbose url resolved https://registry.npmjs.org/gulp-shell
+438 verbose request where is https://registry.npmjs.org/gulp-shell
+439 info trying registry request attempt 1 at 16:44:58
+440 verbose etag "1AW4I6Y8OD799NBYD10PDV4NX"
+441 http GET https://registry.npmjs.org/gulp-shell
+442 verbose request where is /karma
+443 verbose request registry https://registry.npmjs.org/
+444 verbose url raw /karma
+445 verbose url resolving [ 'https://registry.npmjs.org/', './karma' ]
+446 verbose url resolved https://registry.npmjs.org/karma
+447 verbose request where is https://registry.npmjs.org/karma
+448 info trying registry request attempt 1 at 16:44:58
+449 verbose etag "68XQLAFVLBOYTZA3ADF0EKTJA"
+450 http GET https://registry.npmjs.org/karma
+451 verbose request where is /gulp-karma
+452 verbose request registry https://registry.npmjs.org/
+453 verbose url raw /gulp-karma
+454 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-karma' ]
+455 verbose url resolved https://registry.npmjs.org/gulp-karma
+456 verbose request where is https://registry.npmjs.org/gulp-karma
+457 info trying registry request attempt 1 at 16:44:58
+458 verbose etag "9811M28AS9IZU0MIN1MX3OBF0"
+459 http GET https://registry.npmjs.org/gulp-karma
+460 verbose request where is /karma-phantomjs-launcher
+461 verbose request registry https://registry.npmjs.org/
+462 verbose url raw /karma-phantomjs-launcher
+463 verbose url resolving [ 'https://registry.npmjs.org/', './karma-phantomjs-launcher' ]
+464 verbose url resolved https://registry.npmjs.org/karma-phantomjs-launcher
+465 verbose request where is https://registry.npmjs.org/karma-phantomjs-launcher
+466 info trying registry request attempt 1 at 16:44:58
+467 verbose etag "6GUGA8SQT660J8YJAGQS7PAIW"
+468 http GET https://registry.npmjs.org/karma-phantomjs-launcher
+469 verbose request where is /jasmine-core
+470 verbose request registry https://registry.npmjs.org/
+471 verbose url raw /jasmine-core
+472 verbose url resolving [ 'https://registry.npmjs.org/', './jasmine-core' ]
+473 verbose url resolved https://registry.npmjs.org/jasmine-core
+474 verbose request where is https://registry.npmjs.org/jasmine-core
+475 info trying registry request attempt 1 at 16:44:58
+476 verbose etag "ENGM2JLGRQ7X0JKU3ZJH2GGER"
+477 http GET https://registry.npmjs.org/jasmine-core
+478 verbose request where is /karma-firefox-launcher
+479 verbose request registry https://registry.npmjs.org/
+480 verbose url raw /karma-firefox-launcher
+481 verbose url resolving [ 'https://registry.npmjs.org/', './karma-firefox-launcher' ]
+482 verbose url resolved https://registry.npmjs.org/karma-firefox-launcher
+483 verbose request where is https://registry.npmjs.org/karma-firefox-launcher
+484 info trying registry request attempt 1 at 16:44:58
+485 verbose etag "AV15LQLZEMUP8W1E9STH1NHYE"
+486 http GET https://registry.npmjs.org/karma-firefox-launcher
+487 verbose request where is /karma-chrome-launcher
+488 verbose request registry https://registry.npmjs.org/
+489 verbose url raw /karma-chrome-launcher
+490 verbose url resolving [ 'https://registry.npmjs.org/', './karma-chrome-launcher' ]
+491 verbose url resolved https://registry.npmjs.org/karma-chrome-launcher
+492 verbose request where is https://registry.npmjs.org/karma-chrome-launcher
+493 info trying registry request attempt 1 at 16:44:58
+494 verbose etag "DIZC823MUCSKGL614OCJRGKTS"
+495 http GET https://registry.npmjs.org/karma-chrome-launcher
+496 verbose request where is /karma-mocha
+497 verbose request registry https://registry.npmjs.org/
+498 verbose url raw /karma-mocha
+499 verbose url resolving [ 'https://registry.npmjs.org/', './karma-mocha' ]
+500 verbose url resolved https://registry.npmjs.org/karma-mocha
+501 verbose request where is https://registry.npmjs.org/karma-mocha
+502 info trying registry request attempt 1 at 16:44:58
+503 verbose etag "BFLCW2IUSKLXE7ITIP9KDHP7D"
+504 http GET https://registry.npmjs.org/karma-mocha
+505 verbose request where is /karma-jasmine
+506 verbose request registry https://registry.npmjs.org/
+507 verbose url raw /karma-jasmine
+508 verbose url resolving [ 'https://registry.npmjs.org/', './karma-jasmine' ]
+509 verbose url resolved https://registry.npmjs.org/karma-jasmine
+510 verbose request where is https://registry.npmjs.org/karma-jasmine
+511 info trying registry request attempt 1 at 16:44:58
+512 verbose etag "U9T8177EKORM01F4N4OHO7EW"
+513 http GET https://registry.npmjs.org/karma-jasmine
+514 verbose request where is /karma-html2js-preprocessor
+515 verbose request registry https://registry.npmjs.org/
+516 verbose url raw /karma-html2js-preprocessor
+517 verbose url resolving [ 'https://registry.npmjs.org/',
+517 verbose url resolving   './karma-html2js-preprocessor' ]
+518 verbose url resolved https://registry.npmjs.org/karma-html2js-preprocessor
+519 verbose request where is https://registry.npmjs.org/karma-html2js-preprocessor
+520 info trying registry request attempt 1 at 16:44:58
+521 verbose etag "EJLM9HK6IADT0U782C24GE948"
+522 http GET https://registry.npmjs.org/karma-html2js-preprocessor
+523 verbose request where is /node-static
+524 verbose request registry https://registry.npmjs.org/
+525 verbose url raw /node-static
+526 verbose url resolving [ 'https://registry.npmjs.org/', './node-static' ]
+527 verbose url resolved https://registry.npmjs.org/node-static
+528 verbose request where is https://registry.npmjs.org/node-static
+529 info trying registry request attempt 1 at 16:44:58
+530 verbose etag "5LONJTTNWPGKQ61J708Y1ZS8K"
+531 http GET https://registry.npmjs.org/node-static
+532 verbose request where is /mocha
+533 verbose request registry https://registry.npmjs.org/
+534 verbose url raw /mocha
+535 verbose url resolving [ 'https://registry.npmjs.org/', './mocha' ]
+536 verbose url resolved https://registry.npmjs.org/mocha
+537 verbose request where is https://registry.npmjs.org/mocha
+538 info trying registry request attempt 1 at 16:44:58
+539 verbose etag "6IMOWLFIP8W8BTTZ1PUSWHFS7"
+540 http GET https://registry.npmjs.org/mocha
+541 verbose request where is /chai
+542 verbose request registry https://registry.npmjs.org/
+543 verbose url raw /chai
+544 verbose url resolving [ 'https://registry.npmjs.org/', './chai' ]
+545 verbose url resolved https://registry.npmjs.org/chai
+546 verbose request where is https://registry.npmjs.org/chai
+547 info trying registry request attempt 1 at 16:44:58
+548 verbose etag "A8VVHZH4ZA67MGHSWO9QDTKWH"
+549 http GET https://registry.npmjs.org/chai
+550 verbose request where is /gulp-util
+551 verbose request registry https://registry.npmjs.org/
+552 verbose url raw /gulp-util
+553 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-util' ]
+554 verbose url resolved https://registry.npmjs.org/gulp-util
+555 verbose request where is https://registry.npmjs.org/gulp-util
+556 info trying registry request attempt 1 at 16:44:58
+557 verbose etag "DATGUMXZK96OH8A0J5X495A4P"
+558 http GET https://registry.npmjs.org/gulp-util
+559 http 200 https://registry.npmjs.org/express-ejs-layouts
+560 silly registry.get cb [ 200,
+560 silly registry.get   { date: 'Tue, 14 Apr 2015 15:44:59 GMT',
+560 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+560 silly registry.get     etag: '"EN04I5GB3931YZD3CLVRF34XF"',
+560 silly registry.get     'content-type': 'application/json',
+560 silly registry.get     'cache-control': 'max-age=60',
+560 silly registry.get     'content-length': '8498',
+560 silly registry.get     'accept-ranges': 'bytes',
+560 silly registry.get     via: '1.1 varnish',
+560 silly registry.get     age: '0',
+560 silly registry.get     'x-served-by': 'cache-lcy1120-LCY',
+560 silly registry.get     'x-cache': 'MISS',
+560 silly registry.get     'x-cache-hits': '0',
+560 silly registry.get     'x-timer': 'S1429026299.037974,VS0,VE97',
+560 silly registry.get     vary: 'Accept',
+560 silly registry.get     'keep-alive': 'timeout=10, max=50',
+560 silly registry.get     connection: 'Keep-Alive' } ]
+561 silly addNameRange number 2 { name: 'express-ejs-layouts',
+561 silly addNameRange   range: '>=1.1.0-0 <1.2.0-0',
+561 silly addNameRange   hasData: true }
+562 silly addNameRange versions [ 'express-ejs-layouts',
+562 silly addNameRange   [ '0.1.0', '0.2.0', '0.3.0', '0.3.1', '1.0.0', '1.1.0' ] ]
+563 verbose addNamed [ 'express-ejs-layouts', '1.1.0' ]
+564 verbose addNamed [ '1.1.0', '1.1.0' ]
+565 silly lockFile 937e5aad-express-ejs-layouts-1-1-0 express-ejs-layouts@1.1.0
+566 verbose lock express-ejs-layouts@1.1.0 /home/juanfgr/.npm/937e5aad-express-ejs-layouts-1-1-0.lock
+567 http 200 https://registry.npmjs.org/underscore
+568 silly registry.get cb [ 200,
+568 silly registry.get   { date: 'Tue, 14 Apr 2015 15:44:59 GMT',
+568 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+568 silly registry.get     etag: '"7C1BRLYGKR5V8HTCKJBBHI6FQ"',
+568 silly registry.get     'content-type': 'application/json',
+568 silly registry.get     'cache-control': 'max-age=60',
+568 silly registry.get     'content-length': '40409',
+568 silly registry.get     'accept-ranges': 'bytes',
+568 silly registry.get     via: '1.1 varnish',
+568 silly registry.get     age: '19',
+568 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+568 silly registry.get     'x-cache': 'HIT',
+568 silly registry.get     'x-cache-hits': '458',
+568 silly registry.get     'x-timer': 'S1429026299.038042,VS0,VE0',
+568 silly registry.get     vary: 'Accept',
+568 silly registry.get     'keep-alive': 'timeout=10, max=50',
+568 silly registry.get     connection: 'Keep-Alive' } ]
+569 silly addNameRange number 2 { name: 'underscore', range: '*', hasData: true }
+570 silly addNameRange versions [ 'underscore',
+570 silly addNameRange   [ '1.0.3',
+570 silly addNameRange     '1.0.4',
+570 silly addNameRange     '1.1.0',
+570 silly addNameRange     '1.1.1',
+570 silly addNameRange     '1.1.2',
+570 silly addNameRange     '1.1.3',
+570 silly addNameRange     '1.1.4',
+570 silly addNameRange     '1.1.5',
+570 silly addNameRange     '1.1.6',
+570 silly addNameRange     '1.1.7',
+570 silly addNameRange     '1.2.0',
+570 silly addNameRange     '1.2.1',
+570 silly addNameRange     '1.2.2',
+570 silly addNameRange     '1.2.3',
+570 silly addNameRange     '1.2.4',
+570 silly addNameRange     '1.3.0',
+570 silly addNameRange     '1.3.1',
+570 silly addNameRange     '1.3.2',
+570 silly addNameRange     '1.3.3',
+570 silly addNameRange     '1.4.0',
+570 silly addNameRange     '1.4.1',
+570 silly addNameRange     '1.4.2',
+570 silly addNameRange     '1.4.3',
+570 silly addNameRange     '1.4.4',
+570 silly addNameRange     '1.5.0',
+570 silly addNameRange     '1.5.1',
+570 silly addNameRange     '1.5.2',
+570 silly addNameRange     '1.6.0',
+570 silly addNameRange     '1.7.0',
+570 silly addNameRange     '1.8.0',
+570 silly addNameRange     '1.8.1',
+570 silly addNameRange     '1.8.2',
+570 silly addNameRange     '1.8.3' ] ]
+571 verbose addNamed [ 'underscore', '1.8.3' ]
+572 verbose addNamed [ '1.8.3', '1.8.3' ]
+573 silly lockFile e5e32fca-underscore-1-8-3 underscore@1.8.3
+574 verbose lock underscore@1.8.3 /home/juanfgr/.npm/e5e32fca-underscore-1-8-3.lock
+575 silly lockFile d5ea30aa--underscore-underscore-1-8-3-tgz https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+576 verbose lock https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz /home/juanfgr/.npm/d5ea30aa--underscore-underscore-1-8-3-tgz.lock
+577 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz',
+577 verbose addRemoteTarball   '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022' ]
+578 info retry fetch attempt 1 at 16:44:59
+579 verbose fetch to= /tmp/npm-3658-kSWAr3nP/registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+580 http GET https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+581 silly lockFile 937e5aad-express-ejs-layouts-1-1-0 express-ejs-layouts@1.1.0
+582 silly lockFile 937e5aad-express-ejs-layouts-1-1-0 express-ejs-layouts@1.1.0
+583 silly lockFile 2b43e645-express-ejs-layouts-1-1-0 express-ejs-layouts@~1.1.0
+584 silly lockFile 2b43e645-express-ejs-layouts-1-1-0 express-ejs-layouts@~1.1.0
+585 http 200 https://registry.npmjs.org/body-parser
+586 silly registry.get cb [ 200,
+586 silly registry.get   { date: 'Tue, 14 Apr 2015 15:44:59 GMT',
+586 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+586 silly registry.get     etag: '"BBRE2ZOPDFEPO29EVVAPMSA4K"',
+586 silly registry.get     'content-type': 'application/json',
+586 silly registry.get     'cache-control': 'max-age=60',
+586 silly registry.get     'content-length': '90772',
+586 silly registry.get     'accept-ranges': 'bytes',
+586 silly registry.get     via: '1.1 varnish',
+586 silly registry.get     age: '9',
+586 silly registry.get     'x-served-by': 'cache-lcy1120-LCY',
+586 silly registry.get     'x-cache': 'HIT',
+586 silly registry.get     'x-cache-hits': '1',
+586 silly registry.get     'x-timer': 'S1429026299.239473,VS0,VE0',
+586 silly registry.get     vary: 'Accept',
+586 silly registry.get     'keep-alive': 'timeout=10, max=49',
+586 silly registry.get     connection: 'Keep-Alive' } ]
+587 silly addNameRange number 2 { name: 'body-parser',
+587 silly addNameRange   range: '>=1.12.0-0 <1.13.0-0',
+587 silly addNameRange   hasData: true }
+588 silly addNameRange versions [ 'body-parser',
+588 silly addNameRange   [ '1.0.0',
+588 silly addNameRange     '1.0.1',
+588 silly addNameRange     '1.0.2',
+588 silly addNameRange     '1.1.0',
+588 silly addNameRange     '1.1.1',
+588 silly addNameRange     '1.1.2',
+588 silly addNameRange     '1.2.0',
+588 silly addNameRange     '1.2.1',
+588 silly addNameRange     '1.2.2',
+588 silly addNameRange     '1.3.0',
+588 silly addNameRange     '1.3.1',
+588 silly addNameRange     '1.4.0',
+588 silly addNameRange     '1.4.1',
+588 silly addNameRange     '1.4.2',
+588 silly addNameRange     '1.4.3',
+588 silly addNameRange     '1.5.0',
+588 silly addNameRange     '1.5.1',
+588 silly addNameRange     '1.5.2',
+588 silly addNameRange     '1.6.0',
+588 silly addNameRange     '1.6.1',
+588 silly addNameRange     '1.6.2',
+588 silly addNameRange     '1.6.3',
+588 silly addNameRange     '1.6.4',
+588 silly addNameRange     '1.6.5',
+588 silly addNameRange     '1.6.6',
+588 silly addNameRange     '1.6.7',
+588 silly addNameRange     '1.7.0',
+588 silly addNameRange     '1.8.0',
+588 silly addNameRange     '1.8.1',
+588 silly addNameRange     '1.8.2',
+588 silly addNameRange     '1.8.3',
+588 silly addNameRange     '1.8.4',
+588 silly addNameRange     '1.9.0',
+588 silly addNameRange     '1.9.1',
+588 silly addNameRange     '1.9.2',
+588 silly addNameRange     '1.9.3',
+588 silly addNameRange     '1.10.0',
+588 silly addNameRange     '1.10.1',
+588 silly addNameRange     '1.10.2',
+588 silly addNameRange     '1.11.0',
+588 silly addNameRange     '1.12.0',
+588 silly addNameRange     '1.12.1',
+588 silly addNameRange     '1.12.2' ] ]
+589 verbose addNamed [ 'body-parser', '1.12.2' ]
+590 verbose addNamed [ '1.12.2', '1.12.2' ]
+591 silly lockFile 76f09536-body-parser-1-12-2 body-parser@1.12.2
+592 verbose lock body-parser@1.12.2 /home/juanfgr/.npm/76f09536-body-parser-1-12-2.lock
+593 silly lockFile 9a22e482-dy-parser-body-parser-1-12-2-tgz https://registry.npmjs.org/body-parser/-/body-parser-1.12.2.tgz
+594 verbose lock https://registry.npmjs.org/body-parser/-/body-parser-1.12.2.tgz /home/juanfgr/.npm/9a22e482-dy-parser-body-parser-1-12-2-tgz.lock
+595 verbose addRemoteTarball [ 'https://registry.npmjs.org/body-parser/-/body-parser-1.12.2.tgz',
+595 verbose addRemoteTarball   '698368fb4dfc57a05bff1ddb1bebeba3bd2c0e87' ]
+596 info retry fetch attempt 1 at 16:44:59
+597 verbose fetch to= /tmp/npm-3658-kSWAr3nP/registry.npmjs.org/body-parser/-/body-parser-1.12.2.tgz
+598 http GET https://registry.npmjs.org/body-parser/-/body-parser-1.12.2.tgz
+599 http 200 https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+600 http 200 https://registry.npmjs.org/supervisor
+601 silly registry.get cb [ 200,
+601 silly registry.get   { date: 'Tue, 14 Apr 2015 15:44:59 GMT',
+601 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+601 silly registry.get     etag: '"43GVTMBFK2VKRFC4YH6Q9LPSR"',
+601 silly registry.get     'content-type': 'application/json',
+601 silly registry.get     'cache-control': 'max-age=60',
+601 silly registry.get     'content-length': '45136',
+601 silly registry.get     'accept-ranges': 'bytes',
+601 silly registry.get     via: '1.1 varnish',
+601 silly registry.get     age: '0',
+601 silly registry.get     'x-served-by': 'cache-lcy1123-LCY',
+601 silly registry.get     'x-cache': 'HIT',
+601 silly registry.get     'x-cache-hits': '1',
+601 silly registry.get     'x-timer': 'S1429026298.969321,VS0,VE156',
+601 silly registry.get     vary: 'Accept',
+601 silly registry.get     'keep-alive': 'timeout=10, max=50',
+601 silly registry.get     connection: 'Keep-Alive' } ]
+602 silly addNameRange number 2 { name: 'supervisor', range: '*', hasData: true }
+603 silly addNameRange versions [ 'supervisor',
+603 silly addNameRange   [ '0.0.4',
+603 silly addNameRange     '0.0.5',
+603 silly addNameRange     '0.0.6',
+603 silly addNameRange     '0.1.0',
+603 silly addNameRange     '0.1.1',
+603 silly addNameRange     '0.1.2',
+603 silly addNameRange     '0.1.3',
+603 silly addNameRange     '0.2.0',
+603 silly addNameRange     '0.3.0',
+603 silly addNameRange     '0.3.1',
+603 silly addNameRange     '0.3.2',
+603 silly addNameRange     '0.3.3',
+603 silly addNameRange     '0.3.4',
+603 silly addNameRange     '0.3.5',
+603 silly addNameRange     '0.3.6',
+603 silly addNameRange     '0.4.0',
+603 silly addNameRange     '0.4.1',
+603 silly addNameRange     '0.5.0',
+603 silly addNameRange     '0.5.1',
+603 silly addNameRange     '0.5.2',
+603 silly addNameRange     '0.5.3',
+603 silly addNameRange     '0.5.4',
+603 silly addNameRange     '0.5.5',
+603 silly addNameRange     '0.5.6',
+603 silly addNameRange     '0.5.7',
+603 silly addNameRange     '0.6.0' ] ]
+604 verbose addNamed [ 'supervisor', '0.6.0' ]
+605 verbose addNamed [ '0.6.0', '0.6.0' ]
+606 silly lockFile 0362a428-supervisor-0-6-0 supervisor@0.6.0
+607 verbose lock supervisor@0.6.0 /home/juanfgr/.npm/0362a428-supervisor-0-6-0.lock
+608 silly lockFile 3607d2d5--supervisor-supervisor-0-6-0-tgz https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz
+609 verbose lock https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz /home/juanfgr/.npm/3607d2d5--supervisor-supervisor-0-6-0-tgz.lock
+610 verbose addRemoteTarball [ 'https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz',
+610 verbose addRemoteTarball   'c8b965be5ae31822685f176df1f178dd5d85c332' ]
+611 info retry fetch attempt 1 at 16:44:59
+612 verbose fetch to= /tmp/npm-3658-kSWAr3nP/registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz
+613 http GET https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz
+614 http 200 https://registry.npmjs.org/del
+615 silly registry.get cb [ 200,
+615 silly registry.get   { date: 'Tue, 14 Apr 2015 15:44:59 GMT',
+615 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+615 silly registry.get     etag: '"D48Z3JVEB3C0L26WP8G6D650C"',
+615 silly registry.get     'content-type': 'application/json',
+615 silly registry.get     'cache-control': 'max-age=60',
+615 silly registry.get     'content-length': '12263',
+615 silly registry.get     'accept-ranges': 'bytes',
+615 silly registry.get     via: '1.1 varnish',
+615 silly registry.get     age: '31',
+615 silly registry.get     'x-served-by': 'cache-lcy1123-LCY',
+615 silly registry.get     'x-cache': 'HIT',
+615 silly registry.get     'x-cache-hits': '31',
+615 silly registry.get     'x-timer': 'S1429026299.691596,VS0,VE0',
+615 silly registry.get     vary: 'Accept',
+615 silly registry.get     'keep-alive': 'timeout=10, max=49',
+615 silly registry.get     connection: 'Keep-Alive' } ]
+616 silly addNameRange number 2 { name: 'del', range: '>=1.1.1-0 <2.0.0-0', hasData: true }
+617 silly addNameRange versions [ 'del',
+617 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '1.0.0', '1.1.0', '1.1.1' ] ]
+618 verbose addNamed [ 'del', '1.1.1' ]
+619 verbose addNamed [ '1.1.1', '1.1.1' ]
+620 silly lockFile 22ea674c-del-1-1-1 del@1.1.1
+621 verbose lock del@1.1.1 /home/juanfgr/.npm/22ea674c-del-1-1-1.lock
+622 silly lockFile d5ea30aa--underscore-underscore-1-8-3-tgz https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+623 silly lockFile d5ea30aa--underscore-underscore-1-8-3-tgz https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+624 silly lockFile e5e32fca-underscore-1-8-3 underscore@1.8.3
+625 silly lockFile e5e32fca-underscore-1-8-3 underscore@1.8.3
+626 silly lockFile 67e8a6a2-underscore underscore@*
+627 silly lockFile 67e8a6a2-underscore underscore@*
+628 http 200 https://registry.npmjs.org/jquery
+629 silly registry.get cb [ 200,
+629 silly registry.get   { date: 'Tue, 14 Apr 2015 15:44:59 GMT',
+629 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+629 silly registry.get     etag: '"44PHJ1J2AOQ85ZI6OZDKY7Z9P"',
+629 silly registry.get     'content-type': 'application/json',
+629 silly registry.get     'cache-control': 'max-age=60',
+629 silly registry.get     'content-length': '51621',
+629 silly registry.get     'accept-ranges': 'bytes',
+629 silly registry.get     via: '1.1 varnish',
+629 silly registry.get     age: '0',
+629 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+629 silly registry.get     'x-cache': 'HIT',
+629 silly registry.get     'x-cache-hits': '1',
+629 silly registry.get     'x-timer': 'S1429026299.024412,VS0,VE88',
+629 silly registry.get     vary: 'Accept',
+629 silly registry.get     'keep-alive': 'timeout=10, max=50',
+629 silly registry.get     connection: 'Keep-Alive' } ]
+630 silly lockFile 22ea674c-del-1-1-1 del@1.1.1
+631 silly lockFile 22ea674c-del-1-1-1 del@1.1.1
+632 silly lockFile 7493aa52-del-1-1-1 del@^1.1.1
+633 silly lockFile 7493aa52-del-1-1-1 del@^1.1.1
+634 silly addNameRange number 2 { name: 'jquery', range: '*', hasData: true }
+635 silly addNameRange versions [ 'jquery',
+635 silly addNameRange   [ '1.5.1',
+635 silly addNameRange     '1.6.2',
+635 silly addNameRange     '1.6.3',
+635 silly addNameRange     '1.7.2',
+635 silly addNameRange     '1.7.3',
+635 silly addNameRange     '1.8.2',
+635 silly addNameRange     '1.8.3',
+635 silly addNameRange     '2.1.0-beta2',
+635 silly addNameRange     '2.1.0-beta3',
+635 silly addNameRange     '1.11.0-beta3',
+635 silly addNameRange     '1.11.0-rc1',
+635 silly addNameRange     '2.1.0-rc1',
+635 silly addNameRange     '1.11.0',
+635 silly addNameRange     '2.1.0',
+635 silly addNameRange     '2.1.1-beta1',
+635 silly addNameRange     '1.11.1-beta1',
+635 silly addNameRange     '2.1.1-rc1',
+635 silly addNameRange     '1.11.1-rc1',
+635 silly addNameRange     '2.1.1-rc2',
+635 silly addNameRange     '1.11.1-rc2',
+635 silly addNameRange     '2.1.1',
+635 silly addNameRange     '1.11.1',
+635 silly addNameRange     '1.9.1',
+635 silly addNameRange     '2.1.2',
+635 silly addNameRange     '1.11.2',
+635 silly addNameRange     '2.1.3' ] ]
+636 verbose addNamed [ 'jquery', '2.1.3' ]
+637 verbose addNamed [ '2.1.3', '2.1.3' ]
+638 silly lockFile 6fbd5787-jquery-2-1-3 jquery@2.1.3
+639 verbose lock jquery@2.1.3 /home/juanfgr/.npm/6fbd5787-jquery-2-1-3.lock
+640 silly lockFile 6fbd5787-jquery-2-1-3 jquery@2.1.3
+641 silly lockFile 6fbd5787-jquery-2-1-3 jquery@2.1.3
+642 silly lockFile 940b64bc-jquery jquery@*
+643 silly lockFile 940b64bc-jquery jquery@*
+644 http 200 https://registry.npmjs.org/body-parser/-/body-parser-1.12.2.tgz
+645 silly lockFile 9a22e482-dy-parser-body-parser-1-12-2-tgz https://registry.npmjs.org/body-parser/-/body-parser-1.12.2.tgz
+646 silly lockFile 9a22e482-dy-parser-body-parser-1-12-2-tgz https://registry.npmjs.org/body-parser/-/body-parser-1.12.2.tgz
+647 silly lockFile 76f09536-body-parser-1-12-2 body-parser@1.12.2
+648 silly lockFile 76f09536-body-parser-1-12-2 body-parser@1.12.2
+649 silly lockFile 6121e062-body-parser-1-12-0 body-parser@~1.12.0
+650 silly lockFile 6121e062-body-parser-1-12-0 body-parser@~1.12.0
+651 http 200 https://registry.npmjs.org/blanket
+652 silly registry.get cb [ 200,
+652 silly registry.get   { date: 'Tue, 14 Apr 2015 15:44:59 GMT',
+652 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+652 silly registry.get     etag: '"79BTCYC6RT2K5LB8DDN3BK00T"',
+652 silly registry.get     'content-type': 'application/json',
+652 silly registry.get     'cache-control': 'max-age=60',
+652 silly registry.get     'content-length': '33824',
+652 silly registry.get     'accept-ranges': 'bytes',
+652 silly registry.get     via: '1.1 varnish',
+652 silly registry.get     age: '0',
+652 silly registry.get     'x-served-by': 'cache-lcy1120-LCY',
+652 silly registry.get     'x-cache': 'HIT',
+652 silly registry.get     'x-cache-hits': '1',
+652 silly registry.get     'x-timer': 'S1429026299.574328,VS0,VE153',
+652 silly registry.get     vary: 'Accept',
+652 silly registry.get     'keep-alive': 'timeout=10, max=48',
+652 silly registry.get     connection: 'Keep-Alive' } ]
+653 silly addNameRange number 2 { name: 'blanket', range: '>=1.1.6-0 <2.0.0-0', hasData: true }
+654 silly addNameRange versions [ 'blanket',
+654 silly addNameRange   [ '0.1.0',
+654 silly addNameRange     '0.9.1',
+654 silly addNameRange     '0.9.4',
+654 silly addNameRange     '0.9.5',
+654 silly addNameRange     '0.9.6',
+654 silly addNameRange     '0.9.7',
+654 silly addNameRange     '0.9.8',
+654 silly addNameRange     '0.9.9',
+654 silly addNameRange     '1.0.0',
+654 silly addNameRange     '1.0.1',
+654 silly addNameRange     '1.0.2',
+654 silly addNameRange     '1.0.3',
+654 silly addNameRange     '1.0.4',
+654 silly addNameRange     '1.0.5',
+654 silly addNameRange     '1.0.6',
+654 silly addNameRange     '1.0.7',
+654 silly addNameRange     '1.0.8',
+654 silly addNameRange     '1.0.9',
+654 silly addNameRange     '1.1.0',
+654 silly addNameRange     '1.1.1',
+654 silly addNameRange     '1.1.2',
+654 silly addNameRange     '1.1.3',
+654 silly addNameRange     '1.1.4',
+654 silly addNameRange     '1.1.5',
+654 silly addNameRange     '1.1.6' ] ]
+655 verbose addNamed [ 'blanket', '1.1.6' ]
+656 verbose addNamed [ '1.1.6', '1.1.6' ]
+657 silly lockFile 2a18fc2b-blanket-1-1-6 blanket@1.1.6
+658 verbose lock blanket@1.1.6 /home/juanfgr/.npm/2a18fc2b-blanket-1-1-6.lock
+659 http 200 https://registry.npmjs.org/ejs
+660 silly registry.get cb [ 200,
+660 silly registry.get   { date: 'Tue, 14 Apr 2015 15:44:59 GMT',
+660 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+660 silly registry.get     etag: '"9J44KMBNSXHSYYPAK3PSDUQZA"',
+660 silly registry.get     'content-type': 'application/json',
+660 silly registry.get     'cache-control': 'max-age=60',
+660 silly registry.get     'content-length': '45050',
+660 silly registry.get     'accept-ranges': 'bytes',
+660 silly registry.get     via: '1.1 varnish',
+660 silly registry.get     age: '43',
+660 silly registry.get     'x-served-by': 'cache-lcy1123-LCY',
+660 silly registry.get     'x-cache': 'HIT',
+660 silly registry.get     'x-cache-hits': '1',
+660 silly registry.get     'x-timer': 'S1429026299.769129,VS0,VE0',
+660 silly registry.get     vary: 'Accept',
+660 silly registry.get     'keep-alive': 'timeout=10, max=48',
+660 silly registry.get     connection: 'Keep-Alive' } ]
+661 silly lockFile 2a18fc2b-blanket-1-1-6 blanket@1.1.6
+662 silly lockFile 2a18fc2b-blanket-1-1-6 blanket@1.1.6
+663 silly lockFile 48589c58-blanket-1-1-6 blanket@^1.1.6
+664 silly lockFile 48589c58-blanket-1-1-6 blanket@^1.1.6
+665 http 200 https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz
+666 silly addNameRange number 2 { name: 'ejs', range: '*', hasData: true }
+667 silly addNameRange versions [ 'ejs',
+667 silly addNameRange   [ '0.0.1',
+667 silly addNameRange     '0.0.2',
+667 silly addNameRange     '0.0.3',
+667 silly addNameRange     '0.0.4',
+667 silly addNameRange     '0.1.0',
+667 silly addNameRange     '0.2.0',
+667 silly addNameRange     '0.2.1',
+667 silly addNameRange     '0.3.0',
+667 silly addNameRange     '0.3.1',
+667 silly addNameRange     '0.4.0',
+667 silly addNameRange     '0.4.1',
+667 silly addNameRange     '0.4.2',
+667 silly addNameRange     '0.4.3',
+667 silly addNameRange     '0.5.0',
+667 silly addNameRange     '0.6.0',
+667 silly addNameRange     '0.6.1',
+667 silly addNameRange     '0.7.0',
+667 silly addNameRange     '0.7.1',
+667 silly addNameRange     '0.7.2',
+667 silly addNameRange     '0.8.0',
+667 silly addNameRange     '0.8.1',
+667 silly addNameRange     '0.8.2',
+667 silly addNameRange     '0.8.3',
+667 silly addNameRange     '0.8.4',
+667 silly addNameRange     '0.8.5',
+667 silly addNameRange     '0.8.6',
+667 silly addNameRange     '0.8.8',
+667 silly addNameRange     '1.0.0',
+667 silly addNameRange     '2.0.2',
+667 silly addNameRange     '2.0.3',
+667 silly addNameRange     '2.0.4',
+667 silly addNameRange     '2.0.5',
+667 silly addNameRange     '2.0.6',
+667 silly addNameRange     '2.0.7',
+667 silly addNameRange     '2.0.8',
+667 silly addNameRange     '2.1.1',
+667 silly addNameRange     '2.1.2',
+667 silly addNameRange     '2.1.3',
+667 silly addNameRange     '2.1.4',
+667 silly addNameRange     '2.2.1',
+667 silly addNameRange     '2.2.2',
+667 silly addNameRange     '2.2.3',
+667 silly addNameRange     '2.2.4',
+667 silly addNameRange     '2.3.1' ] ]
+668 verbose addNamed [ 'ejs', '2.3.1' ]
+669 verbose addNamed [ '2.3.1', '2.3.1' ]
+670 silly lockFile 823d5f08-ejs-2-3-1 ejs@2.3.1
+671 verbose lock ejs@2.3.1 /home/juanfgr/.npm/823d5f08-ejs-2-3-1.lock
+672 silly lockFile 3607d2d5--supervisor-supervisor-0-6-0-tgz https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz
+673 silly lockFile 3607d2d5--supervisor-supervisor-0-6-0-tgz https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz
+674 silly lockFile 0362a428-supervisor-0-6-0 supervisor@0.6.0
+675 silly lockFile 0362a428-supervisor-0-6-0 supervisor@0.6.0
+676 silly lockFile 568a622e-supervisor supervisor@*
+677 silly lockFile 568a622e-supervisor supervisor@*
+678 silly lockFile 823d5f08-ejs-2-3-1 ejs@2.3.1
+679 silly lockFile 823d5f08-ejs-2-3-1 ejs@2.3.1
+680 silly lockFile 9d73ed50-ejs ejs@*
+681 silly lockFile 9d73ed50-ejs ejs@*
+682 http 200 https://registry.npmjs.org/gulp-concat
+683 silly registry.get cb [ 200,
+683 silly registry.get   { date: 'Tue, 14 Apr 2015 15:44:59 GMT',
+683 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+683 silly registry.get     etag: '"I84UMGEYOCV7J8CFZES9LYCO"',
+683 silly registry.get     'content-type': 'application/json',
+683 silly registry.get     'cache-control': 'max-age=60',
+683 silly registry.get     'content-length': '34785',
+683 silly registry.get     'accept-ranges': 'bytes',
+683 silly registry.get     via: '1.1 varnish',
+683 silly registry.get     age: '13',
+683 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+683 silly registry.get     'x-cache': 'HIT',
+683 silly registry.get     'x-cache-hits': '2',
+683 silly registry.get     'x-timer': 'S1429026299.800416,VS0,VE0',
+683 silly registry.get     vary: 'Accept',
+683 silly registry.get     'keep-alive': 'timeout=10, max=49',
+683 silly registry.get     connection: 'Keep-Alive' } ]
+684 silly addNameRange number 2 { name: 'gulp-concat',
+684 silly addNameRange   range: '>=2.5.2-0 <3.0.0-0',
+684 silly addNameRange   hasData: true }
+685 silly addNameRange versions [ 'gulp-concat',
+685 silly addNameRange   [ '0.0.1',
+685 silly addNameRange     '1.0.0',
+685 silly addNameRange     '1.1.0',
+685 silly addNameRange     '2.0.0',
+685 silly addNameRange     '2.1.0',
+685 silly addNameRange     '2.1.1',
+685 silly addNameRange     '2.1.2',
+685 silly addNameRange     '2.1.3',
+685 silly addNameRange     '2.1.4',
+685 silly addNameRange     '2.1.5',
+685 silly addNameRange     '2.1.6',
+685 silly addNameRange     '2.1.7',
+685 silly addNameRange     '2.2.0',
+685 silly addNameRange     '2.3.0',
+685 silly addNameRange     '2.3.3',
+685 silly addNameRange     '2.3.4',
+685 silly addNameRange     '2.3.5',
+685 silly addNameRange     '2.4.0',
+685 silly addNameRange     '2.4.1',
+685 silly addNameRange     '2.4.2',
+685 silly addNameRange     '2.4.3',
+685 silly addNameRange     '2.5.0',
+685 silly addNameRange     '2.5.1',
+685 silly addNameRange     '2.5.2' ] ]
+686 verbose addNamed [ 'gulp-concat', '2.5.2' ]
+687 verbose addNamed [ '2.5.2', '2.5.2' ]
+688 silly lockFile f86cbda2-gulp-concat-2-5-2 gulp-concat@2.5.2
+689 verbose lock gulp-concat@2.5.2 /home/juanfgr/.npm/f86cbda2-gulp-concat-2-5-2.lock
+690 http 200 https://registry.npmjs.org/gulp-minify-css
+691 silly registry.get cb [ 200,
+691 silly registry.get   { date: 'Tue, 14 Apr 2015 15:44:59 GMT',
+691 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+691 silly registry.get     etag: '"8D7V9C85BG73MNSYNV61G6SR0"',
+691 silly registry.get     'content-type': 'application/json',
+691 silly registry.get     'cache-control': 'max-age=60',
+691 silly registry.get     'content-length': '42296',
+691 silly registry.get     'accept-ranges': 'bytes',
+691 silly registry.get     via: '1.1 varnish',
+691 silly registry.get     age: '19',
+691 silly registry.get     'x-served-by': 'cache-lcy1123-LCY',
+691 silly registry.get     'x-cache': 'HIT',
+691 silly registry.get     'x-cache-hits': '10',
+691 silly registry.get     'x-timer': 'S1429026299.967738,VS0,VE0',
+691 silly registry.get     vary: 'Accept',
+691 silly registry.get     'keep-alive': 'timeout=10, max=47',
+691 silly registry.get     connection: 'Keep-Alive' } ]
+692 silly addNameRange number 2 { name: 'gulp-minify-css',
+692 silly addNameRange   range: '>=0.4.6-0 <0.5.0-0',
+692 silly addNameRange   hasData: true }
+693 silly addNameRange versions [ 'gulp-minify-css',
+693 silly addNameRange   [ '0.0.1',
+693 silly addNameRange     '0.1.0',
+693 silly addNameRange     '0.2.0',
+693 silly addNameRange     '0.3.0',
+693 silly addNameRange     '0.3.1',
+693 silly addNameRange     '0.3.2',
+693 silly addNameRange     '0.3.3',
+693 silly addNameRange     '0.3.4',
+693 silly addNameRange     '0.3.5',
+693 silly addNameRange     '0.3.6',
+693 silly addNameRange     '0.3.7',
+693 silly addNameRange     '0.3.8',
+693 silly addNameRange     '0.3.9',
+693 silly addNameRange     '0.3.10',
+693 silly addNameRange     '0.3.11',
+693 silly addNameRange     '0.3.12',
+693 silly addNameRange     '0.3.13',
+693 silly addNameRange     '0.4.0',
+693 silly addNameRange     '0.4.1',
+693 silly addNameRange     '0.4.2',
+693 silly addNameRange     '0.4.3',
+693 silly addNameRange     '0.4.4',
+693 silly addNameRange     '0.4.5',
+693 silly addNameRange     '0.4.6',
+693 silly addNameRange     '0.5.0',
+693 silly addNameRange     '0.5.1',
+693 silly addNameRange     '1.0.0' ] ]
+694 verbose addNamed [ 'gulp-minify-css', '0.4.6' ]
+695 verbose addNamed [ '0.4.6', '0.4.6' ]
+696 silly lockFile 3efac38b-gulp-minify-css-0-4-6 gulp-minify-css@0.4.6
+697 verbose lock gulp-minify-css@0.4.6 /home/juanfgr/.npm/3efac38b-gulp-minify-css-0-4-6.lock
+698 silly lockFile f86cbda2-gulp-concat-2-5-2 gulp-concat@2.5.2
+699 silly lockFile f86cbda2-gulp-concat-2-5-2 gulp-concat@2.5.2
+700 silly lockFile 60a235d6-gulp-concat-2-5-2 gulp-concat@^2.5.2
+701 silly lockFile 60a235d6-gulp-concat-2-5-2 gulp-concat@^2.5.2
+702 silly lockFile 3efac38b-gulp-minify-css-0-4-6 gulp-minify-css@0.4.6
+703 silly lockFile 3efac38b-gulp-minify-css-0-4-6 gulp-minify-css@0.4.6
+704 silly lockFile 71b63d7b-gulp-minify-css-0-4-6 gulp-minify-css@^0.4.6
+705 silly lockFile 71b63d7b-gulp-minify-css-0-4-6 gulp-minify-css@^0.4.6
+706 http 200 https://registry.npmjs.org/gulp-minify-html
+707 silly registry.get cb [ 200,
+707 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+707 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+707 silly registry.get     etag: '"2TFX3EVYN4LM28953KZYFEUP5"',
+707 silly registry.get     'content-type': 'application/json',
+707 silly registry.get     'cache-control': 'max-age=60',
+707 silly registry.get     'content-length': '18649',
+707 silly registry.get     'accept-ranges': 'bytes',
+707 silly registry.get     via: '1.1 varnish',
+707 silly registry.get     age: '21',
+707 silly registry.get     'x-served-by': 'cache-lcy1123-LCY',
+707 silly registry.get     'x-cache': 'HIT',
+707 silly registry.get     'x-cache-hits': '1',
+707 silly registry.get     'x-timer': 'S1429026300.170012,VS0,VE0',
+707 silly registry.get     vary: 'Accept',
+707 silly registry.get     'keep-alive': 'timeout=10, max=46',
+707 silly registry.get     connection: 'Keep-Alive' } ]
+708 silly addNameRange number 2 { name: 'gulp-minify-html',
+708 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+708 silly addNameRange   hasData: true }
+709 silly addNameRange versions [ 'gulp-minify-html',
+709 silly addNameRange   [ '0.0.1',
+709 silly addNameRange     '0.1.0',
+709 silly addNameRange     '0.1.1',
+709 silly addNameRange     '0.1.2',
+709 silly addNameRange     '0.1.3',
+709 silly addNameRange     '0.1.4',
+709 silly addNameRange     '0.1.5',
+709 silly addNameRange     '0.1.6',
+709 silly addNameRange     '0.1.7',
+709 silly addNameRange     '0.1.8',
+709 silly addNameRange     '1.0.0',
+709 silly addNameRange     '1.0.1',
+709 silly addNameRange     '1.0.2' ] ]
+710 verbose addNamed [ 'gulp-minify-html', '1.0.2' ]
+711 verbose addNamed [ '1.0.2', '1.0.2' ]
+712 silly lockFile 0f6b5e24-gulp-minify-html-1-0-2 gulp-minify-html@1.0.2
+713 verbose lock gulp-minify-html@1.0.2 /home/juanfgr/.npm/0f6b5e24-gulp-minify-html-1-0-2.lock
+714 http 200 https://registry.npmjs.org/gulp
+715 silly registry.get cb [ 200,
+715 silly registry.get   { date: 'Tue, 14 Apr 2015 15:44:59 GMT',
+715 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+715 silly registry.get     etag: '"8PHPU94QFZOTJ9GUK1VZ5TEI1"',
+715 silly registry.get     'content-type': 'application/json',
+715 silly registry.get     'cache-control': 'max-age=60',
+715 silly registry.get     'content-length': '100758',
+715 silly registry.get     'accept-ranges': 'bytes',
+715 silly registry.get     via: '1.1 varnish',
+715 silly registry.get     age: '38',
+715 silly registry.get     'x-served-by': 'cache-lcy1120-LCY',
+715 silly registry.get     'x-cache': 'HIT',
+715 silly registry.get     'x-cache-hits': '1',
+715 silly registry.get     'x-timer': 'S1429026299.945207,VS0,VE0',
+715 silly registry.get     vary: 'Accept',
+715 silly registry.get     'keep-alive': 'timeout=10, max=47',
+715 silly registry.get     connection: 'Keep-Alive' } ]
+716 silly lockFile 9fcb8adc--html-gulp-minify-html-1-0-2-tgz https://registry.npmjs.org/gulp-minify-html/-/gulp-minify-html-1.0.2.tgz
+717 verbose lock https://registry.npmjs.org/gulp-minify-html/-/gulp-minify-html-1.0.2.tgz /home/juanfgr/.npm/9fcb8adc--html-gulp-minify-html-1-0-2-tgz.lock
+718 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-minify-html/-/gulp-minify-html-1.0.2.tgz',
+718 verbose addRemoteTarball   'dc2125f7eeb9ad8e9f2988998b118e2c4692c2cd' ]
+719 silly addNameRange number 2 { name: 'gulp', range: '>=3.8.11-0 <4.0.0-0', hasData: true }
+720 silly addNameRange versions [ 'gulp',
+720 silly addNameRange   [ '0.0.1',
+720 silly addNameRange     '0.0.2',
+720 silly addNameRange     '0.0.3',
+720 silly addNameRange     '0.0.4',
+720 silly addNameRange     '0.0.5',
+720 silly addNameRange     '0.0.7',
+720 silly addNameRange     '0.0.8',
+720 silly addNameRange     '0.0.9',
+720 silly addNameRange     '0.1.0',
+720 silly addNameRange     '0.2.0',
+720 silly addNameRange     '1.0.0',
+720 silly addNameRange     '1.1.0',
+720 silly addNameRange     '1.2.0',
+720 silly addNameRange     '1.2.1',
+720 silly addNameRange     '2.0.0',
+720 silly addNameRange     '2.0.1',
+720 silly addNameRange     '2.1.0',
+720 silly addNameRange     '2.2.0',
+720 silly addNameRange     '2.3.0',
+720 silly addNameRange     '2.4.0',
+720 silly addNameRange     '2.4.1',
+720 silly addNameRange     '2.6.0',
+720 silly addNameRange     '2.6.1',
+720 silly addNameRange     '2.7.0',
+720 silly addNameRange     '3.0.0',
+720 silly addNameRange     '3.1.1',
+720 silly addNameRange     '3.1.2',
+720 silly addNameRange     '3.1.3',
+720 silly addNameRange     '3.1.4',
+720 silly addNameRange     '3.2.0',
+720 silly addNameRange     '3.2.1',
+720 silly addNameRange     '3.2.2',
+720 silly addNameRange     '3.2.3',
+720 silly addNameRange     '3.2.4',
+720 silly addNameRange     '3.2.5',
+720 silly addNameRange     '3.3.0',
+720 silly addNameRange     '3.3.1',
+720 silly addNameRange     '3.3.2',
+720 silly addNameRange     '3.3.4',
+720 silly addNameRange     '3.4.0',
+720 silly addNameRange     '3.5.0',
+720 silly addNameRange     '3.5.1',
+720 silly addNameRange     '3.5.2',
+720 silly addNameRange     '3.5.5',
+720 silly addNameRange     '3.5.6',
+720 silly addNameRange     '3.6.0',
+720 silly addNameRange     '3.6.1',
+720 silly addNameRange     '3.6.2',
+720 silly addNameRange     '3.7.0',
+720 silly addNameRange     '3.8.0',
+720 silly addNameRange     '3.8.1',
+720 silly addNameRange     '3.8.2',
+720 silly addNameRange     '3.8.3',
+720 silly addNameRange     '3.8.4',
+720 silly addNameRange     '3.8.5',
+720 silly addNameRange     '3.8.6',
+720 silly addNameRange     '3.8.7',
+720 silly addNameRange     '3.8.8',
+720 silly addNameRange     '3.8.9',
+720 silly addNameRange     '3.8.10',
+720 silly addNameRange     '3.8.11' ] ]
+721 verbose addNamed [ 'gulp', '3.8.11' ]
+722 verbose addNamed [ '3.8.11', '3.8.11' ]
+723 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+724 verbose lock gulp@3.8.11 /home/juanfgr/.npm/3d31ec08-gulp-3-8-11.lock
+725 info retry fetch attempt 1 at 16:45:00
+726 verbose fetch to= /tmp/npm-3658-kSWAr3nP/registry.npmjs.org/gulp-minify-html/-/gulp-minify-html-1.0.2.tgz
+727 http GET https://registry.npmjs.org/gulp-minify-html/-/gulp-minify-html-1.0.2.tgz
+728 http 200 https://registry.npmjs.org/gulp-uglify
+729 silly registry.get cb [ 200,
+729 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+729 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+729 silly registry.get     etag: '"EUU2QK4WRF829BHGRV5UDEH4T"',
+729 silly registry.get     'content-type': 'application/json',
+729 silly registry.get     'cache-control': 'max-age=60',
+729 silly registry.get     'content-length': '25496',
+729 silly registry.get     'accept-ranges': 'bytes',
+729 silly registry.get     via: '1.1 varnish',
+729 silly registry.get     age: '0',
+729 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+729 silly registry.get     'x-cache': 'HIT',
+729 silly registry.get     'x-cache-hits': '1',
+729 silly registry.get     'x-timer': 'S1429026300.111861,VS0,VE162',
+729 silly registry.get     vary: 'Accept',
+729 silly registry.get     'keep-alive': 'timeout=10, max=48',
+729 silly registry.get     connection: 'Keep-Alive' } ]
+730 silly addNameRange number 2 { name: 'gulp-uglify',
+730 silly addNameRange   range: '>=1.1.0-0 <2.0.0-0',
+730 silly addNameRange   hasData: true }
+731 silly addNameRange versions [ 'gulp-uglify',
+731 silly addNameRange   [ '0.0.1',
+731 silly addNameRange     '0.0.3',
+731 silly addNameRange     '0.0.4',
+731 silly addNameRange     '0.1.0',
+731 silly addNameRange     '0.2.0',
+731 silly addNameRange     '0.2.1',
+731 silly addNameRange     '0.3.0',
+731 silly addNameRange     '0.3.1',
+731 silly addNameRange     '0.3.2',
+731 silly addNameRange     '1.0.0-0',
+731 silly addNameRange     '1.0.0',
+731 silly addNameRange     '1.0.1',
+731 silly addNameRange     '1.0.2',
+731 silly addNameRange     '1.1.0',
+731 silly addNameRange     '1.2.0' ] ]
+732 verbose addNamed [ 'gulp-uglify', '1.2.0' ]
+733 verbose addNamed [ '1.2.0', '1.2.0' ]
+734 silly lockFile 9d272576-gulp-uglify-1-2-0 gulp-uglify@1.2.0
+735 verbose lock gulp-uglify@1.2.0 /home/juanfgr/.npm/9d272576-gulp-uglify-1-2-0.lock
+736 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+737 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+738 silly lockFile 3156ea88-gulp-3-8-11 gulp@^3.8.11
+739 silly lockFile 3156ea88-gulp-3-8-11 gulp@^3.8.11
+740 silly lockFile a22faf16-ulp-uglify-gulp-uglify-1-2-0-tgz https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.2.0.tgz
+741 verbose lock https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.2.0.tgz /home/juanfgr/.npm/a22faf16-ulp-uglify-gulp-uglify-1-2-0-tgz.lock
+742 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.2.0.tgz',
+742 verbose addRemoteTarball   '760a86a5cf68453e0036130763dde2952093e38b' ]
+743 info retry fetch attempt 1 at 16:45:00
+744 verbose fetch to= /tmp/npm-3658-kSWAr3nP/registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.2.0.tgz
+745 http GET https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.2.0.tgz
+746 http 200 https://registry.npmjs.org/gulp-shell
+747 silly registry.get cb [ 200,
+747 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+747 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+747 silly registry.get     etag: '"932MDTPHS7MJ38313KHXNG3SJ"',
+747 silly registry.get     'content-type': 'application/json',
+747 silly registry.get     'cache-control': 'max-age=60',
+747 silly registry.get     'content-length': '22349',
+747 silly registry.get     'accept-ranges': 'bytes',
+747 silly registry.get     via: '1.1 varnish',
+747 silly registry.get     age: '35',
+747 silly registry.get     'x-served-by': 'cache-lcy1123-LCY',
+747 silly registry.get     'x-cache': 'HIT',
+747 silly registry.get     'x-cache-hits': '1',
+747 silly registry.get     'x-timer': 'S1429026300.299355,VS0,VE0',
+747 silly registry.get     vary: 'Accept',
+747 silly registry.get     'keep-alive': 'timeout=10, max=45',
+747 silly registry.get     connection: 'Keep-Alive' } ]
+748 silly addNameRange number 2 { name: 'gulp-shell', range: '*', hasData: true }
+749 silly addNameRange versions [ 'gulp-shell',
+749 silly addNameRange   [ '0.1.0',
+749 silly addNameRange     '0.2.0',
+749 silly addNameRange     '0.2.1',
+749 silly addNameRange     '0.2.2',
+749 silly addNameRange     '0.2.3',
+749 silly addNameRange     '0.2.4',
+749 silly addNameRange     '0.2.5',
+749 silly addNameRange     '0.2.7',
+749 silly addNameRange     '0.2.8',
+749 silly addNameRange     '0.2.9',
+749 silly addNameRange     '0.2.10',
+749 silly addNameRange     '0.2.11',
+749 silly addNameRange     '0.3.0',
+749 silly addNameRange     '0.4.0' ] ]
+750 verbose addNamed [ 'gulp-shell', '0.4.0' ]
+751 verbose addNamed [ '0.4.0', '0.4.0' ]
+752 silly lockFile 3172c7d3-gulp-shell-0-4-0 gulp-shell@0.4.0
+753 verbose lock gulp-shell@0.4.0 /home/juanfgr/.npm/3172c7d3-gulp-shell-0-4-0.lock
+754 http 200 https://registry.npmjs.org/supertest
+755 silly registry.get cb [ 200,
+755 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+755 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+755 silly registry.get     etag: '"49EG8DS88HTCY73JYPCO6Z84F"',
+755 silly registry.get     'content-type': 'application/json',
+755 silly registry.get     'cache-control': 'max-age=60',
+755 silly registry.get     'content-length': '33320',
+755 silly registry.get     'accept-ranges': 'bytes',
+755 silly registry.get     via: '1.1 varnish',
+755 silly registry.get     age: '0',
+755 silly registry.get     'x-served-by': 'cache-lcy1128-LCY',
+755 silly registry.get     'x-cache': 'HIT',
+755 silly registry.get     'x-cache-hits': '1',
+755 silly registry.get     'x-timer': 'S1429026299.817467,VS0,VE625',
+755 silly registry.get     vary: 'Accept',
+755 silly registry.get     'keep-alive': 'timeout=10, max=50',
+755 silly registry.get     connection: 'Keep-Alive' } ]
+756 silly lockFile 3172c7d3-gulp-shell-0-4-0 gulp-shell@0.4.0
+757 silly lockFile 3172c7d3-gulp-shell-0-4-0 gulp-shell@0.4.0
+758 silly lockFile 5093d701-gulp-shell gulp-shell@*
+759 silly lockFile 5093d701-gulp-shell gulp-shell@*
+760 silly addNameRange number 2 { name: 'supertest', range: '*', hasData: true }
+761 silly addNameRange versions [ 'supertest',
+761 silly addNameRange   [ '0.0.1',
+761 silly addNameRange     '0.1.0',
+761 silly addNameRange     '0.1.1',
+761 silly addNameRange     '0.1.2',
+761 silly addNameRange     '0.2.0',
+761 silly addNameRange     '0.3.0',
+761 silly addNameRange     '0.3.1',
+761 silly addNameRange     '0.4.0',
+761 silly addNameRange     '0.4.1',
+761 silly addNameRange     '0.4.2',
+761 silly addNameRange     '0.5.0',
+761 silly addNameRange     '0.5.1',
+761 silly addNameRange     '0.6.0',
+761 silly addNameRange     '0.6.1',
+761 silly addNameRange     '0.7.0',
+761 silly addNameRange     '0.7.1',
+761 silly addNameRange     '0.8.0',
+761 silly addNameRange     '0.8.1',
+761 silly addNameRange     '0.8.2',
+761 silly addNameRange     '0.8.3',
+761 silly addNameRange     '0.9.0',
+761 silly addNameRange     '0.9.1',
+761 silly addNameRange     '0.9.2',
+761 silly addNameRange     '0.10.0',
+761 silly addNameRange     '0.11.0',
+761 silly addNameRange     '0.12.0',
+761 silly addNameRange     '0.12.1',
+761 silly addNameRange     '0.13.0',
+761 silly addNameRange     '0.14.0',
+761 silly addNameRange     '0.15.0' ] ]
+762 verbose addNamed [ 'supertest', '0.15.0' ]
+763 verbose addNamed [ '0.15.0', '0.15.0' ]
+764 silly lockFile afa2c123-supertest-0-15-0 supertest@0.15.0
+765 verbose lock supertest@0.15.0 /home/juanfgr/.npm/afa2c123-supertest-0-15-0.lock
+766 silly lockFile 16745018-g-supertest-supertest-0-15-0-tgz https://registry.npmjs.org/supertest/-/supertest-0.15.0.tgz
+767 verbose lock https://registry.npmjs.org/supertest/-/supertest-0.15.0.tgz /home/juanfgr/.npm/16745018-g-supertest-supertest-0-15-0-tgz.lock
+768 verbose addRemoteTarball [ 'https://registry.npmjs.org/supertest/-/supertest-0.15.0.tgz',
+768 verbose addRemoteTarball   '86118695de4be58869b3ee94c45e1d084ca7fac5' ]
+769 info retry fetch attempt 1 at 16:45:00
+770 verbose fetch to= /tmp/npm-3658-kSWAr3nP/registry.npmjs.org/supertest/-/supertest-0.15.0.tgz
+771 http GET https://registry.npmjs.org/supertest/-/supertest-0.15.0.tgz
+772 http 200 https://registry.npmjs.org/gulp-minify-html/-/gulp-minify-html-1.0.2.tgz
+773 http 200 https://registry.npmjs.org/gulp-karma
+774 silly registry.get cb [ 200,
+774 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+774 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+774 silly registry.get     etag: '"9UHF9RBXLAOQDGE77YDWZ91O9"',
+774 silly registry.get     'content-type': 'application/json',
+774 silly registry.get     'cache-control': 'max-age=60',
+774 silly registry.get     'content-length': '7154',
+774 silly registry.get     'accept-ranges': 'bytes',
+774 silly registry.get     via: '1.1 varnish',
+774 silly registry.get     age: '0',
+774 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+774 silly registry.get     'x-cache': 'HIT',
+774 silly registry.get     'x-cache-hits': '1',
+774 silly registry.get     'x-timer': 'S1429026300.402363,VS0,VE169',
+774 silly registry.get     vary: 'Accept',
+774 silly registry.get     'keep-alive': 'timeout=10, max=47',
+774 silly registry.get     connection: 'Keep-Alive' } ]
+775 silly addNameRange number 2 { name: 'gulp-karma', range: '*', hasData: true }
+776 silly addNameRange versions [ 'gulp-karma', [ '0.0.1', '0.0.2', '0.0.3', '0.0.4' ] ]
+777 verbose addNamed [ 'gulp-karma', '0.0.4' ]
+778 verbose addNamed [ '0.0.4', '0.0.4' ]
+779 silly lockFile d909131b-gulp-karma-0-0-4 gulp-karma@0.0.4
+780 verbose lock gulp-karma@0.0.4 /home/juanfgr/.npm/d909131b-gulp-karma-0-0-4.lock
+781 silly lockFile 9fcb8adc--html-gulp-minify-html-1-0-2-tgz https://registry.npmjs.org/gulp-minify-html/-/gulp-minify-html-1.0.2.tgz
+782 silly lockFile 9fcb8adc--html-gulp-minify-html-1-0-2-tgz https://registry.npmjs.org/gulp-minify-html/-/gulp-minify-html-1.0.2.tgz
+783 silly lockFile 0f6b5e24-gulp-minify-html-1-0-2 gulp-minify-html@1.0.2
+784 silly lockFile 0f6b5e24-gulp-minify-html-1-0-2 gulp-minify-html@1.0.2
+785 silly lockFile 44f1f91f-gulp-minify-html-1-0-0 gulp-minify-html@^1.0.0
+786 silly lockFile 44f1f91f-gulp-minify-html-1-0-0 gulp-minify-html@^1.0.0
+787 silly lockFile d909131b-gulp-karma-0-0-4 gulp-karma@0.0.4
+788 silly lockFile d909131b-gulp-karma-0-0-4 gulp-karma@0.0.4
+789 silly lockFile fa7e6443-gulp-karma gulp-karma@*
+790 silly lockFile fa7e6443-gulp-karma gulp-karma@*
+791 http 200 https://registry.npmjs.org/karma-firefox-launcher
+792 silly registry.get cb [ 200,
+792 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+792 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+792 silly registry.get     etag: '"EMGF88GTL8LGEVEXY38TWCBP7"',
+792 silly registry.get     'content-type': 'application/json',
+792 silly registry.get     'cache-control': 'max-age=60',
+792 silly registry.get     'content-length': '12127',
+792 silly registry.get     'accept-ranges': 'bytes',
+792 silly registry.get     via: '1.1 varnish',
+792 silly registry.get     age: '20',
+792 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+792 silly registry.get     'x-cache': 'HIT',
+792 silly registry.get     'x-cache-hits': '1',
+792 silly registry.get     'x-timer': 'S1429026300.634620,VS0,VE0',
+792 silly registry.get     vary: 'Accept',
+792 silly registry.get     'keep-alive': 'timeout=10, max=46',
+792 silly registry.get     connection: 'Keep-Alive' } ]
+793 http 200 https://registry.npmjs.org/karma-phantomjs-launcher
+794 silly registry.get cb [ 200,
+794 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+794 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+794 silly registry.get     etag: '"8SS6P4R8XMW8A005XSDPMECFM"',
+794 silly registry.get     'content-type': 'application/json',
+794 silly registry.get     'cache-control': 'max-age=60',
+794 silly registry.get     'content-length': '12854',
+794 silly registry.get     'accept-ranges': 'bytes',
+794 silly registry.get     via: '1.1 varnish',
+794 silly registry.get     age: '21',
+794 silly registry.get     'x-served-by': 'cache-lcy1123-LCY',
+794 silly registry.get     'x-cache': 'HIT',
+794 silly registry.get     'x-cache-hits': '1',
+794 silly registry.get     'x-timer': 'S1429026300.507963,VS0,VE0',
+794 silly registry.get     vary: 'Accept',
+794 silly registry.get     'keep-alive': 'timeout=10, max=44',
+794 silly registry.get     connection: 'Keep-Alive' } ]
+795 silly addNameRange number 2 { name: 'karma-firefox-launcher', range: '*', hasData: true }
+796 silly addNameRange versions [ 'karma-firefox-launcher',
+796 silly addNameRange   [ '0.0.1',
+796 silly addNameRange     '0.0.2',
+796 silly addNameRange     '0.0.3',
+796 silly addNameRange     '0.1.0',
+796 silly addNameRange     '0.1.1',
+796 silly addNameRange     '0.1.2',
+796 silly addNameRange     '0.1.3',
+796 silly addNameRange     '0.1.4' ] ]
+797 verbose addNamed [ 'karma-firefox-launcher', '0.1.4' ]
+798 verbose addNamed [ '0.1.4', '0.1.4' ]
+799 silly lockFile 3792356a-karma-firefox-launcher-0-1-4 karma-firefox-launcher@0.1.4
+800 verbose lock karma-firefox-launcher@0.1.4 /home/juanfgr/.npm/3792356a-karma-firefox-launcher-0-1-4.lock
+801 silly addNameRange number 2 { name: 'karma-phantomjs-launcher', range: '*', hasData: true }
+802 silly addNameRange versions [ 'karma-phantomjs-launcher',
+802 silly addNameRange   [ '0.0.1',
+802 silly addNameRange     '0.0.2',
+802 silly addNameRange     '0.0.3',
+802 silly addNameRange     '0.1.0',
+802 silly addNameRange     '0.1.1',
+802 silly addNameRange     '0.1.2',
+802 silly addNameRange     '0.1.3',
+802 silly addNameRange     '0.1.4' ] ]
+803 verbose addNamed [ 'karma-phantomjs-launcher', '0.1.4' ]
+804 verbose addNamed [ '0.1.4', '0.1.4' ]
+805 silly lockFile 5b4ecc13-karma-phantomjs-launcher-0-1-4 karma-phantomjs-launcher@0.1.4
+806 verbose lock karma-phantomjs-launcher@0.1.4 /home/juanfgr/.npm/5b4ecc13-karma-phantomjs-launcher-0-1-4.lock
+807 http 200 https://registry.npmjs.org/express
+808 silly registry.get cb [ 200,
+808 silly registry.get   { date: 'Tue, 14 Apr 2015 15:44:59 GMT',
+808 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+808 silly registry.get     etag: '"API6I63SK1LNUV0SQTM3UXEBQ"',
+808 silly registry.get     'content-type': 'application/json',
+808 silly registry.get     'cache-control': 'max-age=60',
+808 silly registry.get     'content-length': '492243',
+808 silly registry.get     'accept-ranges': 'bytes',
+808 silly registry.get     via: '1.1 varnish',
+808 silly registry.get     age: '40',
+808 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+808 silly registry.get     'x-cache': 'HIT',
+808 silly registry.get     'x-cache-hits': '2',
+808 silly registry.get     'x-timer': 'S1429026299.263589,VS0,VE0',
+808 silly registry.get     vary: 'Accept',
+808 silly registry.get     'keep-alive': 'timeout=10, max=49',
+808 silly registry.get     connection: 'Keep-Alive' } ]
+809 silly addNameRange number 2 { name: 'express', range: '*', hasData: true }
+810 silly addNameRange versions [ 'express',
+810 silly addNameRange   [ '0.14.0',
+810 silly addNameRange     '0.14.1',
+810 silly addNameRange     '1.0.0',
+810 silly addNameRange     '1.0.1',
+810 silly addNameRange     '1.0.2',
+810 silly addNameRange     '1.0.3',
+810 silly addNameRange     '1.0.4',
+810 silly addNameRange     '1.0.5',
+810 silly addNameRange     '1.0.6',
+810 silly addNameRange     '1.0.7',
+810 silly addNameRange     '1.0.8',
+810 silly addNameRange     '2.0.0',
+810 silly addNameRange     '2.1.0',
+810 silly addNameRange     '2.1.1',
+810 silly addNameRange     '2.2.0',
+810 silly addNameRange     '2.2.1',
+810 silly addNameRange     '2.2.2',
+810 silly addNameRange     '2.3.0',
+810 silly addNameRange     '2.3.1',
+810 silly addNameRange     '2.3.2',
+810 silly addNameRange     '2.3.3',
+810 silly addNameRange     '2.3.4',
+810 silly addNameRange     '2.3.5',
+810 silly addNameRange     '2.3.6',
+810 silly addNameRange     '2.3.7',
+810 silly addNameRange     '2.3.8',
+810 silly addNameRange     '2.3.9',
+810 silly addNameRange     '2.3.10',
+810 silly addNameRange     '2.3.11',
+810 silly addNameRange     '2.3.12',
+810 silly addNameRange     '2.4.0',
+810 silly addNameRange     '2.4.1',
+810 silly addNameRange     '2.4.2',
+810 silly addNameRange     '2.4.3',
+810 silly addNameRange     '2.4.4',
+810 silly addNameRange     '2.4.5',
+810 silly addNameRange     '2.4.6',
+810 silly addNameRange     '2.4.7',
+810 silly addNameRange     '2.5.0',
+810 silly addNameRange     '2.5.1',
+810 silly addNameRange     '2.5.2',
+810 silly addNameRange     '2.5.3',
+810 silly addNameRange     '2.5.4',
+810 silly addNameRange     '2.5.5',
+810 silly addNameRange     '2.5.6',
+810 silly addNameRange     '2.5.7',
+810 silly addNameRange     '2.5.8',
+810 silly addNameRange     '2.5.9',
+810 silly addNameRange     '2.5.10',
+810 silly addNameRange     '2.5.11',
+810 silly addNameRange     '3.0.0',
+810 silly addNameRange     '3.0.1',
+810 silly addNameRange     '3.0.2',
+810 silly addNameRange     '3.0.3',
+810 silly addNameRange     '3.0.4',
+810 silly addNameRange     '3.0.5',
+810 silly addNameRange     '3.0.6',
+810 silly addNameRange     '3.1.0',
+810 silly addNameRange     '3.1.1',
+810 silly addNameRange     '3.1.2',
+810 silly addNameRange     '3.2.0',
+810 silly addNameRange     '3.2.1',
+810 silly addNameRange     '3.2.2',
+810 silly addNameRange     '3.2.3',
+810 silly addNameRange     '3.2.4',
+810 silly addNameRange     '3.2.5',
+810 silly addNameRange     '3.2.6',
+810 silly addNameRange     '3.3.0',
+810 silly addNameRange     '3.3.1',
+810 silly addNameRange     '3.3.2',
+810 silly addNameRange     '3.3.3',
+810 silly addNameRange     '3.3.4',
+810 silly addNameRange     '3.3.5',
+810 silly addNameRange     '3.3.6',
+810 silly addNameRange     '1.0.0-beta',
+810 silly addNameRange     '1.0.0-beta2',
+810 silly addNameRange     '1.0.0-rc',
+810 silly addNameRange     '1.0.0-rc2',
+810 silly addNameRange     '1.0.0-rc3',
+810 silly addNameRange     '1.0.0-rc4',
+810 silly addNameRange     '2.0.0-beta',
+810 silly addNameRange     '2.0.0-beta2',
+810 silly addNameRange     '2.0.0-beta3',
+810 silly addNameRange     '2.0.0-rc',
+810 silly addNameRange     '2.0.0-rc2',
+810 silly addNameRange     '2.0.0-rc3',
+810 silly addNameRange     '3.0.0-alpha1',
+810 silly addNameRange     '3.0.0-alpha2',
+810 silly addNameRange     '3.0.0-alpha3',
+810 silly addNameRange     '3.0.0-alpha4',
+810 silly addNameRange     '3.0.0-alpha5',
+810 silly addNameRange     '3.0.0-beta1',
+810 silly addNameRange     '3.0.0-beta2',
+810 silly addNameRange     '3.0.0-beta3',
+810 silly addNameRange     '3.0.0-beta4',
+810 silly addNameRange     '3.0.0-beta6',
+810 silly addNameRange     '3.0.0-beta7',
+810 silly addNameRange     '3.0.0-rc1',
+810 silly addNameRange     '3.0.0-rc2',
+810 silly addNameRange     '3.0.0-rc3',
+810 silly addNameRange     '3.0.0-rc4',
+810 silly addNameRange     '3.0.0-rc5',
+810 silly addNameRange     '3.3.7',
+810 silly addNameRange     '3.3.8',
+810 silly addNameRange     '3.4.0',
+810 silly addNameRange     '3.4.1',
+810 silly addNameRange     '3.4.2',
+810 silly addNameRange     '3.4.3',
+810 silly addNameRange     '3.4.4',
+810 silly addNameRange     '3.4.5',
+810 silly addNameRange     '3.4.6',
+810 silly addNameRange     '3.4.7',
+810 silly addNameRange     '3.4.8',
+810 silly addNameRange     '4.0.0-rc1',
+810 silly addNameRange     '4.0.0-rc2',
+810 silly addNameRange     '3.5.0',
+810 silly addNameRange     '4.0.0-rc3',
+810 silly addNameRange     '4.0.0-rc4',
+810 silly addNameRange     '3.5.1',
+810 silly addNameRange     '4.0.0',
+810 silly addNameRange     '3.5.2',
+810 silly addNameRange     '4.1.0',
+810 silly addNameRange     '4.1.1',
+810 silly addNameRange     '3.5.3',
+810 silly addNameRange     '4.1.2',
+810 silly addNameRange     '3.6.0',
+810 silly addNameRange     '4.2.0',
+810 silly addNameRange     '3.7.0',
+810 silly addNameRange     '3.8.0',
+810 silly addNameRange     '4.3.0',
+810 silly addNameRange     '4.3.1',
+810 silly addNameRange     '3.8.1',
+810 silly addNameRange     '4.3.2',
+810 silly addNameRange     '3.9.0',
+810 silly addNameRange     '4.4.0',
+810 silly addNameRange     '4.4.1',
+810 silly addNameRange     '3.10.0',
+810 silly addNameRange     '3.10.1',
+810 silly addNameRange     '3.10.2',
+810 silly addNameRange     '3.10.3',
+810 silly addNameRange     '3.10.4',
+810 silly addNameRange     '4.4.2',
+810 silly addNameRange     '3.10.5',
+810 silly addNameRange     '4.4.3',
+810 silly addNameRange     '3.11.0',
+810 silly addNameRange     '4.4.4',
+810 silly addNameRange     '3.12.0',
+810 silly addNameRange     '3.12.1',
+810 silly addNameRange     '4.4.5',
+810 silly addNameRange     '3.13.0',
+810 silly addNameRange     '4.5.0',
+810 silly addNameRange     '4.5.1',
+810 silly addNameRange     '3.14.0',
+810 silly addNameRange     '4.6.0',
+810 silly addNameRange     '4.6.1',
+810 silly addNameRange     '3.15.0',
+810 silly addNameRange     '4.7.0',
+810 silly addNameRange     '3.15.1',
+810 silly addNameRange     '4.7.1',
+810 silly addNameRange     '3.15.2',
+810 silly addNameRange     '4.7.2',
+810 silly addNameRange     '4.7.3',
+810 silly addNameRange     '3.15.3',
+810 silly addNameRange     '4.7.4',
+810 silly addNameRange     '3.16.0',
+810 silly addNameRange     '4.8.0',
+810 silly addNameRange     '3.16.1',
+810 silly addNameRange     '4.8.1',
+810 silly addNameRange     '3.16.2',
+810 silly addNameRange     '4.8.2',
+810 silly addNameRange     '3.16.3',
+810 silly addNameRange     '3.16.4',
+810 silly addNameRange     '4.8.3',
+810 silly addNameRange     '3.16.5',
+810 silly addNameRange     '3.16.6',
+810 silly addNameRange     '4.8.4',
+810 silly addNameRange     '3.16.7',
+810 silly addNameRange     '4.8.5',
+810 silly addNameRange     '3.16.8',
+810 silly addNameRange     '4.8.6',
+810 silly addNameRange     '3.16.9',
+810 silly addNameRange     '4.8.7',
+810 silly addNameRange     '3.16.10',
+810 silly addNameRange     '4.8.8',
+810 silly addNameRange     '3.17.0',
+810 silly addNameRange     '3.17.1',
+810 silly addNameRange     '4.9.0',
+810 silly addNameRange     '3.17.2',
+810 silly addNameRange     '4.9.1',
+810 silly addNameRange     '4.9.2',
+810 silly addNameRange     '3.17.3',
+810 silly addNameRange     '4.9.3',
+810 silly addNameRange     '3.17.4',
+810 silly addNameRange     '4.9.4',
+810 silly addNameRange     '3.17.5',
+810 silly addNameRange     '4.9.5',
+810 silly addNameRange     '3.17.6',
+810 silly addNameRange     '3.17.7',
+810 silly addNameRange     '4.9.6',
+810 silly addNameRange     '4.9.7',
+810 silly addNameRange     '3.17.8',
+810 silly addNameRange     '4.9.8',
+810 silly addNameRange     '3.18.0',
+810 silly addNameRange     '3.18.1',
+810 silly addNameRange     '4.10.0',
+810 silly addNameRange     '3.18.2',
+810 silly addNameRange     '4.10.1',
+810 silly addNameRange     '5.0.0-alpha.1',
+810 silly addNameRange     '3.18.3',
+810 silly addNameRange     '4.10.2',
+810 silly addNameRange     '3.18.4',
+810 silly addNameRange     '4.10.3',
+810 silly addNameRange     '4.10.4',
+810 silly addNameRange     '4.10.5',
+810 silly addNameRange     '3.18.5',
+810 silly addNameRange     '3.18.6',
+810 silly addNameRange     '4.10.6',
+810 silly addNameRange     '4.10.7',
+810 silly addNameRange     '3.19.0',
+810 silly addNameRange     '4.10.8',
+810 silly addNameRange     '4.11.0',
+810 silly addNameRange     '3.19.1',
+810 silly addNameRange     '4.11.1',
+810 silly addNameRange     '3.19.2',
+810 silly addNameRange     '4.11.2',
+810 silly addNameRange     '3.20.0',
+810 silly addNameRange     '4.12.0',
+810 silly addNameRange     '3.20.1',
+810 silly addNameRange     '4.12.1',
+810 silly addNameRange     '4.12.2',
+810 silly addNameRange     '3.20.2',
+810 silly addNameRange     '4.12.3' ] ]
+811 verbose addNamed [ 'express', '4.12.3' ]
+812 verbose addNamed [ '4.12.3', '4.12.3' ]
+813 silly lockFile 0b3fc563-express-4-12-3 express@4.12.3
+814 verbose lock express@4.12.3 /home/juanfgr/.npm/0b3fc563-express-4-12-3.lock
+815 silly lockFile 3792356a-karma-firefox-launcher-0-1-4 karma-firefox-launcher@0.1.4
+816 silly lockFile 3792356a-karma-firefox-launcher-0-1-4 karma-firefox-launcher@0.1.4
+817 silly lockFile 981535e0-karma-firefox-launcher karma-firefox-launcher@*
+818 silly lockFile 981535e0-karma-firefox-launcher karma-firefox-launcher@*
+819 silly lockFile c3db49de-s-org-express-express-4-12-3-tgz https://registry.npmjs.org/express/-/express-4.12.3.tgz
+820 verbose lock https://registry.npmjs.org/express/-/express-4.12.3.tgz /home/juanfgr/.npm/c3db49de-s-org-express-express-4-12-3-tgz.lock
+821 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-4.12.3.tgz',
+821 verbose addRemoteTarball   '6b9d94aec5ae03270d86d390c277a8c5a5ad0ee2' ]
+822 info retry fetch attempt 1 at 16:45:00
+823 verbose fetch to= /tmp/npm-3658-kSWAr3nP/registry.npmjs.org/express/-/express-4.12.3.tgz
+824 http GET https://registry.npmjs.org/express/-/express-4.12.3.tgz
+825 http 200 https://registry.npmjs.org/karma-chrome-launcher
+826 silly registry.get cb [ 200,
+826 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+826 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+826 silly registry.get     etag: '"7I6D66RLSE9NSP4ZEV9Z4FS85"',
+826 silly registry.get     'content-type': 'application/json',
+826 silly registry.get     'cache-control': 'max-age=60',
+826 silly registry.get     'content-length': '15180',
+826 silly registry.get     'accept-ranges': 'bytes',
+826 silly registry.get     via: '1.1 varnish',
+826 silly registry.get     age: '32',
+826 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+826 silly registry.get     'x-cache': 'HIT',
+826 silly registry.get     'x-cache-hits': '1',
+826 silly registry.get     'x-timer': 'S1429026300.699875,VS0,VE0',
+826 silly registry.get     vary: 'Accept',
+826 silly registry.get     'keep-alive': 'timeout=10, max=45',
+826 silly registry.get     connection: 'Keep-Alive' } ]
+827 silly lockFile 5b4ecc13-karma-phantomjs-launcher-0-1-4 karma-phantomjs-launcher@0.1.4
+828 silly lockFile 5b4ecc13-karma-phantomjs-launcher-0-1-4 karma-phantomjs-launcher@0.1.4
+829 silly lockFile eb87fc55-karma-phantomjs-launcher karma-phantomjs-launcher@*
+830 silly lockFile eb87fc55-karma-phantomjs-launcher karma-phantomjs-launcher@*
+831 silly addNameRange number 2 { name: 'karma-chrome-launcher', range: '*', hasData: true }
+832 silly addNameRange versions [ 'karma-chrome-launcher',
+832 silly addNameRange   [ '0.0.1',
+832 silly addNameRange     '0.0.2',
+832 silly addNameRange     '0.1.0',
+832 silly addNameRange     '0.1.1',
+832 silly addNameRange     '0.1.2',
+832 silly addNameRange     '0.1.3',
+832 silly addNameRange     '0.1.4',
+832 silly addNameRange     '0.1.5',
+832 silly addNameRange     '0.1.6',
+832 silly addNameRange     '0.1.7' ] ]
+833 verbose addNamed [ 'karma-chrome-launcher', '0.1.7' ]
+834 verbose addNamed [ '0.1.7', '0.1.7' ]
+835 silly lockFile ced0a4a4-karma-chrome-launcher-0-1-7 karma-chrome-launcher@0.1.7
+836 verbose lock karma-chrome-launcher@0.1.7 /home/juanfgr/.npm/ced0a4a4-karma-chrome-launcher-0-1-7.lock
+837 http 200 https://registry.npmjs.org/karma-jasmine
+838 silly registry.get cb [ 200,
+838 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+838 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+838 silly registry.get     etag: '"53I5UN1ZL9QI2KNSWL3HM2NRC"',
+838 silly registry.get     'content-type': 'application/json',
+838 silly registry.get     'cache-control': 'max-age=60',
+838 silly registry.get     'content-length': '31874',
+838 silly registry.get     'accept-ranges': 'bytes',
+838 silly registry.get     via: '1.1 varnish',
+838 silly registry.get     age: '23',
+838 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+838 silly registry.get     'x-cache': 'HIT',
+838 silly registry.get     'x-cache-hits': '1',
+838 silly registry.get     'x-timer': 'S1429026300.746881,VS0,VE0',
+838 silly registry.get     vary: 'Accept',
+838 silly registry.get     'keep-alive': 'timeout=10, max=48',
+838 silly registry.get     connection: 'Keep-Alive' } ]
+839 http 200 https://registry.npmjs.org/supertest/-/supertest-0.15.0.tgz
+840 http 200 https://registry.npmjs.org/karma-html2js-preprocessor
+841 silly registry.get cb [ 200,
+841 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+841 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+841 silly registry.get     etag: '"508OO5WL03Y63PNYU0U9BK7X7"',
+841 silly registry.get     'content-type': 'application/json',
+841 silly registry.get     'cache-control': 'max-age=60',
+841 silly registry.get     'content-length': '6196',
+841 silly registry.get     'accept-ranges': 'bytes',
+841 silly registry.get     via: '1.1 varnish',
+841 silly registry.get     age: '17',
+841 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+841 silly registry.get     'x-cache': 'HIT',
+841 silly registry.get     'x-cache-hits': '1',
+841 silly registry.get     'x-timer': 'S1429026300.820759,VS0,VE0',
+841 silly registry.get     vary: 'Accept',
+841 silly registry.get     'keep-alive': 'timeout=10, max=44',
+841 silly registry.get     connection: 'Keep-Alive' } ]
+842 silly lockFile 16745018-g-supertest-supertest-0-15-0-tgz https://registry.npmjs.org/supertest/-/supertest-0.15.0.tgz
+843 silly lockFile 16745018-g-supertest-supertest-0-15-0-tgz https://registry.npmjs.org/supertest/-/supertest-0.15.0.tgz
+844 silly lockFile afa2c123-supertest-0-15-0 supertest@0.15.0
+845 silly lockFile afa2c123-supertest-0-15-0 supertest@0.15.0
+846 silly addNameRange number 2 { name: 'karma-html2js-preprocessor', range: '*', hasData: true }
+847 silly addNameRange versions [ 'karma-html2js-preprocessor', [ '0.0.1', '0.0.2', '0.1.0' ] ]
+848 verbose addNamed [ 'karma-html2js-preprocessor', '0.1.0' ]
+849 verbose addNamed [ '0.1.0', '0.1.0' ]
+850 silly lockFile 2d2bfd7a-karma-html2js-preprocessor-0-1-0 karma-html2js-preprocessor@0.1.0
+851 verbose lock karma-html2js-preprocessor@0.1.0 /home/juanfgr/.npm/2d2bfd7a-karma-html2js-preprocessor-0-1-0.lock
+852 silly lockFile 3f72b6b7-supertest supertest@*
+853 silly lockFile 3f72b6b7-supertest supertest@*
+854 silly addNameRange number 2 { name: 'karma-jasmine',
+854 silly addNameRange   range: '>=0.3.5-0 <0.4.0-0',
+854 silly addNameRange   hasData: true }
+855 silly addNameRange versions [ 'karma-jasmine',
+855 silly addNameRange   [ '0.0.1',
+855 silly addNameRange     '0.0.2',
+855 silly addNameRange     '0.0.3',
+855 silly addNameRange     '0.1.0',
+855 silly addNameRange     '0.1.1',
+855 silly addNameRange     '0.1.2',
+855 silly addNameRange     '0.1.3',
+855 silly addNameRange     '0.1.4',
+855 silly addNameRange     '0.1.5',
+855 silly addNameRange     '0.2.0',
+855 silly addNameRange     '0.2.1',
+855 silly addNameRange     '0.2.2',
+855 silly addNameRange     '0.2.3',
+855 silly addNameRange     '0.3.0',
+855 silly addNameRange     '0.3.1',
+855 silly addNameRange     '0.3.2',
+855 silly addNameRange     '0.3.3',
+855 silly addNameRange     '0.3.4',
+855 silly addNameRange     '0.3.5' ] ]
+856 verbose addNamed [ 'karma-jasmine', '0.3.5' ]
+857 verbose addNamed [ '0.3.5', '0.3.5' ]
+858 silly lockFile b510234b-karma-jasmine-0-3-5 karma-jasmine@0.3.5
+859 verbose lock karma-jasmine@0.3.5 /home/juanfgr/.npm/b510234b-karma-jasmine-0-3-5.lock
+860 http 200 https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.2.0.tgz
+861 silly lockFile ced0a4a4-karma-chrome-launcher-0-1-7 karma-chrome-launcher@0.1.7
+862 silly lockFile ced0a4a4-karma-chrome-launcher-0-1-7 karma-chrome-launcher@0.1.7
+863 silly lockFile 436adad2-karma-chrome-launcher karma-chrome-launcher@*
+864 silly lockFile 436adad2-karma-chrome-launcher karma-chrome-launcher@*
+865 silly lockFile 2d2bfd7a-karma-html2js-preprocessor-0-1-0 karma-html2js-preprocessor@0.1.0
+866 silly lockFile 2d2bfd7a-karma-html2js-preprocessor-0-1-0 karma-html2js-preprocessor@0.1.0
+867 silly lockFile 30ba7a84-karma-html2js-preprocessor karma-html2js-preprocessor@*
+868 silly lockFile 30ba7a84-karma-html2js-preprocessor karma-html2js-preprocessor@*
+869 silly lockFile b510234b-karma-jasmine-0-3-5 karma-jasmine@0.3.5
+870 silly lockFile b510234b-karma-jasmine-0-3-5 karma-jasmine@0.3.5
+871 silly lockFile b0acc008-karma-jasmine-0-3-5 karma-jasmine@^0.3.5
+872 silly lockFile b0acc008-karma-jasmine-0-3-5 karma-jasmine@^0.3.5
+873 http 200 https://registry.npmjs.org/karma-mocha
+874 silly registry.get cb [ 200,
+874 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+874 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+874 silly registry.get     etag: '"1Z0OVSUEJY61BW851FHABBHWU"',
+874 silly registry.get     'content-type': 'application/json',
+874 silly registry.get     'cache-control': 'max-age=60',
+874 silly registry.get     'content-length': '24687',
+874 silly registry.get     'accept-ranges': 'bytes',
+874 silly registry.get     via: '1.1 varnish',
+874 silly registry.get     age: '0',
+874 silly registry.get     'x-served-by': 'cache-lcy1123-LCY',
+874 silly registry.get     'x-cache': 'HIT',
+874 silly registry.get     'x-cache-hits': '1',
+874 silly registry.get     'x-timer': 'S1429026300.701220,VS0,VE162',
+874 silly registry.get     vary: 'Accept',
+874 silly registry.get     'keep-alive': 'timeout=10, max=43',
+874 silly registry.get     connection: 'Keep-Alive' } ]
+875 silly addNameRange number 2 { name: 'karma-mocha', range: '*', hasData: true }
+876 silly addNameRange versions [ 'karma-mocha',
+876 silly addNameRange   [ '0.0.1',
+876 silly addNameRange     '0.0.2',
+876 silly addNameRange     '0.0.3',
+876 silly addNameRange     '0.0.4',
+876 silly addNameRange     '0.1.0',
+876 silly addNameRange     '0.1.1',
+876 silly addNameRange     '0.1.3',
+876 silly addNameRange     '0.1.4',
+876 silly addNameRange     '0.1.6',
+876 silly addNameRange     '0.1.7',
+876 silly addNameRange     '0.1.8',
+876 silly addNameRange     '0.1.9',
+876 silly addNameRange     '0.1.10' ] ]
+877 verbose addNamed [ 'karma-mocha', '0.1.10' ]
+878 verbose addNamed [ '0.1.10', '0.1.10' ]
+879 silly lockFile 60f7092d-karma-mocha-0-1-10 karma-mocha@0.1.10
+880 verbose lock karma-mocha@0.1.10 /home/juanfgr/.npm/60f7092d-karma-mocha-0-1-10.lock
+881 silly lockFile a22faf16-ulp-uglify-gulp-uglify-1-2-0-tgz https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.2.0.tgz
+882 silly lockFile a22faf16-ulp-uglify-gulp-uglify-1-2-0-tgz https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.2.0.tgz
+883 silly lockFile 9d272576-gulp-uglify-1-2-0 gulp-uglify@1.2.0
+884 silly lockFile 9d272576-gulp-uglify-1-2-0 gulp-uglify@1.2.0
+885 silly lockFile f336d083-gulp-uglify-1-1-0 gulp-uglify@^1.1.0
+886 silly lockFile f336d083-gulp-uglify-1-1-0 gulp-uglify@^1.1.0
+887 silly lockFile 60f7092d-karma-mocha-0-1-10 karma-mocha@0.1.10
+888 silly lockFile 60f7092d-karma-mocha-0-1-10 karma-mocha@0.1.10
+889 silly lockFile f47f521a-karma-mocha karma-mocha@*
+890 silly lockFile f47f521a-karma-mocha karma-mocha@*
+891 http 200 https://registry.npmjs.org/node-static
+892 silly registry.get cb [ 200,
+892 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+892 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+892 silly registry.get     etag: '"4FIYYG0R90FDEUZ7OQ3Y5R6RG"',
+892 silly registry.get     'content-type': 'application/json',
+892 silly registry.get     'cache-control': 'max-age=60',
+892 silly registry.get     'content-length': '31588',
+892 silly registry.get     'accept-ranges': 'bytes',
+892 silly registry.get     via: '1.1 varnish',
+892 silly registry.get     age: '0',
+892 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+892 silly registry.get     'x-cache': 'HIT',
+892 silly registry.get     'x-cache-hits': '1',
+892 silly registry.get     'x-timer': 'S1429026300.892853,VS0,VE87',
+892 silly registry.get     vary: 'Accept',
+892 silly registry.get     'keep-alive': 'timeout=10, max=47',
+892 silly registry.get     connection: 'Keep-Alive' } ]
+893 silly addNameRange number 2 { name: 'node-static',
+893 silly addNameRange   range: '>=0.7.6-0 <0.8.0-0',
+893 silly addNameRange   hasData: true }
+894 silly addNameRange versions [ 'node-static',
+894 silly addNameRange   [ '0.5.6',
+894 silly addNameRange     '0.5.7',
+894 silly addNameRange     '0.5.8',
+894 silly addNameRange     '0.5.9',
+894 silly addNameRange     '0.6.0',
+894 silly addNameRange     '0.6.1',
+894 silly addNameRange     '0.6.2',
+894 silly addNameRange     '0.6.3',
+894 silly addNameRange     '0.6.4',
+894 silly addNameRange     '0.6.5',
+894 silly addNameRange     '0.6.6',
+894 silly addNameRange     '0.6.7',
+894 silly addNameRange     '0.6.8',
+894 silly addNameRange     '0.6.9',
+894 silly addNameRange     '0.7.0',
+894 silly addNameRange     '0.7.1',
+894 silly addNameRange     '0.7.2',
+894 silly addNameRange     '0.7.3',
+894 silly addNameRange     '0.7.4',
+894 silly addNameRange     '0.7.5',
+894 silly addNameRange     '0.7.6' ] ]
+895 verbose addNamed [ 'node-static', '0.7.6' ]
+896 verbose addNamed [ '0.7.6', '0.7.6' ]
+897 silly lockFile 04f479d4-node-static-0-7-6 node-static@0.7.6
+898 verbose lock node-static@0.7.6 /home/juanfgr/.npm/04f479d4-node-static-0-7-6.lock
+899 http 200 https://registry.npmjs.org/jasmine-core
+900 silly registry.get cb [ 200,
+900 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+900 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+900 silly registry.get     etag: '"2SWEGK72N3W73VJTGHHTBB3M"',
+900 silly registry.get     'content-type': 'application/json',
+900 silly registry.get     'cache-control': 'max-age=60',
+900 silly registry.get     'content-length': '13955',
+900 silly registry.get     'accept-ranges': 'bytes',
+900 silly registry.get     via: '1.1 varnish',
+900 silly registry.get     age: '49',
+900 silly registry.get     'x-served-by': 'cache-lcy1128-LCY',
+900 silly registry.get     'x-cache': 'HIT',
+900 silly registry.get     'x-cache-hits': '1',
+900 silly registry.get     'x-timer': 'S1429026300.594129,VS0,VE0',
+900 silly registry.get     vary: 'Accept',
+900 silly registry.get     'keep-alive': 'timeout=10, max=49',
+900 silly registry.get     connection: 'Keep-Alive' } ]
+901 silly addNameRange number 2 { name: 'jasmine-core',
+901 silly addNameRange   range: '>=2.2.0-0 <3.0.0-0',
+901 silly addNameRange   hasData: true }
+902 silly addNameRange versions [ 'jasmine-core',
+902 silly addNameRange   [ '2.0.0',
+902 silly addNameRange     '2.0.1',
+902 silly addNameRange     '2.0.4',
+902 silly addNameRange     '2.1.0',
+902 silly addNameRange     '2.1.1',
+902 silly addNameRange     '2.1.2',
+902 silly addNameRange     '2.1.3',
+902 silly addNameRange     '2.2.0' ] ]
+903 verbose addNamed [ 'jasmine-core', '2.2.0' ]
+904 verbose addNamed [ '2.2.0', '2.2.0' ]
+905 silly lockFile 07e7ab73-jasmine-core-2-2-0 jasmine-core@2.2.0
+906 verbose lock jasmine-core@2.2.0 /home/juanfgr/.npm/07e7ab73-jasmine-core-2-2-0.lock
+907 silly lockFile 07e7ab73-jasmine-core-2-2-0 jasmine-core@2.2.0
+908 silly lockFile 07e7ab73-jasmine-core-2-2-0 jasmine-core@2.2.0
+909 silly lockFile 02d021a2-jasmine-core-2-2-0 jasmine-core@^2.2.0
+910 silly lockFile 02d021a2-jasmine-core-2-2-0 jasmine-core@^2.2.0
+911 http 200 https://registry.npmjs.org/express/-/express-4.12.3.tgz
+912 silly lockFile 04f479d4-node-static-0-7-6 node-static@0.7.6
+913 silly lockFile 04f479d4-node-static-0-7-6 node-static@0.7.6
+914 silly lockFile 7ffb1a23-node-static-0-7-6 node-static@^0.7.6
+915 silly lockFile 7ffb1a23-node-static-0-7-6 node-static@^0.7.6
+916 http 200 https://registry.npmjs.org/mocha
+917 silly registry.get cb [ 200,
+917 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+917 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+917 silly registry.get     etag: '"8BPH9NK0DCD4T2FQ5H3FKN4GZ"',
+917 silly registry.get     'content-type': 'application/json',
+917 silly registry.get     'cache-control': 'max-age=60',
+917 silly registry.get     'content-length': '110349',
+917 silly registry.get     'accept-ranges': 'bytes',
+917 silly registry.get     via: '1.1 varnish',
+917 silly registry.get     age: '22',
+917 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+917 silly registry.get     'x-cache': 'HIT',
+917 silly registry.get     'x-cache-hits': '1',
+917 silly registry.get     'x-timer': 'S1429026300.900204,VS0,VE0',
+917 silly registry.get     vary: 'Accept',
+917 silly registry.get     'keep-alive': 'timeout=10, max=43',
+917 silly registry.get     connection: 'Keep-Alive' } ]
+918 verbose addNamed [ 'mocha', '2.2.4' ]
+919 verbose addNamed [ '2.2.4', '2.2.4' ]
+920 silly lockFile 8d691304-mocha-2-2-4 mocha@2.2.4
+921 verbose lock mocha@2.2.4 /home/juanfgr/.npm/8d691304-mocha-2-2-4.lock
+922 silly lockFile e946a989--npmjs-org-mocha-mocha-2-2-4-tgz https://registry.npmjs.org/mocha/-/mocha-2.2.4.tgz
+923 verbose lock https://registry.npmjs.org/mocha/-/mocha-2.2.4.tgz /home/juanfgr/.npm/e946a989--npmjs-org-mocha-mocha-2-2-4-tgz.lock
+924 verbose addRemoteTarball [ 'https://registry.npmjs.org/mocha/-/mocha-2.2.4.tgz',
+924 verbose addRemoteTarball   '192b0edc0e17e56613bc66e5fc7e81c00413a98d' ]
+925 info retry fetch attempt 1 at 16:45:01
+926 verbose fetch to= /tmp/npm-3658-kSWAr3nP/registry.npmjs.org/mocha/-/mocha-2.2.4.tgz
+927 http GET https://registry.npmjs.org/mocha/-/mocha-2.2.4.tgz
+928 http 200 https://registry.npmjs.org/gulp-util
+929 silly registry.get cb [ 200,
+929 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:01 GMT',
+929 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+929 silly registry.get     etag: '"C6PAO06OXHF2LHI9H426LUCJR"',
+929 silly registry.get     'content-type': 'application/json',
+929 silly registry.get     'cache-control': 'max-age=60',
+929 silly registry.get     'content-length': '55225',
+929 silly registry.get     'accept-ranges': 'bytes',
+929 silly registry.get     via: '1.1 varnish',
+929 silly registry.get     age: '0',
+929 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+929 silly registry.get     'x-cache': 'HIT',
+929 silly registry.get     'x-cache-hits': '1',
+929 silly registry.get     'x-timer': 'S1429026301.205423,VS0,VE155',
+929 silly registry.get     vary: 'Accept',
+929 silly registry.get     'keep-alive': 'timeout=10, max=46',
+929 silly registry.get     connection: 'Keep-Alive' } ]
+930 silly addNameRange number 2 { name: 'gulp-util', range: '>=3.0.4-0 <4.0.0-0', hasData: true }
+931 silly addNameRange versions [ 'gulp-util',
+931 silly addNameRange   [ '0.0.1',
+931 silly addNameRange     '1.0.0',
+931 silly addNameRange     '1.1.0',
+931 silly addNameRange     '1.1.1',
+931 silly addNameRange     '1.2.0',
+931 silly addNameRange     '1.3.0',
+931 silly addNameRange     '2.0.0',
+931 silly addNameRange     '2.1.1',
+931 silly addNameRange     '2.1.2',
+931 silly addNameRange     '2.1.3',
+931 silly addNameRange     '2.1.4',
+931 silly addNameRange     '2.2.0',
+931 silly addNameRange     '2.2.1',
+931 silly addNameRange     '2.2.2',
+931 silly addNameRange     '2.2.3',
+931 silly addNameRange     '2.2.5',
+931 silly addNameRange     '2.2.6',
+931 silly addNameRange     '2.2.7',
+931 silly addNameRange     '2.2.8',
+931 silly addNameRange     '2.2.9',
+931 silly addNameRange     '2.2.10',
+931 silly addNameRange     '2.2.11',
+931 silly addNameRange     '2.2.12',
+931 silly addNameRange     '2.2.13',
+931 silly addNameRange     '2.2.14',
+931 silly addNameRange     '2.2.15',
+931 silly addNameRange     '2.2.16',
+931 silly addNameRange     '2.2.17',
+931 silly addNameRange     '2.2.18',
+931 silly addNameRange     '2.2.19',
+931 silly addNameRange     '2.2.20',
+931 silly addNameRange     '3.0.0',
+931 silly addNameRange     '3.0.1',
+931 silly addNameRange     '3.0.2',
+931 silly addNameRange     '3.0.3',
+931 silly addNameRange     '3.0.4' ] ]
+932 verbose addNamed [ 'gulp-util', '3.0.4' ]
+933 verbose addNamed [ '3.0.4', '3.0.4' ]
+934 silly lockFile 3c9f70bb-gulp-util-3-0-4 gulp-util@3.0.4
+935 verbose lock gulp-util@3.0.4 /home/juanfgr/.npm/3c9f70bb-gulp-util-3-0-4.lock
+936 http 200 https://registry.npmjs.org/mocha/-/mocha-2.2.4.tgz
+937 http 200 https://registry.npmjs.org/chai
+938 silly registry.get cb [ 200,
+938 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:01 GMT',
+938 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+938 silly registry.get     etag: '"AUEALAUJAX82FXL8T6IICCHMP"',
+938 silly registry.get     'content-type': 'application/json',
+938 silly registry.get     'cache-control': 'max-age=60',
+938 silly registry.get     'content-length': '72416',
+938 silly registry.get     'accept-ranges': 'bytes',
+938 silly registry.get     via: '1.1 varnish',
+938 silly registry.get     age: '56',
+938 silly registry.get     'x-served-by': 'cache-lcy1123-LCY',
+938 silly registry.get     'x-cache': 'HIT',
+938 silly registry.get     'x-cache-hits': '3',
+938 silly registry.get     'x-timer': 'S1429026301.087245,VS0,VE0',
+938 silly registry.get     vary: 'Accept',
+938 silly registry.get     'keep-alive': 'timeout=10, max=42',
+938 silly registry.get     connection: 'Keep-Alive' } ]
+939 silly addNameRange number 2 { name: 'chai', range: '>=2.1.0-0 <3.0.0-0', hasData: true }
+940 silly addNameRange versions [ 'chai',
+940 silly addNameRange   [ '0.0.1',
+940 silly addNameRange     '0.0.2',
+940 silly addNameRange     '0.1.0',
+940 silly addNameRange     '0.1.1',
+940 silly addNameRange     '0.1.2',
+940 silly addNameRange     '0.1.3',
+940 silly addNameRange     '0.1.4',
+940 silly addNameRange     '0.1.5',
+940 silly addNameRange     '0.1.6',
+940 silly addNameRange     '0.1.7',
+940 silly addNameRange     '0.2.0',
+940 silly addNameRange     '0.2.1',
+940 silly addNameRange     '0.2.2',
+940 silly addNameRange     '0.2.3',
+940 silly addNameRange     '0.2.4',
+940 silly addNameRange     '0.3.0',
+940 silly addNameRange     '0.3.1',
+940 silly addNameRange     '0.3.2',
+940 silly addNameRange     '0.3.3',
+940 silly addNameRange     '0.3.4',
+940 silly addNameRange     '0.4.0',
+940 silly addNameRange     '0.4.1',
+940 silly addNameRange     '0.4.2',
+940 silly addNameRange     '0.5.0',
+940 silly addNameRange     '0.5.1',
+940 silly addNameRange     '0.5.2',
+940 silly addNameRange     '0.5.3',
+940 silly addNameRange     '1.0.0',
+940 silly addNameRange     '1.0.1',
+940 silly addNameRange     '1.0.2',
+940 silly addNameRange     '1.0.3',
+940 silly addNameRange     '1.0.4',
+940 silly addNameRange     '1.1.0',
+940 silly addNameRange     '1.1.1',
+940 silly addNameRange     '1.2.0',
+940 silly addNameRange     '1.3.0',
+940 silly addNameRange     '1.4.0',
+940 silly addNameRange     '1.4.1',
+940 silly addNameRange     '1.4.2',
+940 silly addNameRange     '1.5.0',
+940 silly addNameRange     '1.6.0',
+940 silly addNameRange     '1.6.1',
+940 silly addNameRange     '1.7.0',
+940 silly addNameRange     '1.7.1',
+940 silly addNameRange     '1.7.2',
+940 silly addNameRange     '1.8.0',
+940 silly addNameRange     '1.8.1',
+940 silly addNameRange     '1.9.0',
+940 silly addNameRange     '1.9.1',
+940 silly addNameRange     '1.9.2',
+940 silly addNameRange     '1.10.0',
+940 silly addNameRange     '2.0.0',
+940 silly addNameRange     '2.1.0',
+940 silly addNameRange     '2.1.1',
+940 silly addNameRange     '2.1.2',
+940 silly addNameRange     '2.2.0' ] ]
+941 verbose addNamed [ 'chai', '2.2.0' ]
+942 verbose addNamed [ '2.2.0', '2.2.0' ]
+943 silly lockFile 379c620f-chai-2-2-0 chai@2.2.0
+944 verbose lock chai@2.2.0 /home/juanfgr/.npm/379c620f-chai-2-2-0.lock
+945 silly lockFile d936526a-ry-npmjs-org-chai-chai-2-2-0-tgz https://registry.npmjs.org/chai/-/chai-2.2.0.tgz
+946 verbose lock https://registry.npmjs.org/chai/-/chai-2.2.0.tgz /home/juanfgr/.npm/d936526a-ry-npmjs-org-chai-chai-2-2-0-tgz.lock
+947 verbose addRemoteTarball [ 'https://registry.npmjs.org/chai/-/chai-2.2.0.tgz',
+947 verbose addRemoteTarball   'd21135623bd393ad4702d94536eca482ad78d01d' ]
+948 info retry fetch attempt 1 at 16:45:01
+949 verbose fetch to= /tmp/npm-3658-kSWAr3nP/registry.npmjs.org/chai/-/chai-2.2.0.tgz
+950 http GET https://registry.npmjs.org/chai/-/chai-2.2.0.tgz
+951 silly lockFile 3c9f70bb-gulp-util-3-0-4 gulp-util@3.0.4
+952 silly lockFile 3c9f70bb-gulp-util-3-0-4 gulp-util@3.0.4
+953 silly lockFile f8ceac1d-gulp-util-3-0-4 gulp-util@^3.0.4
+954 silly lockFile f8ceac1d-gulp-util-3-0-4 gulp-util@^3.0.4
+955 silly lockFile e946a989--npmjs-org-mocha-mocha-2-2-4-tgz https://registry.npmjs.org/mocha/-/mocha-2.2.4.tgz
+956 silly lockFile e946a989--npmjs-org-mocha-mocha-2-2-4-tgz https://registry.npmjs.org/mocha/-/mocha-2.2.4.tgz
+957 silly lockFile 8d691304-mocha-2-2-4 mocha@2.2.4
+958 silly lockFile 8d691304-mocha-2-2-4 mocha@2.2.4
+959 silly lockFile 12215997-mocha-latest mocha@latest
+960 silly lockFile 12215997-mocha-latest mocha@latest
+961 http 200 https://registry.npmjs.org/chai/-/chai-2.2.0.tgz
+962 silly lockFile c3db49de-s-org-express-express-4-12-3-tgz https://registry.npmjs.org/express/-/express-4.12.3.tgz
+963 silly lockFile c3db49de-s-org-express-express-4-12-3-tgz https://registry.npmjs.org/express/-/express-4.12.3.tgz
+964 silly lockFile 0b3fc563-express-4-12-3 express@4.12.3
+965 silly lockFile 0b3fc563-express-4-12-3 express@4.12.3
+966 silly lockFile 8ad1ad64-express express@*
+967 silly lockFile 8ad1ad64-express express@*
+968 silly lockFile d936526a-ry-npmjs-org-chai-chai-2-2-0-tgz https://registry.npmjs.org/chai/-/chai-2.2.0.tgz
+969 silly lockFile d936526a-ry-npmjs-org-chai-chai-2-2-0-tgz https://registry.npmjs.org/chai/-/chai-2.2.0.tgz
+970 silly lockFile 379c620f-chai-2-2-0 chai@2.2.0
+971 silly lockFile 379c620f-chai-2-2-0 chai@2.2.0
+972 silly lockFile fbacd2aa-chai-2-1-0 chai@^2.1.0
+973 silly lockFile fbacd2aa-chai-2-1-0 chai@^2.1.0
+974 http 200 https://registry.npmjs.org/karma
+975 silly registry.get cb [ 200,
+975 silly registry.get   { date: 'Tue, 14 Apr 2015 15:45:00 GMT',
+975 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+975 silly registry.get     etag: '"AM3MHGYPALFCLXRK2PPCL48GD"',
+975 silly registry.get     'content-type': 'application/json',
+975 silly registry.get     'cache-control': 'max-age=60',
+975 silly registry.get     'content-length': '688375',
+975 silly registry.get     'accept-ranges': 'bytes',
+975 silly registry.get     via: '1.1 varnish',
+975 silly registry.get     age: '0',
+975 silly registry.get     'x-served-by': 'cache-lcy1120-LCY',
+975 silly registry.get     'x-cache': 'HIT',
+975 silly registry.get     'x-cache-hits': '1',
+975 silly registry.get     'x-timer': 'S1429026300.315266,VS0,VE88',
+975 silly registry.get     vary: 'Accept',
+975 silly registry.get     'keep-alive': 'timeout=10, max=46',
+975 silly registry.get     connection: 'Keep-Alive' } ]
+976 silly addNameRange number 2 { name: 'karma', range: '*', hasData: true }
+977 silly addNameRange versions [ 'karma',
+977 silly addNameRange   [ '0.8.0',
+977 silly addNameRange     '0.9.0-dart',
+977 silly addNameRange     '0.8.1',
+977 silly addNameRange     '0.8.2',
+977 silly addNameRange     '0.8.3',
+977 silly addNameRange     '0.9.0',
+977 silly addNameRange     '0.8.4',
+977 silly addNameRange     '0.9.1',
+977 silly addNameRange     '0.8.5',
+977 silly addNameRange     '0.9.2',
+977 silly addNameRange     '0.9.2-dart',
+977 silly addNameRange     '0.9.3',
+977 silly addNameRange     '0.8.6',
+977 silly addNameRange     '0.9.4',
+977 silly addNameRange     '0.8.7',
+977 silly addNameRange     '0.9.5',
+977 silly addNameRange     '0.9.6',
+977 silly addNameRange     '0.8.8',
+977 silly addNameRange     '0.9.7',
+977 silly addNameRange     '0.9.8',
+977 silly addNameRange     '0.10.0',
+977 silly addNameRange     '0.10.1',
+977 silly addNameRange     '0.10.2',
+977 silly addNameRange     '0.11.0',
+977 silly addNameRange     '0.11.1',
+977 silly addNameRange     '0.10.3',
+977 silly addNameRange     '0.10.4',
+977 silly addNameRange     '0.11.2',
+977 silly addNameRange     '0.11.3',
+977 silly addNameRange     '0.10.5',
+977 silly addNameRange     '0.11.4',
+977 silly addNameRange     '0.11.5',
+977 silly addNameRange     '0.10.6',
+977 silly addNameRange     '0.11.6',
+977 silly addNameRange     '0.10.7',
+977 silly addNameRange     '0.11.7',
+977 silly addNameRange     '0.11.8',
+977 silly addNameRange     '0.11.9',
+977 silly addNameRange     '0.10.8',
+977 silly addNameRange     '0.11.10',
+977 silly addNameRange     '0.11.11',
+977 silly addNameRange     '0.11.12',
+977 silly addNameRange     '0.11.11-dev',
+977 silly addNameRange     '0.10.9',
+977 silly addNameRange     '0.11.12-dev',
+977 silly addNameRange     '0.11.12-dev2',
+977 silly addNameRange     '0.11.13',
+977 silly addNameRange     '0.11.14',
+977 silly addNameRange     '0.12.0',
+977 silly addNameRange     '0.10.10',
+977 silly addNameRange     '0.12.1',
+977 silly addNameRange     '0.12.2',
+977 silly addNameRange     '0.12.3',
+977 silly addNameRange     '0.12.4',
+977 silly addNameRange     '0.12.5',
+977 silly addNameRange     '0.12.6',
+977 silly addNameRange     '0.12.6-beta-43e6e28',
+977 silly addNameRange     '0.12.7',
+977 silly addNameRange     '0.12.8',
+977 silly addNameRange     '0.12.9',
+977 silly addNameRange     '0.12.10',
+977 silly addNameRange     '0.12.11',
+977 silly addNameRange     '0.12.12',
+977 silly addNameRange     '0.12.11-beta-3029418',
+977 silly addNameRange     '0.12.13',
+977 silly addNameRange     '0.12.14',
+977 silly addNameRange     '0.12.15',
+977 silly addNameRange     '0.12.16',
+977 silly addNameRange     '0.12.16-beta-905422d',
+977 silly addNameRange     '0.12.17',
+977 silly addNameRange     '0.12.18',
+977 silly addNameRange     '0.12.19',
+977 silly addNameRange     '0.12.20',
+977 silly addNameRange     '0.12.21',
+977 silly addNameRange     '0.12.22',
+977 silly addNameRange     '0.12.23',
+977 silly addNameRange     '0.12.24',
+977 silly addNameRange     '0.12.24-beta-6cf7955',
+977 silly addNameRange     '0.12.25',
+977 silly addNameRange     '0.12.25-beta-37a7958',
+977 silly addNameRange     '0.12.25-beta-ad5bc24',
+977 silly addNameRange     '0.12.26',
+977 silly addNameRange     '0.12.27',
+977 silly addNameRange     '0.12.28',
+977 silly addNameRange     '0.12.28-beta-b9be580',
+977 silly addNameRange     '0.12.29',
+977 silly addNameRange     '0.12.30',
+977 silly addNameRange     '0.12.31',
+977 silly addNameRange     '0.12.28-beta-f65c864',
+977 silly addNameRange     '0.12.24-dev-test',
+977 silly addNameRange     '0.12.24-dev-socketio10',
+977 silly addNameRange     '0.12.24-dev-socketio10-2',
+977 silly addNameRange     '0.12.32-beta.0',
+977 silly addNameRange     '0.12.32' ] ]
+978 verbose addNamed [ 'karma', '0.12.31' ]
+979 verbose addNamed [ '0.12.31', '0.12.31' ]
+980 silly lockFile feea9de1-karma-0-12-31 karma@0.12.31
+981 verbose lock karma@0.12.31 /home/juanfgr/.npm/feea9de1-karma-0-12-31.lock
+982 silly lockFile feea9de1-karma-0-12-31 karma@0.12.31
+983 silly lockFile feea9de1-karma-0-12-31 karma@0.12.31
+984 silly lockFile 85881dbb-karma karma@*
+985 silly lockFile 85881dbb-karma karma@*
+986 error Error: EACCES, mkdir '/home/juanfgr/.npm/express/4.12.3'
+986 error  { [Error: EACCES, mkdir '/home/juanfgr/.npm/express/4.12.3']
+986 error   errno: 3,
+986 error   code: 'EACCES',
+986 error   path: '/home/juanfgr/.npm/express/4.12.3',
+986 error   parent: 'PL015-AnalizadorLexicoJS' }
+987 error Please try running this command again as root/Administrator.
+988 error System Linux 3.13.0-32-generic
+989 error command "/usr/bin/node" "/usr/bin/npm" "install"
+990 error cwd /home/juanfgr/Escritorio/PL015-AnalizadorDescendentePR
+991 error node -v v0.10.38
+992 error npm -v 1.4.28
+993 error path /home/juanfgr/.npm/express/4.12.3
+994 error code EACCES
+995 error errno 3
+996 error stack Error: EACCES, mkdir '/home/juanfgr/.npm/express/4.12.3'
+997 verbose exit [ 3, true ]
