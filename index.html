@@ -1,46 +1,217 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Top Down Operator Precedence</title>
-      <link href="styles/global.css" rel="stylesheet" type="text/css">
-      <script src="scripts/parse.js"></script>
-      <script src="scripts/tokens.js"></script>
-      <script src="lib/jquery.min.js"></script>
-      <script src="scripts/main.js"></script>
-      <script src="scripts/inputFiles.js"></script>
-      
-   </head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
 
-   <body>
-      <h1>Top Down Operator Precedence. Lexical Analysis</h1>
-      <p>
-         <nav>
-            <a href="http://javascript.crockford.com/tdop/tdop.html" class="mylink">Top Down Operator Precedence tutorial</a>
-            <a href="https://github.com/PL2015/PL015-AnalizadorLexicoJS" class="mylink">Repo at GitHub</a>
-         </nav>
-      </p>
-      <h2>Input</h2>
-      <p>Fill the input box with javascript code:</p>
-      <textarea id="INPUT">
-var a = "hello"; // initialize a
-var b = function(x) {
-   var c = 3;
-   return x+c;
-};
-      </textarea>
-      <br>
-      <input id="PARSE" value=parse type=button class="mylink">
-      
-      <button id ="input2" type="button" onclick="dump('input2.txt');">input2</button>
-      
-      <div id="drop_zone">Drop files here</div>
-      <output id="list"></output>
-      
-      <script>
-setupFileList ();
-     </script>
+<head>
+    <meta charset="utf-8">
+    <title>PL | Analizador Descendente Predictivo Recursivo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <pre id=OUTPUT></pre>
-   </body>
-</html>
+    <!-- Google fonts - which you want to use - (rest you can just remove) -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body id="top">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade ybrowser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header>
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- LOGO -->
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <!-- END LOGO -->
+
+                </div>
+
+                <!-- TOGGLE NAV -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li><a class="page-scroll" href="#services">ENLACES</a>
+                        </li>
+                        <li><a class="page-scroll" href="#testimonial">AUTORES</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- TOGGLE NAV -->
+
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- END NAVIGATION -->
+    </header>
+
+   
+
+    <!-- SERVICES -->
+    <section id="services" class="section text-center">
+        <div class="container">
+            <h2 class="section-title wow fadeIn">Enlaces</h2>
+            <div class="row">
+                <!-- SINGLE SERVICE -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-service text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".9s">
+                        <div class="service-title">
+                            <i class="fa fa-code fa-3x"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Github</h3>
+                            <p>El ontrol de versiones de este proyecto se realizo utilizando Github, puedes visitar nuestro repositorio en el enlace.</p>
+                            <a href="#">Abrir enlace</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SINGLE SERVICE -->
+
+                <!-- SINGLE SERVICE -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-service text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.2s">
+                        <div class="service-title">
+                            <i class="fa fa-rocket fa-3x"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Heroku</h3>
+                            <p>El despliegue de la aplicación se realizo en Heroku, puedes visitar nuestro despliegue visitando el enlace.</p>
+                            <a href="#">Abrir enlace</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SINGLE SERVICE -->
+
+                <!-- SINGLE SERVICE -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-service text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.5s">
+                        <div class="service-title">
+                            <i class="fa fa-bug fa-3x"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Heroku Test</h3>
+                            <p>El despliegue de la aplicación se realizo en Heroku, puedes visitar nuestro despliegue visitando el enlace.</p>
+                            <a href="#">Abrir enlace</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SINGLE SERVICE -->
+
+            </div>
+            <!--.row-->
+        </div>
+        <!--/.container -->
+    </section>
+    <!-- END SERVICES -->
+
+    <!-- TESTIMONIAL -->
+    <section id="testimonial" class="section text-center" style="background-color:#eee">
+        <h2 class="section-title">Autores</h2>
+        <div class="container">
+
+
+                <!-- SINGLE TESTIMONIAL -->
+                    <div class="single-testimonial col-md-6">
+                        <img class="center-block wow fadeInDown" data-wow-duration="1s" src="http://www.gravatar.com/avatar/juan.ramos.fg1@gmail.com?s=32" alt="Testimoinial">
+                        <p class="wow fadeInDown" data-wow-duration="1s">
+                            Guillermo Rodriguez Pardo
+                        </p>
+                        <div class="social-networks wow fadeInDown" data-wow-duration="1s">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                <!-- END SINGLE TESTIMONIAL -->
+
+                <!-- SINGLE TESTIMONIAL -->
+                    <div class="single-testimonial col-md-6">
+                        <img class="center-block wow fadeInDown" data-wow-duration="1s" src="http://www.gravatar.com/avatar/juan.ramos.fg1@gmail.com?s=32" alt="Testimoinial">
+                        <p class="wow fadeInDown" data-wow-duration="1s">
+                            Juan Francsico González Ramos
+                        </p>
+                        <div class="social-networks wow fadeInDown" data-wow-duration="1s">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                <!-- END SINGLE TESTIMONIAL -->
+        </div>
+        <!--/.container -->
+    </section>
+    <!-- END TESTIMONIAL -->
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <!-- FOOTER MENU -->
+                <div class="col-md-6">
+                    <div class="footer-menu">
+                        <ul class="list-inline">
+                            <li><a href="#services">ENLACES</a>
+                            </li>
+                            <li><a href="#testimonial">AUTORES</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END FOOTER MENU -->
+
+                <!-- FOOTER CONTENT -->
+                <div class="col-md-6">
+                    <div class="footer-content text-right">
+                        <p>&copy; 2014 All Rights Reserved, <a href="#">PLTeam</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- END FOOTER CONTENT -->
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- ./container -->
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- js files -->
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/prettyPhoto.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
