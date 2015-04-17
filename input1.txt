@@ -1,0 +1,6 @@
+CONST
+  m =  7,
+  n = 85;
+BEGIN
+   x = 1
+END. 

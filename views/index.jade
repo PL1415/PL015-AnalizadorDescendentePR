@@ -13,7 +13,10 @@ block content
       | var a = "hello"; // initialize a    
     br
     input#PARSE(value='parse', type=button, class="mylink") 
+    button#input1(type="button", onclick="dump('input1.txt')") input1
     button#input2(type="button", onclick="dump('input2.txt')") input2
+    button#input3(type="button", onclick="dump('input3.txt')") input3
+    button#input4(type="button", onclick="dump('input4.txt')") input4
       
     div#drop_zone
       Drop files here

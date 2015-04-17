@@ -1,0 +1,50 @@
+CONST
+  m =  7,
+  n = 85;
+ 
+ 
+VAR a, b;
+
+PROCEDURE square;
+VAR w;
+BEGIN
+  r = x;
+  q = 0;
+  w = y;
+  WHILE w <= r DO w = 2 * w;
+  WHILE w > y DO BEGIN
+    q = 2 * q;
+    w = w / 2;
+    IF w <= r THEN BEGIN
+      r = r - w;
+      q = q + 1
+    END
+  END
+END;
+
+BEGIN
+   x = 1;
+   CALL square;
+   WHILE x <= 10 DO BEGIN
+   IF f < g THEN g = g - f;
+    	IF g < f THEN f = f - g;
+			z = 2
+   END;
+    x = 1;
+   CALL square;
+   WHILE x <= 10 DO BEGIN
+   IF f < g THEN g = g - f;
+    	IF g < f THEN f = f - g;
+			z = 2
+   END;
+   WHILE w <= r DO w = 2 * w;
+  WHILE w > y DO BEGIN
+    q = 2 * q;
+    w = w / 2;
+    IF w <= r THEN BEGIN
+      r = r - w;
+      q = q + 1
+    END
+  END;
+    x = x + 1
+END. 
