@@ -1,3 +1,5 @@
+// Note the new way of requesting CoffeeScript since 1.7.x
+require('coffee-script/register.js');
 var gulp    = require('gulp'),
     gutil   = require('gulp-util'),
     uglify  = require('gulp-uglify'),

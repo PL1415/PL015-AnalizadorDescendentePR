@@ -17,7 +17,7 @@ module.exports = function(config) {
     files: [
       'lib/*js',
       'tests/*.js',
-      'scripts/*.js',
+      'scripts/coffee/*.coffee',
       'test.html'
     ],
     

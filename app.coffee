@@ -1,6 +1,9 @@
 _ = require('underscore')
 $ = require('jquery')
 require("coffee-script")
+logger = require('morgan')
+cookieParser = require('cookie-parser')
+bodyParser = require('body-parser')
 express = require('express')
 app = express()
 module.exports = app
@@ -8,6 +11,11 @@ path = require('path')
 app.set 'port', process.env.PORT or 5000
 app.set 'views', path.join(__dirname, 'views')
 app.set 'view engine', 'jade'
+app.use logger('dev')
+app.use bodyParser.json()
+app.use bodyParser.urlencoded(extended: false)
+app.use cookieParser()
+
 app.use express.static(__dirname + '/')
 app.get '/', (request, response) ->
   response.render 'index', title: 'Analiz. Lex. JS'

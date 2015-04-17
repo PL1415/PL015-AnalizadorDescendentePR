@@ -8,6 +8,7 @@ main = ->
   OUTPUT.innerHTML = result
 
 $(document).ready ->
+  alert("ffff");
   PARSE.onclick = main
 
 Object.constructor::error = (message, t) ->
