@@ -1,14 +1,15 @@
 {
-  "name": "PL015-AnalizadorLexicoJS",
+  "name": "PL015-AnalizadorDescententePR",
   "version": "0.0.1",
-  "description": "ULL ESIT Grado de Informática. 3º. PL Lab \"Analizador Léxico de un subconjunto de JavaScript\"",
-  "main": "main.js",
+  "description": "ULL ESIT Grado de Informática. 3º. PL Lab \"Analizador Descentente Predictivo Recursivo\"",
+  "main": "",
   "scripts": {
-    "test": "gulp test"
+    "start": "",
+    "test": ""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PL2015/PL015-AnalizadorLexicoJS.git"
+    "url": "https://github.com/PL1415/PL015-AnalizadorDescendentePR.git"
   },
   "keywords": [
     "regexp",
@@ -18,9 +19,9 @@
   "author": "Guillermo Rodríguez Pardo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PL2015/PL015-AnalizadorLexicoJS/issues"
+    "url": "https://github.com/PL1415/PL015-AnalizadorDescendentePR/issues"
   },
-  "homepage": "https://pl2015.github.io/PL015-AnalizadorLexicoJS/",
+  "homepage": "https://pl1415.github.io/PL015-AnalizadorDescendentePR/",
   "engines": {
     "node": "0.10.x"
   },
@@ -34,7 +35,7 @@
     "express": "~4.12.2",
     "jade": "~1.9.2",
     "morgan": "~1.5.1",
-    "body-parser": "~1.12.0",
+    "body-parser": "~1.12.0"
   },
   "devDependencies": {
     "blanket": "^1.1.6",
@@ -61,6 +62,6 @@
     "supervisor": "*",
     "supertest": "*",
     "expect": "^1.6.0",
-    "js2coffee": "^2.0.3",
+    "js2coffee": "^2.0.3"
   }
 }

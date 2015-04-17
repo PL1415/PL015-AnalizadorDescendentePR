@@ -1,5 +1,6 @@
 _ = require('underscore')
 $ = require('jquery')
+require("coffee-script")
 express = require('express')
 app = express()
 module.exports = app
@@ -17,6 +18,8 @@ app.listen app.get('port'), ->
 app.get '/test/', (request, response) ->
   response.render 'test', title: 'Analiz. Lex. JS test'
   return
+
+
 server = app.listen(3000, ->
   host = server.address().address
   port = server.address().port

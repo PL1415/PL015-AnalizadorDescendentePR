@@ -10,7 +10,7 @@ block content
   h2 Input
     p Fill the input box with javascript code:
     textarea#INPUT
-      'var a = "hello"; // initialize a'    
+      | var a = "hello"; // initialize a    
     br
     input#PARSE(value='parse', type=button, class="mylink") 
     button#input2(type="button", onclick="dump('input2.txt')") input2
@@ -20,5 +20,5 @@ block content
     output#list
       
     script(type='text/javascript')
-      setupFileList ();
-  pre#OUTPUT
+      | setupFileList();
+    pre#OUTPUT

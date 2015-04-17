@@ -1,29 +1,24 @@
 var main, parse, root;
-
 main = function() {
-  var result, source;
+  var source;
   $('#outputdiv').css("display", "");
   source = INPUT.value;
   try {
     result = JSON.stringify(parse(source), null, 2);
-  } catch (_error) {
-    result = _error;
+  } catch (result) {
     result = "<div class=\"error\">" + result + "</div>";
   }
   return OUTPUT.innerHTML = result;
 };
-
 $(document).ready(function() {
   return PARSE.onclick = main;
 });
-
 Object.constructor.prototype.error = function(message, t) {
   t = t || this;
   t.name = "SyntaxError";
   t.message = message;
   throw treturn;
 };
-
 RegExp.prototype.bexec = function(str) {
   var i, m;
   i = this.lastIndex;
@@ -33,7 +28,6 @@ RegExp.prototype.bexec = function(str) {
   }
   return null;
 };
-
 String.prototype.tokens = function() {
   var ADDOP, COMPARISONOPERATOR, ID, MULTIPLELINECOMMENT, MULTOP, NUM, ONECHAROPERATORS, ONELINECOMMENT, RESERVED_WORDS, STRING, WHITES, from, getTok, i, m, make, n, result, rw, tokens;
   from = void 0;
@@ -120,7 +114,6 @@ String.prototype.tokens = function() {
   }
   return result;
 };
-
 parse = function(input) {
   var block, condition, expression, factor, lookahead, match, program, statement, statements, term, tokens, tree;
   tokens = input.tokens();
@@ -141,7 +134,7 @@ parse = function(input) {
     if (lookahead && lookahead.type === ".") {
       match(".");
     } else {
-      throw "Syntax Error. Expected '.' Remember to end your input with a .";
+      throw "Syntax Error. Expected '.' at the end of file.";
     }
     return result;
   };
@@ -155,7 +148,7 @@ parse = function(input) {
         result = null;
         if (lookahead && lookahead.type === "ID") {
           left = {
-            type: "Const ID",
+            type: "CONSTANT",
             value: lookahead.value
           };
           match("ID");
@@ -193,7 +186,7 @@ parse = function(input) {
         result = null;
         if (lookahead && lookahead.type === "ID") {
           result = {
-            type: "Var ID",
+            type: "VARIABLE",
             value: lookahead.value
           };
           match("ID");
@@ -218,9 +211,9 @@ parse = function(input) {
         match("ID");
         match(";");
         result = {
-          type: "Procedure",
-          value: value,
-          left: block()
+          type: "PROCEDURE",
+          name: value,
+          oper: block()
         };
         match(";");
       } else {
@@ -267,7 +260,7 @@ parse = function(input) {
       match("P");
       right = expression();
       result = {
-        type: "P",
+        type: "PRINT",
         value: right
       };
     } else if (lookahead && lookahead.type === "CALL") {
@@ -292,8 +285,8 @@ parse = function(input) {
       right = statement();
       result = {
         type: "IF",
-        left: left,
-        right: right
+        cond: left,
+        oper: right
       };
     } else if (lookahead && lookahead.type === "WHILE") {
       match("WHILE");
@@ -302,8 +295,8 @@ parse = function(input) {
       right = statement();
       result = {
         type: "WHILE",
-        left: left,
-        right: right
+        cond: left,
+        oper: right
       };
     } else {
       throw "Syntax Error. Expected identifier but found " + (lookahead ? lookahead.value : "end of input") + (" near '" + (input.substr(lookahead.from)) + "'");
@@ -392,16 +385,13 @@ parse = function(input) {
   }
   return tree;
 };
-
 root = typeof exports !== "undefined" && exports !== null ? exports : this;
-
 root.test_main = function(text) {
-  var result, source;
+  var source;
   source = text;
   try {
     result = JSON.stringify(parse(source), null, 2);
-  } catch (_error) {
-    result = _error;
+  } catch (result) {
     result = "<div class=\"error\">" + result + "</div>";
   }
   return result.replace(/\n/g, '');
